@@ -45,7 +45,7 @@ export default function LandingPage(props) {
         {...rest}
       />
       
-      <Fade duration = "1500"  >
+      
       <Parallax filter image={require("assets/img/back.jpeg")}>
         <div className={classes.container}>
           <GridContainer>
@@ -63,7 +63,7 @@ export default function LandingPage(props) {
           </GridContainer>
         </div>
       </Parallax>
-      </Fade>
+     
       
       <Fade bottom duration ={2000} delay="500">
       <div className={classNames(classes.main, classes.mainRaised)}>

@@ -233,7 +233,7 @@ export default function MemberDetails() {
         <CardBody>
          
           <p>
-           <Fade bottom cascade delay={800}>
+          
             
                <strong style ={card}>UI provides a common platform for the matured and young researchers working in the field of research.</strong> <br/>
                <strong style ={card}>Opportunity to join a large community of universal inovators.</strong> <br/>
@@ -241,7 +241,7 @@ export default function MemberDetails() {
                <strong style ={card}>Opportunity to get information of all events organized / sponsored by UI.</strong> <br/>
                <strong style ={card}>All members of UI will receive the discount in the registration fee of ICICC series conferences, UI schools, FDPs and all other events sponsored/supported by UI.</strong> 
             
-           </Fade>
+        
           </p>
           
         </CardBody>
@@ -256,7 +256,7 @@ export default function MemberDetails() {
         <CardBody>
          
           <p>
-           <Fade bottom cascade delay={800}>
+          
           
                <strong style ={card}>UI provides platform to discuss with the experts (editors and Reviewers of UI) about technical concepts related to the experts during UI conferences or via email.</strong> <br/>
                <strong style ={card}>Reduction of 10% of registration fee will be made for publishing research works in UI conferences or journals.</strong> <br/>
@@ -266,7 +266,7 @@ export default function MemberDetails() {
                <strong style ={card}>UI members will be given more preference during the issuing of UI’s yearly awards.</strong> <br/>
                <strong style ={card}>UI members will get complete assistance in publishing textbooks at nominal charges.</strong> <br/>
                <strong style ={card}>Periodical promotions will be there as region wise Coordinator and Chief Coordinator.</strong> 
-           </Fade>
+         
           </p>
           
         </CardBody>
@@ -282,7 +282,7 @@ export default function MemberDetails() {
         <CardBody>
          
           <p>
-           <Fade bottom cascade delay={800}>
+        
              
 
                <strong style ={card} >Complete assistance in writing technical papers. </strong> <br/>
@@ -292,7 +292,7 @@ export default function MemberDetails() {
                <strong style ={card}>Periodical promotions will be there as region wise Coordinator and Chief Coordinator.</strong> 
 
            
-           </Fade>
+        
           </p>
           
         </CardBody>
@@ -308,7 +308,7 @@ export default function MemberDetails() {
         <CardBody>
          
           <p>
-           <Fade bottom cascade delay={800}>
+         
              
 
                <strong style ={card}>MOU with the Institute/Department to establish Faculty/Student Chapter. </strong> <br/>
@@ -321,7 +321,7 @@ export default function MemberDetails() {
                <strong style ={card}>Assistance in publishing thesis / text books under UI Publication House with nominal charges.</strong> 
 
            
-           </Fade>
+        
           </p>
           
         </CardBody>

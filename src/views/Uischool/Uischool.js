@@ -41,7 +41,7 @@ export default function Uischool(props) {
         }}
         {...rest}
       />
-      <Fade duration = "1500"  >
+      
       <Parallax filter image={require("assets/img/school.jpg")}>
         <div className={classes.container}>
           <GridContainer>
@@ -54,7 +54,7 @@ export default function Uischool(props) {
           </GridContainer>
         </div>
       </Parallax>
-      </Fade>
+   
       <Fade bottom duration ={2000} delay="500">
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>

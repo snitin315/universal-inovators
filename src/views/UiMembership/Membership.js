@@ -45,7 +45,7 @@ export default function Membership(props) {
         }}
         {...rest}
       />
-      <Fade duration = "1500"  >
+     
       <Parallax filter image={require("assets/img/member.jpg")}>
         <div className={classes.container}>
           <GridContainer>
@@ -60,7 +60,7 @@ export default function Membership(props) {
           </GridContainer>
         </div>
       </Parallax>
-      </Fade>
+    
       <Fade bottom duration ={2000} delay="500">
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
