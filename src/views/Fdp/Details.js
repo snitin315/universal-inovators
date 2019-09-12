@@ -42,14 +42,14 @@ export default function Details() {
       
         <Card style ={border}>
           <CardBody  style = {design}>
-             <Fade bottom cascade delay={500} duration={2000}>
+            
              
              <strong style={card}>1. One Week FDP (National/International).</strong> <hr/>
              <strong style={card}>2. Two Week FDP (National/International).</strong> <hr/>
              <strong style={card}>3. Workshops</strong> <hr/>
              <strong style={card}>4. Seminars</strong> <hr/>
             
-             </Fade>
+          
             
           </CardBody>
         </Card>

@@ -44,7 +44,7 @@ export default function Conferences(props) {
         {...rest}
       />
       <Fade duration = "1500"  >
-      <Parallax filter image={require("assets/img/conf.jpg")}>
+      <Parallax filter image={require("assets/img/conf2.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             
