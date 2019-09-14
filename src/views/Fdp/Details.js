@@ -44,10 +44,10 @@ export default function Details() {
           <CardBody  style = {design}>
              <Fade cascade>
              
-             <strong style={card}>1. One Week FDP (National/International).</strong> <hr/>
-             <strong style={card}>2. Two Week FDP (National/International).</strong> <hr/>
-             <strong style={card}>3. Workshops</strong> <hr/>
-             <strong style={card}>4. Seminars</strong> <hr/>
+             <strong style={card}>1 One Week FDP (National/International).</strong> <hr/>
+             <strong style={card}>2 Two Week FDP (National/International).</strong> <hr/>
+             <strong style={card}>3 Workshops</strong> <hr/>
+             <strong style={card}>4 Seminars</strong> <hr/>
             
              </Fade>
             

@@ -46,12 +46,12 @@ export default function LandingPage(props) {
       />
       
       
-      <Parallax filter image={require("assets/img/back.jpeg")}>
+      <Parallax filter image={require("assets/img/start-bg.png")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
             
-              <h1 className={classes.title}> <CharPose text = " Your Story Starts With Us" /></h1>
+              <h1 className={classes.title} style={{color:"cyan"}}> <CharPose text = " Your Story Starts With Us" /></h1>
              
               <br />
 

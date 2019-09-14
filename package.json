@@ -1,7 +1,7 @@
 {
-  "name": "material-kit-react",
+  "name": "universal-inovators",
   "version": "1.8.0",
-  "description": "Material Kit React. Coded by Creative Tim",
+  "description": "Your story starts with us",
   "private": true,
   "main": "dist/index.js",
   "dependencies": {

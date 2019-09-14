@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // material-ui core components
-import { List, ListItem } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
@@ -35,12 +34,12 @@ export default function Footer(props) {
           <Favorite className={classes.icon} /> by{" "}
           <a
             href="https://universal-inovators.com"
-            className={aClasses}
             target="_blank"
           >
             Universal-Inovators
           </a>{" "}
-          for a better web.
+          for a better web. <br/>
+          Designed by <a href="https://github.com/snitin315" target="_blank">Nitin Kumar</a>
         </div>
       </div>
     </footer>
