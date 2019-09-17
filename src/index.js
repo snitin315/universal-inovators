@@ -35,10 +35,10 @@ ReactDOM.render(
       <Route path="/uimembership" component={Membership}/>
 
       <Route path="/startup" component = {StartUpPage}/>
-      <Route path="/sessions" component = {Sessions} />
-      <Route path="/eligibility" component = {Eligibility} />
-      <Route path="/funding" component = {Funding} />
-      <Route path="/application" component = {Application}/>
+      <Route path="/startup/sessions" component = {Sessions} />
+      <Route path="/startup/eligibility" component = {Eligibility} />
+      <Route path="/startup/funding" component = {Funding} />
+      <Route path="/startup/application" component = {Application}/>
      
      
       <Route path="/" component={LandingPage} />

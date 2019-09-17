@@ -33,13 +33,13 @@ export default function Footer(props) {
           &copy; {1900 + new Date().getYear()} , made with{" "}
           <Favorite className={classes.icon} /> by{" "}
           <a
-            href="https://universal-inovators.com"
+            href="http://universal-inovators.com"
             target="_blank"
           >
             Universal-Inovators
           </a>{" "}
-          for a better web. <br/>
-          Designed by <a href="https://github.com/snitin315" target="_blank">Nitin Kumar</a>
+          for a better web. 
+         
         </div>
       </div>
     </footer>
