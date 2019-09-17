@@ -35,7 +35,7 @@ export default function StartupHeader(props) {
       
       <ListItem className={classes.listItem}>
         <Button
-          href="/startup/sessions"
+          href="startup-sessions"
           color="transparent"
           className={classes.navLink}
         >
@@ -44,7 +44,7 @@ export default function StartupHeader(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="/startup/eligibility"
+          href="startup-eligibility"
           color="transparent"
           className={classes.navLink}
         >
@@ -53,7 +53,7 @@ export default function StartupHeader(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="/startup/application"
+          href="/startup-application"
           color="transparent"
           className={classes.navLink}
         >
@@ -63,7 +63,7 @@ export default function StartupHeader(props) {
 
       <ListItem className={classes.listItem}>
         <Button
-          href="/startup/funding"
+          href="/startup-funding"
           color="transparent"
           className={classes.navLink}
         >
@@ -71,6 +71,7 @@ export default function StartupHeader(props) {
         </Button>
       </ListItem>
       
+     
     </List>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch, Redirect } from "react-router-dom";
 import "assets/scss/material-kit-react.scss?v=1.8.0";
 
 // pages for this product
@@ -34,13 +34,17 @@ ReactDOM.render(
       <Route path="/books"  component ={Books}/>
       <Route path="/uimembership" component={Membership}/>
 
-      <Route path="/startup" component = {StartUpPage}/>
-      <Route path="/startup/sessions" component = {Sessions} />
-      <Route path="/startup/eligibility" component = {Eligibility} />
-      <Route path="/startup/funding" component = {Funding} />
-      <Route path="/startup/application" component = {Application}/>
-     
-     
+    
+          <Route path ="/startup" component = {StartUpPage}/>
+    
+          <Route path="/startup-sessions" component = {Sessions} />
+              <Route path="/startup-eligibility" component = {Eligibility} />
+              <Route path="/startup-funding" component = {Funding} />
+              <Route path="/startup-application" component = {Application}/>
+           
+         
+      
+         
       <Route path="/" component={LandingPage} />
 
     </Switch>
