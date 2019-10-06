@@ -18,6 +18,7 @@ import Sessions from "views/SessionsPage/Sessions"
 import Eligibility from "views/EligibilityPage/Eligibility";
 import Funding from "views/FundingPage/Funding";
 import Application from "views/ApplicationPage/Application";
+import Partners from "views/PartnersPage/Partners";
 
 
 var hist = createBrowserHistory();
@@ -37,11 +38,12 @@ ReactDOM.render(
     
           <Route path ="/startup" component = {StartUpPage}/>
     
-          <Route path="/startup-sessions" component = {Sessions} />
+          <Route path="/startup-about" component = {Sessions} />
               <Route path="/startup-eligibility" component = {Eligibility} />
               <Route path="/startup-funding" component = {Funding} />
-              <Route path="/startup-application" component = {Application}/>
-           
+              <Route path="/startup-application-procedure" component = {Application}/>
+              <Route path="/startup-partners-and-promoters" component = {Partners}/>
+              
          
       
          
