@@ -5,7 +5,6 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 
 
-
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
@@ -15,6 +14,7 @@ import StartupHeader from "components/Header/StartupHeader";
 import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import Fade from 'react-reveal/Fade';
+
 
 //logo
 import DUlogo from "assets/img/DUlogo.png"
@@ -95,23 +95,7 @@ export default function Partners(props) {
            </div>
          <br/>
          
-         <Fade>
-         <GridContainer style = {flex}>
-            <GridItem xs={12} sm={6} md={3}>
-                    <div >
-                      <img src={DUlogo} style={container} />
-                    </div>  
-            </GridItem>
-
-            <GridItem xs={12} sm={6} md={9}>
-                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}} >UNIVERSITY OF DELHI</h4>
-            </GridItem>
-            
-         </GridContainer>
-         </Fade>
-
-           <br/>
-           <Fade>
+          <Fade>
           <GridContainer style = {flex}>
             <GridItem xs={12} sm={3} md={3}>
                      <div> <img src={ssclogo} style={container} /> </div> 

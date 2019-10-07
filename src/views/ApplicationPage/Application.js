@@ -3,8 +3,7 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
-
+import Button from 'components/CustomButtons/Button';
 
 // core components
 import Header from "components/Header/Header.js";
@@ -35,6 +34,18 @@ export default function Application(props) {
 
   const style={
     color : 'cyan'
+  }
+
+  const design ={
+    width : '50%',
+    textAlign : 'justify',
+    
+  }
+
+  const border ={
+    border : "2px solid skyblue",
+    borderRadius : '10px',
+    minwidth: "12rem"
   }
 
   return (
@@ -77,7 +88,16 @@ export default function Application(props) {
            </div>
          <br/>
         <Fade left duration={1500}>
-        <Steps num= "1st" text="The Venture must fill the form and complete their Registration at the ICICC Website"/>  
+        <GridContainer style = {flex}>
+            <GridItem   xs={12} sm={10} md={9}>
+            <Steps num= "1st" text="The Venture must fill the form and complete their Registration at the ICICC Website"/> 
+            </GridItem>
+            <GridItem  xs={12} sm={2} md={3}>
+            <Button color="info" href="/startup-application-form" target="-blank" type="button">Click Here To Fill the Form </Button>
+            </GridItem>
+
+        </GridContainer>
+        
         </Fade> 
 
         <br/>
