@@ -17,7 +17,7 @@ import Fade from 'react-reveal/Fade';
 
 
 //logo
-import DUlogo from "assets/img/DUlogo.png"
+
 import ssclogo from "assets/img/ssclogo.png"
 import nitplogo from "assets/img/nitplogo.jpeg"
 import npclogo from "assets/img/npclogo.jpeg"
@@ -26,6 +26,12 @@ import setitlogo from "assets/img/setitlogo.png"
 import dilogo from "assets/img/dilogo.jpg"
 import uilogo from "assets/img/uilogo.jpeg"
 import minlogo from "assets/img/minlogo.png"
+import dmrlogo from "assets/img/dmrlogo.jpeg"
+import pkslogo from "assets/img/pkslogo.jpeg"
+import autologo from "assets/img/autologo.jpeg"
+import callogo from "assets/img/callogo.jpeg"
+import plucklogo from "assets/img/plucklogo.jpeg"
+
 
 
 // Sections for this page
@@ -144,7 +150,7 @@ export default function Partners(props) {
             </GridItem>
 
             <GridItem xs={12} sm={9} md={9}>
-                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}} > SCIENTIFIC RESEARCH GROUP IN EGYPT (SRGE) </h4>
+                         <h4  className={classes.title} style={{textAlign:"justify", color : "black"}} > SCIENTIFIC RESEARCH GROUP IN EGYPT (SRGE) </h4>
             </GridItem>
             
           </GridContainer>
@@ -158,7 +164,7 @@ export default function Partners(props) {
             </GridItem>
 
             <GridItem xs={12} sm={9} md={9}>
-                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}} > MINISTRY OF ELECTRONICS & INFORMAION TECHNOLOGY , GOVERNMENT OF INDIA</h4>
+                         <h4  className={classes.title} style={{textAlign:"left", color : "black"}} > MINISTRY OF ELECTRONICS & INFORMAION TECHNOLOGY , GOVERNMENT OF INDIA</h4>
             </GridItem>
             
           </GridContainer>
@@ -201,14 +207,83 @@ export default function Partners(props) {
             </GridItem>
 
             <GridItem xs={12} sm={9} md={9}>
-                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}}> SCIENCES of ELECTRONICS, TECHNOLOGIES of INFORMATION & TELECOMMUNICATIONS (SETIT) , TUNISIA</h4>
+                         <h4  className={classes.title} style={{textAlign:"left", color : "black"}}> SCIENCES of ELECTRONICS, TECHNOLOGIES of INFORMATION & TELECOMMUNICATIONS (SETIT) , TUNISIA</h4>
             </GridItem>
             
           </GridContainer>
           </Fade>
-
           
+          <br/>
+
+          <Fade>
+          <GridContainer style = {flex}>
+            <GridItem xs={12} sm={3} md={3}>
+                     <div> <img src={dmrlogo} style={container} /> </div> 
+            </GridItem>
+
+            <GridItem xs={12} sm={9} md={9}>
+                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}}>  DMR Hydroengineering & Infrastructures Ltd. </h4>
+            </GridItem>
+            
+          </GridContainer>
+          </Fade>          
           <br/> 
+
+          <Fade>
+          <GridContainer style = {flex}>
+            <GridItem xs={12} sm={3} md={3}>
+                     <div> <img src={pkslogo} style={container} /> </div> 
+            </GridItem>
+
+            <GridItem xs={12} sm={9} md={9}>
+                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}}>PKS INFRA ENGINEERS PRIVATE LIMTED</h4>
+            </GridItem>
+            
+          </GridContainer>
+          </Fade>          
+          <br/> 
+
+          <Fade>
+          <GridContainer style = {flex}>
+            <GridItem xs={12} sm={3} md={3}>
+                     <div> <img src={autologo} style={container} /> </div> 
+            </GridItem>
+
+            <GridItem xs={12} sm={9} md={9}>
+                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}}>AUTODEALZ.IN</h4>
+            </GridItem>
+            
+          </GridContainer>
+          </Fade>          
+          <br/> 
+
+          <Fade>
+          <GridContainer style = {flex}>
+            <GridItem xs={12} sm={3} md={3}>
+                     <div> <img src={callogo} style={container} /> </div> 
+            </GridItem>
+
+            <GridItem xs={12} sm={9} md={9}>
+                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}}>CALIBRE</h4>
+            </GridItem>
+            
+          </GridContainer>
+          </Fade>          
+          <br/> 
+
+          <Fade>
+          <GridContainer style = {flex}>
+            <GridItem xs={12} sm={3} md={3}>
+                     <div> <img src={plucklogo} style={container} /> </div> 
+            </GridItem>
+
+            <GridItem xs={12} sm={9} md={9}>
+                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}} > PLUCK ENGINEERING PRIVATE LIMITED </h4>
+            </GridItem>
+            
+          </GridContainer>
+          </Fade>
+          <br/>  
         
         </div>
         

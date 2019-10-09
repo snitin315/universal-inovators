@@ -4,6 +4,7 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
+import Popover from "@material-ui/core/Popover";
 // core components
 import Button from "components/CustomButtons/Button.js";
 
@@ -22,6 +23,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import Fade from 'react-reveal/Fade';
 import CustomInput from "components/CustomInput/CustomInput.js";
 
+
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
 
@@ -29,9 +31,23 @@ const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
+const popstyle = {
+    width : "300px",
+    padding : "20px",
+    color : "#fff",
+    backgroundColor : "rgba(0,0,0,0.6)"
+}
+
 export default function LandingPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
+
+  const [anchorElLeft, setAnchorElLeft] = React.useState(null);
+  const [anchorElLeft2, setAnchorElLeft2] = React.useState(null);
+  const [anchorElTop, setAnchorElTop] = React.useState(null);
+  const [anchorElBottom, setAnchorElBottom] = React.useState(null);
+  const [anchorElRight, setAnchorElRight] = React.useState(null);
+
   return (
     <div>
       <Header
@@ -345,16 +361,30 @@ export default function LandingPage(props) {
 
         <GridItem xs={4} sm={2} md={3} >   
             <br/>
-            <Tooltip
-                id="tooltip-right"
-                title="Not more than one paragraph (100 words max )to describe your business and the business opportunity. If it takes more than a paragraph to describe your business, perhaps you need to revisit the drawing board. The simpler the message, the quicker you will draw investor attention."
-                placement="right"
-                classes={{ tooltip: classes.tooltip }}
-            >
-                <Button color="info"  style={{width:"3px"}}> <Info className={classes.icons} /> </Button>
-            </Tooltip>
-
-        </GridItem>
+               <Button onClick={event => setAnchorElLeft(event.currentTarget)} color="info"  style={{width:"3px"}}> <Info className={classes.icons} /> </Button>
+                    
+                <Popover
+                    classes={{
+                    paper: classes.popover
+                    }}
+                    open={Boolean(anchorElLeft)}
+                    anchorEl={anchorElLeft}
+                    onClose={() => setAnchorElLeft(null)}
+                    anchorOrigin={{
+                    vertical: "center",
+                    horizontal: "left"
+                    }}
+                    transformOrigin={{
+                    vertical: "center",
+                    horizontal: "right"
+                    }}
+                >
+                   
+                    <p style={popstyle} >
+                    Not more than one paragraph (100 words max )to describe yourbusiness and the business opportunity. If it takes more than a paragraph to describe your business, perhaps you need to revisit the drawing board. The simpler the message, the quicker you will draw investor attention
+                    </p>
+                </Popover>
+            </GridItem>
 
         <GridItem xs={8} sm={10} md={9}>
             <CustomInput
@@ -373,14 +403,30 @@ export default function LandingPage(props) {
 
         <GridItem xs={4} sm={2} md={3} >   
             <br/>
-            <Tooltip
-                id="tooltip-right"
-                title="This section should answer the question ‘Why is this team/entrepreneur best suited to implement this business opportunity’. Keep it simple. Introduce the member as well as give the link for their LinkedIn Profile"
-                placement="right"
-                classes={{ tooltip: classes.tooltip }}
-            >
-                <Button color="info"  style={{width:"3px"}}> <Info className={classes.icons} /> </Button>
-            </Tooltip>
+            <Button onClick={event => setAnchorElLeft(event.currentTarget)} color="info"  style={{width:"3px"}}> <Info className={classes.icons} /> </Button>
+                    
+                <Popover
+                    classes={{
+                    paper: classes.popover
+                    }}
+                    open={Boolean(anchorElLeft)}
+                    anchorEl={anchorElLeft}
+                    onClose={() => setAnchorElLeft(null)}
+                    anchorOrigin={{
+                    vertical: "center",
+                    horizontal: "left"
+                    }}
+                    transformOrigin={{
+                    vertical: "center",
+                    horizontal: "right"
+                    }}
+                >
+                   
+                    <p style={popstyle} >
+                    This section should answer the question ‘Why is this team/entrepreneur best suited to implement this business opportunity’. Keep it simple. Introduce the member as well as give the link for their LinkedIn Profile
+                    </p>
+                </Popover>
+            
 
         </GridItem>
 

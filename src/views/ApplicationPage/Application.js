@@ -90,7 +90,7 @@ export default function Application(props) {
         <Fade left duration={1500}>
         <GridContainer style = {flex}>
             <GridItem   xs={12} sm={10} md={9}>
-            <Steps num= "1st" text="The Venture must fill the form and complete their Registration at the ICICC Website"/> 
+            <Steps num= "1st" text="The Venture must fill the form and complete their Registration at the ICICC Website."/> 
             </GridItem>
             <GridItem  xs={12} sm={2} md={3}>
             <Button color="info" href="/startup-application-form" target="-blank" type="button">Click Here To Fill the Form </Button>
@@ -135,9 +135,7 @@ export default function Application(props) {
         <Steps num= "8th" text="Post Successful investment, The Start-up will pay 4% of the total amount successfully raised by the Start-up through the medium of the Start-up Event."/>  
         </Fade> 
         <br/>
-                   
-         
-        
+                         
         </div>
         
       </div>
