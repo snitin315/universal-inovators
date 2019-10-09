@@ -31,6 +31,7 @@ import pkslogo from "assets/img/pkslogo.jpeg"
 import autologo from "assets/img/autologo.jpeg"
 import callogo from "assets/img/callogo.jpeg"
 import plucklogo from "assets/img/plucklogo.jpeg"
+import rtmlogo from "assets/img/rtmlogo.jpeg"
 
 
 
@@ -279,6 +280,20 @@ export default function Partners(props) {
 
             <GridItem xs={12} sm={9} md={9}>
                          <h4  className={classes.title} style={{textAlign:"center", color : "black"}} > PLUCK ENGINEERING PRIVATE LIMITED </h4>
+            </GridItem>
+            
+          </GridContainer>
+          </Fade>
+          <br/>  
+
+          <Fade>
+          <GridContainer style = {flex}>
+            <GridItem xs={12} sm={3} md={3}>
+                     <div> <img src={rtmlogo} style={container} /> </div> 
+            </GridItem>
+
+            <GridItem xs={12} sm={9} md={9}>
+                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}} > RTM ENGINEERS PVT. LTD. </h4>
             </GridItem>
             
           </GridContainer>
