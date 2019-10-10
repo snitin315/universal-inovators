@@ -32,6 +32,11 @@ import autologo from "assets/img/autologo.jpeg"
 import callogo from "assets/img/callogo.jpeg"
 import plucklogo from "assets/img/plucklogo.jpeg"
 import rtmlogo from "assets/img/rtmlogo.jpeg"
+import spainlogo from "assets/img/spainlogo.jpeg"
+import sgrtlogo from "assets/img/sgrtlogo.jpeg"
+import negdlogo from "assets/img/negdlogo.jpeg"
+import thinklogo from "assets/img/thinklogo.jpeg"
+import gvlogo from "assets/img/gvlogo.png"
 
 
 
@@ -299,6 +304,79 @@ export default function Partners(props) {
           </GridContainer>
           </Fade>
           <br/>  
+
+          <Fade>
+          <GridContainer style = {flex}>
+            <GridItem xs={12} sm={3} md={3}>
+                     <div> <img src={spainlogo} style={container} /> </div> 
+            </GridItem>
+
+            <GridItem xs={12} sm={9} md={9}>
+                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}} > UNIVERSITY OF VALLADOLID SPAIN  </h4>
+            </GridItem>
+            
+          </GridContainer>
+          </Fade>
+          <br/>  
+
+          <Fade>
+          <GridContainer style = {flex}>
+            <GridItem xs={12} sm={3} md={3}>
+                     <div> <img src={sgrtlogo} style={container} /> </div> 
+            </GridItem>
+
+            <GridItem xs={12} sm={9} md={9}>
+                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}} > SCIENTIFIC GROUP FOR RESEARCH AND TECHNOLOGY  </h4>
+            </GridItem>
+            
+          </GridContainer>
+          </Fade>
+          <br/>  
+
+          <Fade>
+          <GridContainer style = {flex}>
+            <GridItem xs={12} sm={3} md={3}>
+                     <div> <img src={gvlogo} style={container} /> </div> 
+            </GridItem>
+
+            <GridItem xs={12} sm={9} md={9}>
+                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}} > GENOMIC VALLEY BIOTECH LIMITED  </h4>
+            </GridItem>
+            
+          </GridContainer>
+          </Fade>
+          <br/> 
+
+          <Fade>
+          <GridContainer style = {flex}>
+            <GridItem xs={12} sm={3} md={3}>
+                     <div> <img src={negdlogo} style={container} /> </div> 
+            </GridItem>
+
+            <GridItem xs={12} sm={9} md={9}>
+                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}} > NATIONAL E-GOVERNANCE DIVISION  </h4>
+            </GridItem>
+            
+          </GridContainer>
+          </Fade>
+          <br/>
+
+          
+          <Fade>
+          <GridContainer style = {flex}>
+            <GridItem xs={12} sm={3} md={3}>
+                     <div> <img src={thinklogo} style={container} /> </div> 
+            </GridItem>
+
+            <GridItem xs={12} sm={9} md={9}>
+                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}} > THINK PARYAVARAN : SAVE EARTH SAVE GENERATION  </h4>
+            </GridItem>
+            
+          </GridContainer>
+          </Fade>
+          <br/>  
+
+          
         
         </div>
         
