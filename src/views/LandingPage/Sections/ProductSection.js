@@ -2,19 +2,26 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-// @material-ui/icons
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import InfoArea from "components/InfoArea/InfoArea.js";
+
+import sideImage from "assets/img/services.png"
+
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
-import { SupervisorAccount , Apps, School,Book,} from "@material-ui/icons";
+
 import Fade from 'react-reveal/Fade';
 import  css from "./ProductSection.css"
 
 const useStyles = makeStyles(styles);
+const design= {
+  textAlign : 'justify',
+   }
+
+const flex = {
+  display : 'flex',
+  alignItems : 'center',
+}   
 
 const Service = function(props){
   const classes = useStyles();
@@ -38,18 +45,24 @@ export default function ProductSection() {
           
           <h3 className={classes.title}>Universal-Inovators: Research Lab</h3>
           
-          <Fade bottom duration ={2000}>
+          <GridContainer style = {flex}>
+          <GridItem xs={12} sm={12} md={6}>
+            <Fade left duration={2000}>
+             <img style = {{width : "100%"}}src={sideImage}/>
+             </Fade> 
+          </GridItem>    
+
+          <GridItem xs={12} sm={12} md={6}>
+
+          <Fade right duration ={2000}>
           <p className={classes.description} style={design} >
-          Every success story begins with a vision.The Universal Inovators (UI) is a private and autonomous body promoting research-based innovative activities all over the globe for the overall growth of human welfare and environment. 
-          The UI aims to do non-profit collaborative research in the field of engineering, applied sciences, management and other domains. We aim to be the leading independent academic and professional body working in collaboration 
-          with academicians, faculties, students, researchers, industry experts, Private bodies, government bodies and educational institutes. This leads us to be playing a creative and critical role in the society by disseminating teaching 
-          and research on a global scale, the cornerstones of which are good, long-term relationships, a focus on real life applications necessary for the welfare of the mankind, and an ability to combine quality and innovation. The 
-          mission of Universal Inovator is to cultivate and carry out research in high-tech, productive and cost efficient methodologies. We deal in conducting FDP’s, workshops, seminars, summer and winter schools, research projects,
-          Book publishing, internship, and conferences. As a recognized body, Universal Innovators (UI) seeks to facilitate the availability of academic excellence and disseminate innovative knowledge worldwide.
-          <br/><strong>Universal Inovator is an Indian research lab </strong>to promote research and development in India via conferences, FDPs, workshops, seminars, summer and winter schools, journals, research collaborations, patents, paper publication, book publications
-          and collaborated national and international projects.
+          Every success story begins with a vision.The Universal Inovators (UI) is a private and autonomous body promoting research-based innovative activities all over the globe for the overall growth of human welfare and environment. The UI aims to do non-profit collaborative research in the field of engineering, applied sciences, management and other domains. We aim to be the leading independent academic and professional body working in collaboration with academicians, faculties, students, researchers, industry experts, Private bodies, government bodies and educational institutes. This leads us to be playing a creative and critical role in the society by disseminating teaching and research on a global scale, the cornerstones of which are good, long-term relationships, a focus on real life applications necessary for the welfare of the mankind, and an ability to combine quality and innovation. The mission of Universal Inovator is to cultivate and carry out research in high-tech, productive and cost efficient methodologies. We deal in conducting FDP’s, workshops, seminars, summer and winter schools, research projects, Book publishing, internship, and conferences. As a recognized body, Universal Innovators (UI) seeks to facilitate the availability of academic excellence and disseminate innovative knowledge worldwide.<br/>
+          <strong> Universal Inovator is an Indian research lab </strong>to promote research and development in India via conferences, FDPs, workshops, seminars, summer and winter schools, journals, research collaborations, patents, paper publication, book publications and collaborated national and international projects.
           </p>
           </Fade>
+
+          </GridItem>
+          </GridContainer>
        
       <div>
       <br/>
