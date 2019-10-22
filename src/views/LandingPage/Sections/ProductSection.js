@@ -112,7 +112,7 @@ export default function ProductSection() {
                 link = "/workshops"
                 icon = "fas fa-gem"
                 title = "FDP/Workshops/Seminar"
-                description = "Universal Inovators have already organised many conferences. The flagship conference of Universal Inovators is International Conference on Innovative Computing and Communication."
+                description = "Universal Inovators have already organised a very successful One Week Faculty Development Program on 'Machine Learning with Data Analytics' at Shaheed Sukhdev College of Business Studies, New Delhi"
                 
             />
             
@@ -125,7 +125,7 @@ export default function ProductSection() {
                 link = "/uischool"
                 icon = "fas fa-graduation-cap"
                 title = "School"
-                description = "Universal Inovators have already launched its first journal entitled 'Innovative Computing and Communication : An International Journal'. Many more journals are in the pipeline"
+                description = "Universal Inovators promotes UG/PG/ PhD students of all the streams and all years to learn latest and emerging technologies. UI provides the students an opportunity to attend its summer and winter schools."
                 
             />
             
@@ -137,7 +137,7 @@ export default function ProductSection() {
                 link = "/books"
                 icon = "fas fa-book "
                 title = "Book Series"
-                description = "We, at UI, provide end to end patent services starting from search, drafting and filing of your application till obtaining a grant and subsequent services in respect of the invention."
+                description = " Open Access publication series dedicated to archiving conference proceedings, edited books, monograph books dealing with all the aspects related to electrical engineering and computer science."
                 
             />
             
