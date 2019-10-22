@@ -31,9 +31,9 @@ const useCard = makeStyles(cardStyles);
     return (
       <Zoom>
       <Card className={classes.textCenter}>
-        <strong><CardHeader color="info">Featured</CardHeader></strong>
+        <strong><CardHeader color="info">FDP BROCHURE</CardHeader></strong>
         <CardBody>
-          <h4 className={classes.cardTitle}>FDP Brochure</h4>
+          <h4 className={classes.cardTitle}>Interested ? Get on Board!</h4>
           <p>
             Click The Button Below To Download The <strong>FDP Brochure</strong>
           </p>
