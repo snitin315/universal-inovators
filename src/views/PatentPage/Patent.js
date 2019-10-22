@@ -19,7 +19,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js"
 import PatentDetails from "./PatentDetails.js"
-import Top from "./Top.js";
+
 
 
 const dashboardRoutes = [];
@@ -58,7 +58,7 @@ export default function Patent(props) {
          <Fade bottom duration ={2000} delay="500">
          <div className={classNames(classes.main, classes.mainRaised)}>
             <div className={classes.container}>
-             <Top/>
+            
              <PatentDetails/>
              <br/>
             </div>
