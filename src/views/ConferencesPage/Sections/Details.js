@@ -3,6 +3,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 
+import sideImage from "assets/img/conf2.jpg"
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -13,6 +14,15 @@ import { SupervisorAccount } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
+const design= {
+  textAlign : 'justify',
+   }
+
+const flex = {
+  display : 'flex',
+  alignItems : 'center',
+}
+
 export default function Details() {
   const classes = useStyles();
   const design = {
@@ -20,21 +30,26 @@ export default function Details() {
   }
   return (
     <div className={classes.section}>
-      <GridContainer justify="center">
-        <GridItem xs={12} sm={12} md={11}>
-          <h3 className={classes.title}>Conferences</h3>
-          <Fade up>
-          <p className={classes.description} style ={design}>
-            Universal Inovators have already organised many conferences. The flagship conference of Universal Inovators is <strong>International Conference on Innovative Computing and Communication (ICICC).</strong>
-           <br/>International Conference on Innovative Computing and Communication (ICICC) is organised with the objective of bringing together innovative scientists, professors, research scholars,
-           students and industrial experts in the field of Computing and Communication to a common forum. The primary goal of the conference is to promote the exchange of innovative scientific information
-            between researchers, developers, engineers, students, and practitioners. Another goal is to promote the transformation of fundamental research into institutional and industrialized research and 
-            to convert applied exploration into real time application. Overall the conference will provide the researchers and attendees with prospects for national and international collaboration and 
-            networking among universities and institutions from India and abroad for promoting research.
+      <h3  className={classes.title}>International Conference on Innovative Computing and Communication <a href="http://icicc-conf.com">(ICICC)</a></h3>
+      <GridContainer style = {flex}>
+          <GridItem xs={12} sm={12} md={6}>
+            <Fade left duration={2000}>
+             <img style = {{width : "100%"}}src={sideImage}/>
+             </Fade> 
+          </GridItem>    
+
+          <GridItem xs={12} sm={12} md={6}>
+
+          <Fade right duration ={2000}>
+          <p className={classes.description} style={design} >
+          <strong>International Conference on Innovative Computing and Communication (ICICC)</strong> is organised with the objective of bringing together innovative scientists, professors, research scholars, students and industrial experts in the field of Computing and Communication to a common forum. The primary goal of the conference is to promote the exchange of innovative scientific information between researchers, developers, engineers, students, and practitioners.<br/>
+          Another goal is to promote the transformation of fundamental research into institutional and industrialized research and to convert applied exploration into real time application. Overall the conference will provide the researchers and attendees with prospects for national and international collaboration and networking among universities and institutions from India and abroad for promoting research.
           </p>
           </Fade>
-        </GridItem>
-      </GridContainer>
+
+          </GridItem>
+          </GridContainer>
+      
       <div>
       <h4  className={classes.title}>Some Of The Details Of The Conferences Are As Follows:</h4>
         <GridContainer>
