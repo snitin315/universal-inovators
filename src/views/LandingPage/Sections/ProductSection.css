@@ -1,0 +1,81 @@
+ .box {
+    cursor: pointer; 
+    padding: 50px 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    box-shadow: 5px 10px #bdbdbd; 
+    border-radius: 25px;    
+    height: 270px;
+    position: relative;
+    background: #fafafa;
+    transition: all ease-in 0.2s;    ;
+  }
+  
+   .icon {
+    position: absolute;
+    top: -36px;
+    left: calc(50% - 36px);
+    transition: 0.2s;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 72px;
+    height: 72px;
+    background: #00a5bb;
+  }
+  
+ .icon a {
+    display: inline-block;
+  }
+  
+ .icon i {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  
+ .box:hover{
+    box-shadow: 15px 20px #bdbdbd; 
+    border:2px solid #00a5bb;    
+  }
+  
+ .box:hover .icon {
+    background: #fff;
+    border: 2px solid #00a5bb;
+  }
+  
+ .box:hover .icon i {
+    color: #00a5bb;
+  }
+  
+ .box:hover .icon a {
+    color: #00a5bb;
+  }
+  
+.title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+.title a {
+    color: #111;
+    transition : all 0.3s ease-in;
+  }
+
+.title a:hover {
+    color: #00a5bb;
+  }  
+  
+.description {
+    font-size: 14px;
+    line-height: 24px;
+    color : black;
+    text-align: justify;
+  }

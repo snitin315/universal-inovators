@@ -12,8 +12,19 @@ import InfoArea from "components/InfoArea/InfoArea.js";
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 import { SupervisorAccount , Apps, School,Book,} from "@material-ui/icons";
 import Fade from 'react-reveal/Fade';
+import  css from "./ProductSection.css"
 
 const useStyles = makeStyles(styles);
+
+const Service = function(props){
+  const classes = useStyles();
+        return (
+           <div className="box">
+              <div className="icon"><a href={props.link}><i class={props.icon}></i></a></div>
+              <h4 className="title"><a href={props.link}>{props.title}</a></h4>
+              <p className={classes.description} >{props.description}</p>
+            </div>
+        )}
 
 export default function ProductSection() {
   const classes = useStyles();
@@ -41,83 +52,82 @@ export default function ProductSection() {
           </Fade>
        
       <div>
-      
-        <GridContainer>
+      <br/>
+      <br/>
+        <GridContainer >
           
           <GridItem xs={12} sm={6} md={4}>
             <Fade left >
-            <InfoArea
-              title="Conferences"
-              description="Universal Inovators have already organised many conferences. The flagship conference of Universal Inovators is International Conference on Innovative Computing and Communication (ICICC)."
-              icon={SupervisorAccount}
-              iconColor="primary"
-              link="/conferences"
-              vertical
+            <Service
+                link = "/conferences"
+                icon = "fas fa-users"
+                title = "Conferences"
+                description = "Universal Inovators have already organised many conferences. The flagship conference of Universal Inovators is International Conference on Innovative Computing and Communication."
+                
             />
             </Fade>
 
           </GridItem>
           <GridItem xs={12} sm={6} md={4}>
             <Fade left delay={500}>
-            <InfoArea
-              title="Journals"
-              link = "/journals"
-              description="Universal Inovators have already launched its first journal entitled 'Innovative Computing and Communication : An International Journal'. Many more journals are in the pipeline"
-              icon={VerifiedUser}
-              iconColor="primary"
-              vertical
-            />
-            </Fade>
+            <Service
+                link = "/journals"
+                icon = "fas fa-check-circle"
+                title = "Journals "
+                description = "Universal Inovators have already launched its first journal entitled 'Innovative Computing and Communication : An International Journal'. Many more journals are in the pipeline"
+                
+            />  
+           </Fade>
           </GridItem>
           <GridItem xs={12} sm={6} md={4}>
             
             <Fade left delay={1000}>
-            <InfoArea
-              title="Patent And Research"
-              description="We, at UI, provide end to end patent services starting from search, drafting and filing of your application till obtaining a grant and subsequent services in respect of the invention."
-              icon={Fingerprint}
-              iconColor="info"
-              link="/patent"
-              vertical
+            <Service
+                link = "/patent"
+                icon = "fas fa-search"
+                title = "Patent And Research"
+                description = "We, at UI, provide end to end patent services starting from search, drafting and filing of your application till obtaining a grant and subsequent services in respect of the invention."
+                
             />
+            
             </Fade>
           </GridItem>
 
           <GridItem xs={12} sm={6} md={4}>
            <Fade left>
-            <InfoArea
-              title="FDP/Workshops/Seminar"
-              description="Universal Inovators have already organised many conferences. The flagship conference of Universal Inovators is International Conference on Innovative Computing and Communication (ICICC)."
-              icon={Apps}
-              iconColor="primary"
-              link="/workshops"
-              vertical
+           <Service
+                link = "/workshops"
+                icon = "fas fa-gem"
+                title = "FDP/Workshops/Seminar"
+                description = "Universal Inovators have already organised many conferences. The flagship conference of Universal Inovators is International Conference on Innovative Computing and Communication."
+                
             />
+            
            </Fade>
           </GridItem>
 
           <GridItem xs={12} sm={6} md={4}>
             <Fade left delay={500}>
-            <InfoArea
-              title="School"
-              description="Universal Inovators have already launched its first journal entitled 'Innovative Computing and Communication : An International Journal'. Many more journals are in the pipeline"
-              icon={School}
-              iconColor="primary"
-              link = "/uischool"
-              vertical
+            <Service
+                link = "/uischool"
+                icon = "fas fa-graduation-cap"
+                title = "School"
+                description = "Universal Inovators have already launched its first journal entitled 'Innovative Computing and Communication : An International Journal'. Many more journals are in the pipeline"
+                
             />
+            
             </Fade>
           </GridItem>
           <GridItem xs={12} sm={6} md={4}>
             <Fade left delay={1000}>
-            <InfoArea
-              title="Book Series"
-              description="We, at UI, provide end to end patent services starting from search, drafting and filing of your application till obtaining a grant and subsequent services in respect of the invention."
-              icon={Book}
-              iconColor="primary"
-              link ="/books"
-              vertical
+            <Service
+                link = "/books"
+                icon = "fas fa-book "
+                title = "Book Series"
+                description = "We, at UI, provide end to end patent services starting from search, drafting and filing of your application till obtaining a grant and subsequent services in respect of the invention."
+                
             />
+            
             </Fade>
           </GridItem>
          
