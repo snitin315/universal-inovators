@@ -71,7 +71,7 @@ const design= {
           <GridItem xs={12} sm={12} md={3}>
             <Fade left duration={2000}>
              <div>
-             <img style = {{width : "80%"}}src={NDA}/>
+             <img style = {{width : "80%" , borderRadius : "50%"}}src={NDA}/>
              </div> 
              </Fade> 
           </GridItem>    

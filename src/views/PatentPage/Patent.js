@@ -43,11 +43,11 @@ export default function Patent(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/start-bg.png")}>
+      <Parallax filter image={require("assets/img/patent-page.jpeg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title} style={{color:"cyan"}}><CharPose text="Patents And Research"/></h1>
+              <h1 className={classes.title} ><CharPose text="Patents And Research"/></h1>
   
               <br />
 
