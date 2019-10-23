@@ -42,7 +42,7 @@ export default function Uischool(props) {
         {...rest}
       />
       
-      <Parallax filter image={require("assets/img/school.jpg")}>
+      <Parallax filter image={require("assets/img/uischool-page.jpeg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
