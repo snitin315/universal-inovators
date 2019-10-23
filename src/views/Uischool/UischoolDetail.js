@@ -45,7 +45,7 @@ export default function UischoolDetails() {
 
           <GridItem xs={12} sm={12} md={6}>
 
-          <h3 className={classes.title}>UI-SCHOOL</h3>
+          <h3 className={classes.title}> What is UI-SCHOOL ?</h3>
           <Fade right duration ={2000}>
           <p className={classes.description} style={design} >
           Every success story begins with a vision.The Universal Inovators (UI) is a private and autonomous body promoting research-based innovative activities all over the globe for the overall growth of human welfare and environment. The UI aims to do non-profit collaborative research in the field of engineering, applied sciences, management and other domains. We aim to be the leading independent academic and professional body working in collaboration with academicians, faculties, students, researchers, industry experts, Private bodies, government bodies and educational institutes. This leads us to be playing a creative and critical role in the society by disseminating teaching and research on a global scale, the cornerstones of which are good, long-term relationships, a focus on real life applications necessary for the welfare of the mankind, and an ability to combine quality and innovation. The mission of Universal Inovator is to cultivate and carry out research in high-tech, productive and cost efficient methodologies. We deal in conducting FDP’s, workshops, seminars, summer and winter schools, research projects, Book publishing, internship, and conferences. As a recognized body, Universal Innovators (UI) seeks to facilitate the availability of academic excellence and disseminate innovative knowledge worldwide.<br/>
@@ -85,7 +85,7 @@ export default function UischoolDetails() {
           <GridItem xs={12} sm={4} md={4}>
             <Service 
              icon = "fas fa-users"
-             title = "Number Of Seat"
+             title = "Number Of Seats"
              description = "180 seats, Our motto is serving quality not quantity"
             
             />

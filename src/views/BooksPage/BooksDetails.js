@@ -2,6 +2,10 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
+//images
+import sideImage from "assets/img/book3.png"
+import book4 from "assets/img/book4.png"
+import googleScholar from "assets/img/googleScholar.png"
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
@@ -16,31 +20,70 @@ const design = {
   textAlign : "justify" 
 }
 
+const flex = {
+  display : 'flex',
+  alignItems : 'center',
+}   
+
 export default function BooksDetails() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
-     
-      <GridContainer justify="center">
-        <GridItem xs={12} sm={12} md={12}>
-         
-        <h3 className={classes.title}><strong> Electrical Engineering and Computer Science Book Series </strong></h3> 
-        <Fade bottom>
-        <p className={classes.description} style={design}>The Electrical Engineering and Computer Science Book Series is an Open Access publication series dedicated to archiving <b>conference proceedings, edited books, monograph books</b> dealing with all the aspects related to electrical engineering and computer science. The aims and scope of the publication series cover the whole spectrum of algorithms, bioinformatics and biomedical engineering, big data management and analytics, broadband networks, distributed computing and computer architectures, electromagnetism, radio-frequencies and microwaves, information management and data mining, multimedia and interactive virtual environments, photonics, privacy and security, robotics, machine vision and autonomous systems, software engineering, speech/audio/image/video processing, text analysis and machine learning, wireless communications, wireless networks and mobile computing.<br/>
+      <h3 className={classes.title}><strong> Electrical Engineering and Computer Science Book Series </strong></h3> 
+      <GridContainer style = {flex}>
+          <GridItem xs={12} sm={12} md={6}>
+            <Fade left duration={2000}>
+             <img style = {{width : "100%"}}src={sideImage}/>
+             </Fade> 
+          </GridItem>    
+
+          <GridItem xs={12} sm={12} md={6}>
+
+          <Fade right duration ={2000}>
+          <p className={classes.description} style={design}>The Electrical Engineering and Computer Science Book Series is an Open Access publication series dedicated to archiving <b>conference proceedings, edited books, monograph books</b> dealing with all the aspects related to electrical engineering and computer science. The aims and scope of the publication series cover the whole spectrum of algorithms, bioinformatics and biomedical engineering, big data management and analytics, broadband networks, distributed computing and computer architectures, electromagnetism, radio-frequencies and microwaves, information management and data mining, multimedia and interactive virtual environments, photonics, privacy and security, robotics, machine vision and autonomous systems, software engineering, speech/audio/image/video processing, text analysis and machine learning, wireless communications, wireless networks and mobile computing.<br/>
         <b>The Electrical Engineering and Computer Science Book Series </b>offers a wide range of services from the organization of the submission of conference proceedings to the worldwide dissemination of the conference papers. It provides an efficient archiving solution, ensuring maximum exposure and wide indexing of scientific conference proceedings.</p>
-         </Fade>
+          </Fade>
+
+          </GridItem>
+          </GridContainer>
 
         <h3 className={classes.title}>The Engineering and Management Book Series</h3> 
-        <Fade bottom>
-        <p className={classes.description} style={design}><b>The Engineering and Management Book Series</b> is an Open Access publication series dedicated to archiving <b>conference proceedings, edited books, monograph books</b> dealing with all the aspects related to electrical engineering and computer science. The aims and scope of the publication series cover the all topics related to Engineering (CSE, IT, ECE, MAE, EEE) and Management.<br/> <b>The Engineering and Management Book Series</b>  offers a wide range of services from the organization of the submission of conference proceedings to the worldwide dissemination of the conference papers. It provides an efficient archiving solution, ensuring maximum exposure and wide indexing of scientific conference proceedings.Proceedings are published under the scientific responsibility of the conference editors.</p>
-        </Fade>
-        <h3 className={classes.title}><strong> Abstracted In </strong></h3> 
-        <Fade bottom>
-        <p className={classes.description} style={design}>
+      <GridContainer style = {flex}>
           
-        All articles published in this book series are submitted for indexation evaluation to CPCI (part of Clarivate's Web of Science), CNKI, Crossref and Google Scholar. Where applicable, they are also submitted to Ei Compendex and Scopus. For any information about the indexation of a particular proceedings, you are requested to contact the conference organizers as we are not able to respond to messages received directly from participants.  
-        </p>  
-        </Fade> 
+
+          <GridItem xs={12} sm={12} md={6}>
+
+          <Fade right duration ={2000}>
+          <p className={classes.description} style={design}><b>The Engineering and Management Book Series</b> is an Open Access publication series dedicated to archiving <b>conference proceedings, edited books, monograph books</b> dealing with all the aspects related to electrical engineering and computer science. The aims and scope of the publication series cover the all topics related to Engineering (CSE, IT, ECE, MAE, EEE) and Management.<br/> <b>The Engineering and Management Book Series</b>  offers a wide range of services from the organization of the submission of conference proceedings to the worldwide dissemination of the conference papers. It provides an efficient archiving solution, ensuring maximum exposure and wide indexing of scientific conference proceedings.Proceedings are published under the scientific responsibility of the conference editors.</p>
+          </Fade>
+
+          </GridItem>
+
+          <GridItem xs={12} sm={12} md={6}>
+            <Fade left duration={2000}>
+             <img style = {{width : "100%"}}src={book4}/>
+             </Fade> 
+          </GridItem>    
+
+      </GridContainer>  
+      
+      <h3 className={classes.title}>Abstracted In</h3> 
+      <GridContainer style = {flex}>
+          <GridItem xs={12} sm={12} md={4}>
+            <Fade left duration={2000}>
+             <img style = {{width : "100%"}}src={googleScholar}/>
+             </Fade> 
+          </GridItem>    
+
+          <GridItem xs={12} sm={12} md={8}>
+
+          <Fade right duration ={2000}>
+          <p className={classes.description} style={design}> All articles published in this book series are submitted for indexation evaluation to <b>CPCI (part of Clarivate's Web of Science), CNKI, Crossref and Google Scholar.</b> Where applicable, they are also submitted to Ei Compendex and Scopus. For any information about the indexation of a particular proceedings, you are requested to contact the conference organizers as we are not able to respond to messages received directly from participants
+          </p>
+          </Fade>
+
+          </GridItem>
+      </GridContainer>
 
         <h3 className={classes.title}><strong> Our Process </strong></h3> 
         <Fade bottom cascade>
@@ -65,8 +108,6 @@ export default function BooksDetails() {
 
         </p>
         </Fade>
-        </GridItem>
-      </GridContainer>
     
 
 
