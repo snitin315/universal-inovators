@@ -66,7 +66,7 @@ export default function HeaderLinks(props) {
           color="transparent"
           className={classes.navLink}
         >
-         <Money className={classes.icons} />StartUp Funding
+         <Money className={classes.icons} />StartUp Meet Investor
         </Button>
       </ListItem>
 

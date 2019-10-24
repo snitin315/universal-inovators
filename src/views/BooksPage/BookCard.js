@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
-import Button from "components/CustomButtons/Button.js";
+
 import Zoom from "react-reveal/Zoom"
 import imagesStyles from "assets/jss/material-kit-react/imagesStyles.js";
 
@@ -14,7 +14,6 @@ import book2 from "assets/img/book2.png"
 import { cardTitle } from "assets/jss/material-kit-react.js";
 import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
-import CardHeader from "components/Card/CardHeader";
 
 const styles = {
   ...imagesStyles,
