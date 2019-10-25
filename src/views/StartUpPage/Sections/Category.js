@@ -2,37 +2,59 @@ import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
+import Carousel from "react-slick";
+
+import LocationOn from "@material-ui/icons/LocationOn";
+
 
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import CardHeader from "components/Card/CardHeader";
-import { cardTitle } from "assets/jss/material-kit-react.js";
+
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 import Fade from 'react-reveal/Fade';
+import NavPills from "components/NavPills/NavPills.js";
+import  Album from '@material-ui/icons/Album';
+import Card from "components/Card/Card.js";
 
+//images 
+import image1 from "assets/img/catA.jpeg";
+import image2 from "assets/img/catA2.jpeg";
+import image3 from "assets/img/catA3.jpeg";
 
-const cardstyles = {
+import bigdata from "assets/img/book1.png";
+import iot from "assets/img/iot.jpg";
+import cloud from "assets/img/cloud.png";
+import cyber from "assets/img/cyber.jpg";
+import ml from "assets/img/ml.jpeg";
+import water from "assets/img/water.png";
+import recycle from "assets/img/recycle.jpg";
+import renew from "assets/img/renew.png";
+import idea from "assets/img/idea.jpeg";
+import idea2 from "assets/img/startup-about.jpeg";
 
-    cardTitle,
-  };
-  
-const design = {
-    textAlign : "left"
-}  
+const flex = {display : "flex", alignItems : "center",textalign : "justify"}
 
-const flex = {
-  display : 'flex',
-  justifyContent : "center"
+function ListStyle(props){
+  const classes = useStyles(); 
+  return (
+    <h6 className={classes.description} style= {flex}><Album style = {{ color : "#00A5BB"}}/> <li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}> {props.text}</li> </h6>
+  )
 }
-const useCardStyles = makeStyles(cardstyles);
+
 const useStyles = makeStyles(styles);
 
 export default function About() {
   const classes = useStyles();
-  const cards = useCardStyles();
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true
+  };
  
   return (
 
@@ -42,69 +64,239 @@ export default function About() {
           <h3 className={classes.title}>Core Fields of Research for the Start-Up </h3>
 
           <br/>
+          <NavPills
+      color="info"
+      tabs={[
+        {
+          tabButton: "Category A",
+          tabContent: (
+            <span>
+              <GridContainer style = {flex} justify="center">
+              <GridItem xs={12} sm={12} md={6}>
+              <Fade > 
+              <Card>
+                <Carousel {...settings}>
+                  <div>
+                    <img
+                      src={image1}
+                      alt="First slide"
+                      className="slick-image"
+                    />
+                    
+                  </div>
+                  <div>
+                    <img
+                      src={image2}
+                      alt="Second slide"
+                      className="slick-image"
+                    />
+                    
+                  </div>
+                  <div>
+                    <img
+                      src={idea2}
+                      alt="Third slide"
+                      className="slick-image"
+                    />
+                  </div>
+                </Carousel>
+            </Card>
+             </Fade>
+               
+              </GridItem>
+
+              <GridItem xs={12} sm={12} md={4}>
+
+              <h3 className={classes.title}> Societal Applications </h3>
+                <ListStyle text = " Agriculture/Food "/> 
+                <ListStyle text = "Healthcare"/> 
+                <ListStyle text = "Education "/> 
+                <ListStyle text = "Hospitality"/> 
+                                              
+              </GridItem>
+
+            
+              </GridContainer>
+            </span>
+          )
+        },
+        {
+          tabButton: "Category B",
+          tabContent: (
+            <GridContainer style = {flex} justify="center">
+              <GridItem xs={12} sm={12} md={6}>
+              <Fade >  
+              <Card>
+                <Carousel {...settings}>
+                  <div>
+                    <img
+                      src={renew}
+                      alt="Renewable Energy"
+                      className="slick-image"
+                    /> 
+                  </div>
+                  <div>
+                    <img
+                      src={water}
+                      alt="Clean Water"
+                      className="slick-image"
+                    />
+                    
+                  </div>
+                  <div>
+                    <img
+                      src={recycle}
+                      alt="Second slide"
+                      className="slick-image"
+                    />
+                    
+                  </div>
+                
+                </Carousel>
+            </Card>
+            </Fade> 
+               
+              </GridItem>
+
+              <GridItem xs={12} sm={12} md={4}>
+
+              <h3 className={classes.title}> Environment & Sustainability </h3>
+                <ListStyle text = "Water-Crisis/ Clean Water"/> 
+                <ListStyle text = "Recycling/ Waste Management"/> 
+                <ListStyle text = "Renewable Energy"/> 
+                <ListStyle text = "Sanitation"/> 
+                <ListStyle text = "Food Waste Prevention and Separation"/> 
+                
+               
+                                              
+              </GridItem>
+
+            
+              </GridContainer>
+            
+          )
+        },
+        {
+          tabButton: "Category C",
+          tabContent: (
+            <GridContainer style = {flex} justify="center">
+              <GridItem xs={12} sm={12} md={6}>
+              <Fade >  
+              <Card>
+                <Carousel {...settings}>
+                  <div>
+                    <img
+                      src={bigdata}
+                      alt="First slide"
+                      className="slick-image"
+                    />
+                    
+                  </div>
+                  <div>
+                    <img
+                      src={iot}
+                      alt="Second slide"
+                      className="slick-image"
+                    />
+                    
+                  </div>
+                  <div>
+                    <img
+                      src={cloud}
+                      alt="Cloud Computing"
+                      className="slick-image"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src={cyber}
+                      alt="Cyber Security"
+                      className="slick-image"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src={ml}
+                      alt="Machine Learning"
+                      className="slick-image"
+                    />
+                  </div>
+                </Carousel>
+            </Card>
+             </Fade>
+               
+              </GridItem>
+
+              <GridItem xs={12} sm={12} md={4}>
+
+              <h3 className={classes.title}> Advanced Technologie </h3>
+                <ListStyle text = "Internet of Things"/> 
+                <ListStyle text = "Big Data"/> 
+                <ListStyle text = "Cloud computing "/> 
+                <ListStyle text = "Cyber Security "/> 
+                <ListStyle text = "ICT "/> 
+                <ListStyle text = "Bio-Sciences "/> 
+                <ListStyle text = "Artificial Intelligence / ML"/> 
+                <ListStyle text = "Intelligent Transportation"/> 
+                <ListStyle text = "5G and beyond Communications"/> 
+                <ListStyle text = "Robotics & Automation"/> 
+                                              
+              </GridItem>
+
+            
+              </GridContainer>
+          )
+        },
+
+        {tabButton: "Category D",
+          tabContent: (
+            <span>
+              <GridContainer style = {flex} justify="center">
+               
+              <GridItem xs={12} sm={12} md={6}>
+              <Fade > 
+              <Card>
+                <Carousel {...settings}>
+                  <div>
+                    <img
+                      src={idea}
+                      alt="First slide"
+                      className="slick-image"
+                    />
+                    
+                  </div>
+                  <div>
+                    <img
+                      src={idea2}
+                      alt="Second slide"
+                      className="slick-image"
+                    />
+                    
+                  </div>
+                  
+                </Carousel>
+            </Card>
+            </Fade> 
+             
+               
+              </GridItem>
+
+              <GridItem xs={12} sm={12} md={4}>
+
+              <h3 className={classes.title}> Miscellaneous </h3>
+                <ListStyle text = " Candidates having unique idea other than the  mentioned areas can submit their applicatipn in this category."/> 
+                
+                                              
+              </GridItem>
+
+            
+              </GridContainer>
+            </span>
+          )
+        }
+      ]}
+    />
           
-          <GridContainer  style={flex} >
-          <Fade left  duration={2000}> 
-          <GridItem xs={12} sm={12} md={4}>
-          <Card style={{width: "16rem"}}>
-          <strong><CardHeader color="info">CATEGORY A</CardHeader>  </strong>     
-                <CardBody>
-                <h4 className={cards.cardTitle}>Societal Applications</h4>
-                <ul style={design}>
-                    <li>Agriculture/Food</li>
-                    <li>Healthcare</li>
-                    <li>Education</li>
-                    <li>Hospitality</li>
-                    <br/>
-                    
-                </ul>
-                
-                </CardBody>
-             </Card>
-          </GridItem>    
-
-          <GridItem xs={12} sm={12} md={4}>
-          <Card style={{width: "16rem"}}>
-          <strong><CardHeader color="info">CATEGORY B</CardHeader> </strong> 
-                <CardBody>
-                <h4 className={cards.cardTitle}> Environment & Sustainability</h4>
-                <ul style={design}>
-                    <li>Water-Crisis/ Clean Water</li>
-                    <li>Recycling/ Waste Management</li>
-                    <li>Renewable Energy</li>
-                    <li>Sanitation</li>
-                    <li>Food Waste Prevention and Separation</li>
-                    
-                </ul>
-                
-                </CardBody>
-             </Card>
-          </GridItem>    
-
-          <GridItem xs={12} sm={12} md={4}>
-          <Card style={{width: "16rem"}}>
-                <strong><CardHeader color="info">CATEGORY C</CardHeader>  </strong>   
-                <CardBody>
-                <h4 className={cards.cardTitle}>Advanced Technologies</h4>
-                <ul style={design}>
-                    <li>Internet of Things</li>
-                    <li>Big Data</li>
-                    <li>Cloud Computing</li>
-                    <li>Cyber Security</li>
-                    <li>ICT</li>
-                    <li>Bio-Sciences</li>
-                    <li>Artificial Intelligence/ ML</li>
-                    <li>Intelligent Transportation</li>
-                    <li>5G and beyond Communications</li>
-                    <li>Robotics & Automation</li>
-                </ul>
-                
-                </CardBody>
-             </Card>
-          </GridItem>    
-
-          </Fade>
-          </GridContainer>
          
             
          
@@ -112,11 +304,7 @@ export default function About() {
         
           
        
-      <div>
       
-       
-       
-      </div>
     </div>
   );
 }

@@ -55,7 +55,7 @@ export default function StartUpPage(props) {
       />
       
       <Fade duration = "1500"  >
-      <Parallax filter image={require("assets/img/start-bg.png")}>
+      <Parallax  filter image={require("assets/img/start-bg.png")}>
         <div className={classes.container}>
           <GridContainer style = {flex}>
             <GridItem xs={12} sm={12} md={6}>
@@ -75,7 +75,7 @@ export default function StartUpPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
          <About/>
-
+          
          <Category/>
 
         </div>
