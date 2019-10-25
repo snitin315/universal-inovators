@@ -53,12 +53,12 @@ export default function StartUpPage(props) {
       />
       
       <Fade duration = "1500"  >
-      <Parallax filter image={require("assets/img/start-bg.png")}>
+      <Parallax filter image={require("assets/img/startup-about.jpeg")}>
         <div className={classes.container}>
           <GridContainer style = {flex}>
             <GridItem xs={12} sm={12} md={6}>
             
-              <h1 className={classes.title} style={style} > <CharPose  text = "Sessions" /></h1>
+              <h1 className={classes.title}  > <CharPose  text = "About UISI 2020" /></h1>
              
               <br />
 
