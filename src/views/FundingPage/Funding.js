@@ -20,6 +20,7 @@ import Fade from 'react-reveal/Fade';
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
 import FundingDetails from "./FundingDetails.js";
+import Preloader from "components/Preloader/Preloader.js";
 
 
 const dashboardRoutes = [];
@@ -40,6 +41,7 @@ export default function Funding(props) {
 
   return (
     <div>
+      <Preloader/>
       <Header
         color="transparent"
         routes={dashboardRoutes}

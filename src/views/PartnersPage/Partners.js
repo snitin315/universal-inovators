@@ -42,6 +42,7 @@ import gvlogo from "assets/img/gvlogo.png"
 
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
+import Preloader from "components/Preloader/Preloader.js";
 
 const dashboardRoutes = [];
 
@@ -66,6 +67,7 @@ export default function Partners(props) {
   
   return (
     <div>
+      <Preloader/>
       <Header
         color="transparent"
         routes={dashboardRoutes}

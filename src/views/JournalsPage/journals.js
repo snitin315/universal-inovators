@@ -22,6 +22,7 @@ import Details from "./journalsDetails.js"
 
 
 
+
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
@@ -33,6 +34,7 @@ export default function Journals(props) {
   const { ...rest } = props;
   return (
     <div>
+      
       <Header
         color="transparent"
         routes={dashboardRoutes}

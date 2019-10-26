@@ -4,8 +4,6 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-// @material-ui/icons
-
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
@@ -20,6 +18,7 @@ import Fade from 'react-reveal/Fade';
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
 import SessionDetails from "./SessionDetails"
+import Preloader from "components/Preloader/Preloader.js";
 
 const dashboardRoutes = [];
 
@@ -39,6 +38,8 @@ export default function StartUpPage(props) {
 
   return (
     <div>
+       
+       <Preloader/>
       <Header
         color="transparent"
         routes={dashboardRoutes}
@@ -58,7 +59,7 @@ export default function StartUpPage(props) {
           <GridContainer style = {flex}>
             <GridItem xs={12} sm={12} md={6}>
             
-              <h1 className={classes.title}  > <CharPose  text = "About UISI 2020" /></h1>
+              <h1 className={classes.title}  > <CharPose   text = "About UISI 2020" /></h1>
              
               <br />
 
@@ -78,7 +79,8 @@ export default function StartUpPage(props) {
       </div>
       </Fade>
       <Footer />
-
+     
+      
     </div>
   );
 }

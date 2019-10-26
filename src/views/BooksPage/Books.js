@@ -20,6 +20,8 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import CharPose from "../LandingPage/Sections/CharPose.js"
 import BooksDetails from "./BooksDetails.js";
 import BookCard from "./BookCard"
+import Preloader from "components/Preloader/Preloader.js";
+
 
 
 
@@ -33,6 +35,7 @@ export default function Conferences(props) {
   const { ...rest } = props;
   return (
     <div>
+      <Preloader/>
       <Header
         color="transparent"
         routes={dashboardRoutes}

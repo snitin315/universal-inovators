@@ -21,6 +21,7 @@ import Fade from 'react-reveal/Fade';
 import CharPose from "../LandingPage/Sections/CharPose.js";
 import About from "./Sections/About.js";
 import Category from "./Sections/Category.js";
+import Preloader from "components/Preloader/Preloader.js";
 
 
 const dashboardRoutes = [];
@@ -41,6 +42,7 @@ export default function StartUpPage(props) {
 
   return (
     <div>
+      <Preloader/>
       <Header
         color="transparent"
         routes={dashboardRoutes}

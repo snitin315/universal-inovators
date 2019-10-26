@@ -19,6 +19,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js"
 import MemberDetails from "./MemberDetails.js";
+import Preloader from "components/Preloader/Preloader.js";
 
 
 
@@ -33,6 +34,7 @@ export default function Membership(props) {
   const { ...rest } = props;
   return (
     <div>
+      <Preloader/>
       <Header
         color="transparent"
         routes={dashboardRoutes}

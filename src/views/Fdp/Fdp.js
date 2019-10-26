@@ -24,6 +24,7 @@ import Download from "./Download.js"
 
 
 
+
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
@@ -33,6 +34,7 @@ export default function Fdp(props) {
   const { ...rest } = props;
   return (
     <div>
+     
       <Header
         color="transparent"
         routes={dashboardRoutes}
@@ -70,6 +72,7 @@ export default function Fdp(props) {
       </div>
       </Fade>
       <Footer />
+   
     </div>
   );
 }

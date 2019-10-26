@@ -19,6 +19,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js"
 import Details from "./Sections/Details.js"
+import Preloader from "components/Preloader/Preloader.js";
 
 
 
@@ -31,6 +32,7 @@ export default function Conferences(props) {
   const { ...rest } = props;
   return (
     <div>
+      
       <Header
         color="transparent"
         routes={dashboardRoutes}
@@ -69,6 +71,7 @@ export default function Conferences(props) {
       </div>
       </Fade>
       <Footer />
+   
     </div>
   );
 }

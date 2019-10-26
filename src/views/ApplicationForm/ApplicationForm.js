@@ -26,6 +26,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
+import Preloader from "components/Preloader/Preloader";
 
 const dashboardRoutes = [];
 
@@ -50,6 +51,7 @@ export default function LandingPage(props) {
 
   return (
     <div>
+      <Preloader/>  
       <Header
         color="transparent"
         routes={dashboardRoutes}

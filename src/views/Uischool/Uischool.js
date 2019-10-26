@@ -19,6 +19,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js"
 import UischoolDetails from "./UischoolDetail.js";
+import Preloader from "components/Preloader/Preloader.js";
 
 const dashboardRoutes = [];
 
@@ -29,6 +30,7 @@ export default function Uischool(props) {
   const { ...rest } = props;
   return (
     <div>
+      <Preloader/>
       <Header
         color="transparent"
         routes={dashboardRoutes}
