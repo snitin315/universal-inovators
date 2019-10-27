@@ -11,7 +11,7 @@ import Fade from 'react-reveal/Fade';
 
 import objective from "assets/img/startup1.jpg"
 import sideImage from "assets/img/startup-10.jpg"
-import sideImage2 from "assets/img/startup-9.jpg"
+import sideImage2 from "assets/img/startup2.jpg"
 
 const useStyles = makeStyles(styles);
 
@@ -107,8 +107,7 @@ export default function About() {
           </GridContainer>
           
           
-       
-      <div>
+        <div>
       
        
        
