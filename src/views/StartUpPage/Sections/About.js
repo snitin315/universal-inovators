@@ -9,8 +9,9 @@ import GridItem from "components/Grid/GridItem.js";
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 import Fade from 'react-reveal/Fade';
 
-import objective from "assets/img/objectives.svg"
-import sideImage from "assets/img/side.svg"
+import objective from "assets/img/startup1.jpg"
+import sideImage from "assets/img/startup-10.jpg"
+import sideImage2 from "assets/img/startup-9.jpg"
 
 const useStyles = makeStyles(styles);
 
@@ -28,10 +29,17 @@ export default function About() {
 
     <div className={classes.section} >
       
-          
-          <h3 className={classes.title}>ICICC Startup Event: Where Startups meets funder</h3>
-          
-          <Fade bottom duration ={2000}>
+        <h3 className={classes.title}> ICICC Startup Event: Where Startup Meets Investor </h3>
+          <GridContainer style = {flex}>
+          <GridItem xs={12} sm={12} md={6}>
+            <Fade left duration={2000}>
+             <img style={{width : '100%'}} src={sideImage}/>
+             </Fade> 
+          </GridItem>    
+
+          <GridItem xs={12} sm={12} md={6}>
+
+          <Fade right duration ={2000}>
           <p className={classes.description} style={design} >
           ICICC is a non-profit organization under the umbrella of Universal Innovator. It has successfully conducted numerous technical conferences, FDPs and workshops. It has also been parts of Nasa hackthons
           and has members who have successfully organized and prepared teams for AICTE’s Smart India Hackathons.  It has support of many reputed international and national organizations. ICICC enjoys support of
@@ -39,21 +47,17 @@ export default function About() {
           </p>
           </Fade>
 
-          <h3 className={classes.title}>About The StartUp Event</h3>
-          <br/>
+          </GridItem>
+          </GridContainer>
 
-          
+          <h3 className={classes.title}> About The StartUp Event </h3>
 
           <GridContainer style = {flex}>
-          <GridItem xs={12} sm={12} md={6}>
-            <Fade left duration={2000}>
-             <img src={sideImage}/>
-             </Fade> 
-          </GridItem>    
+              
 
           <GridItem xs={12} sm={12} md={6}>
 
-          <Fade right duration ={2000}>
+          <Fade left duration ={2000}>
           <p className={classes.description} style={design} >
            ICICC in association with many reputed funding agencies is organizing a Startup event, where startup ideas meet funder. The selection procedure for the startup idea will be professional, stringent and scientific in nature.
            The prime objective of the startup meet is for successful ventures of future. The process of converting ideas into ventures will be monitored by several standard associated expert agencies at various levels to increase the hit ratio.
@@ -67,16 +71,27 @@ export default function About() {
           </Fade>
 
           </GridItem>
+
+          <GridItem xs={12} sm={12} md={6}>
+            <Fade right duration={2000}>
+             <img style={{width : '100%'}} src={sideImage2}/>
+             </Fade> 
+          </GridItem>
           </GridContainer>
             
-          <h3 className={classes.title}>Objectives of the StartUp Event</h3>
+          <h3 className={classes.title}> Objectives of The StartUp Event </h3>
 
           <GridContainer style = {flex}>
             
+          <GridItem xs={12} sm={12} md={6}>
+            <Fade left  style = {{width : "100%"}} duration={2000}>
+             <img style={{width : '100%'}} src={objective}/>
+             </Fade> 
+          </GridItem>  
 
           <GridItem xs={12} sm={12} md={6}>
 
-          <Fade left duration ={2000}>
+          <Fade right duration ={2000}>
           <p className={classes.description} style={design} >
             <br/>
             Prime objective of the event is to promote Make in India and Digital India initiative. Through this platform we want to bring the faith of investors and startups that the success ratio/ hit ratio of the startups funded
@@ -84,17 +99,10 @@ export default function About() {
             kind of safety to the investors and start up teams that there funds and ideas are safer comparatively at our platform. Another objective is to give funding agencies and start up teams a common platform where they can meet and
             work together.
 
-
           </p>
           </Fade>
 
           </GridItem>
-
-          <GridItem xs={12} sm={12} md={6}>
-            <Fade right duration={2000}>
-             <img src={objective}/>
-             </Fade> 
-          </GridItem>  
 
           </GridContainer>
           
