@@ -227,7 +227,7 @@ export default function About() {
 
               <GridItem xs={12} sm={12} md={4}>
 
-              <h3 className={classes.title}> Advanced Technologie </h3>
+              <h3 className={classes.title}> Advanced Technologies </h3>
                 <ListStyle text = "Internet of Things"/> 
                 <ListStyle text = "Big Data"/> 
                 <ListStyle text = "Cloud computing "/> 
