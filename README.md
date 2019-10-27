@@ -22,6 +22,6 @@ Website for universal-inovators.com made with React.
 
 * <h3>Step 1 :</h3> <b>Create the production build by :</b> npm run build
 
-* <h3>Step 1 :</h3> <b>Run the production build of app with :</b> node server.js
+* <h3>Step 2 :</h3> <b>Run the production build of app with :</b> node server.js
 
 <h6> Now your app will be up and running on port 5000 , visit <a href="http://localhost:5000" target="_blank">http://localhost:5000</a> </h6>
