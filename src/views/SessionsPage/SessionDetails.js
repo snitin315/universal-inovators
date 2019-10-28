@@ -43,6 +43,15 @@ const awards = {
     justifyContent : "center"
   }
   
+const Service = function(props){
+   const classes = useStyles();
+         return (
+            <div className="box" style={{height : "200px", boxShadow : "0 0"}}>
+               <div className="icon"><a href={props.link}><i class={props.icon}></i></a></div>
+               <h4 className="title"><a href={props.link}>{props.title}</a></h4>
+               <p className={classes.description} >{props.description}</p>
+             </div>
+         )}  
 
   const useCardStyles = makeStyles(cardstyles);
   const cards = useCardStyles();
@@ -82,52 +91,47 @@ const awards = {
           </GridContainer>
 
           <h3 className={classes.title}>Awards & Prizes </h3>
-          
+          <br/>       
           
           <GridContainer>
            
            
           <GridItem xs={12} sm={12} md={4}>
           <Fade up>
-            <Card style={{minwidth :"14rem"}}>
-                 <strong><CardHeader color="info">Start-up of the year Award</CardHeader>  </strong>     
-                <CardBody>
-                <h5 className={cards.cardTitle}>The start-up with the greatest growth and success rate.</h5>
-                
-                
-                </CardBody>
-             </Card>
-             </Fade>
+            <Service 
+             icon = "fas fa-trophy"
+             title = "Start-up of the year Award"
+             description = "The start-up with the greatest growth and success rate."
+            
+            />
+          </Fade>
 
           </GridItem>
-        
+                   
           
           <GridItem xs={12} sm={12} md={4}>
           <Fade up delay={500}>
-             <Card  style={{minwidth :"14rem"}}>
-                 <strong><CardHeader color="info">Young Innovator Award</CardHeader>  </strong>     
-                <CardBody>
-                <h4 className={cards.cardTitle}>Best Student Start-Up</h4>
-                
-                <br/>
-                </CardBody>
-             </Card>
-             </Fade>
+            <Service 
+             icon = "fas fa-trophy"
+             title = "Young Innovator Award"
+             description = "Best Student Start-Up"
+            
+            />
+            
+          </Fade>
           </GridItem>
          
 
           
           <GridItem xs={12} sm={12} md={4}>
           <Fade up delay={1000}>
-             <Card  style={{minwidth :"14rem"}}>
-                 <strong><CardHeader color="info">Womanovator Award</CardHeader>  </strong>     
-                <CardBody>
-                <h5 className={cards.cardTitle}>Best of a start-up/innovative idea led by a woman.</h5>
-                
-                
-                </CardBody>
-             </Card>
-             </Fade>
+           <Service 
+             icon = "fas fa-trophy"
+             title = "Womanovator Award"
+             description = "Best of a start-up/innovative idea led by a woman."
+            
+            />
+            </Fade>
           </GridItem>
           
 
