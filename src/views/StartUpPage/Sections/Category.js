@@ -290,7 +290,7 @@ export default function About() {
               <GridItem xs={12} sm={12} md={4}>
 
               <h3 className={classes.title}> Miscellaneous </h3>
-                <ListStyle text = " Candidates having unique idea other than the  mentioned areas can submit their applicatipn in this category."/> 
+                <ListStyle text = "Candidates having any unique innovative idea other than mentioned categories can submit their application in this category."/> 
                 
                                               
               </GridItem>
