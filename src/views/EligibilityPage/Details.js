@@ -136,8 +136,7 @@ export default function Details() {
           </GridContainer>
 
             </Fade>
-    
-            
+     
             <Fade up>
 
             <GridContainer style = {flex}>
@@ -203,10 +202,6 @@ export default function Details() {
             </GridItem>
             
           </GridContainer>
-
-            <li>
-                
-            </li>
             </Fade>
         </ol>                      
     </div>

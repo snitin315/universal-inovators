@@ -66,12 +66,12 @@ export default function Application(props) {
       />
       
       <Fade duration = "1500"  >
-      <Parallax filter image={require("assets/img/start-bg.png")}>
+      <Parallax filter image={require("assets/img/Application.svg")}>
         <div className={classes.container}>
           <GridContainer style = {flex}>
             <GridItem xs={12} sm={12} md={6}>
             
-              <h1 className={classes.title} style={style} > <CharPose  text = "Application Procedure" /></h1>
+              <h1 className={classes.title} > <CharPose  text = "Application Procedure" /></h1>
                
               <br />
 
@@ -90,18 +90,13 @@ export default function Application(props) {
            </div>
          <br/>
         <Fade left duration={1500}>
-        <GridContainer style = {flex}>
-            <GridItem   xs={12} sm={10} md={9}>
-            <Steps num= "1st" text="The Venture must fill the form and complete their Registration at the ICICC Website."/> 
-            </GridItem>
-            <GridItem  xs={12} sm={2} md={3}>
-            <Button color="info" href="/startup-application-form" target="-blank" type="button">Click Here To Fill the Form </Button>
-            </GridItem>
-
-        </GridContainer>
-        
+            <Steps num= "1st" text="The Venture must fill the form and complete their Registration of INR 5,000 here. Click the button below to fill the application form. "/>              
         </Fade> 
-
+       
+        <div style={{display:"flex" , justifyContent : "center"}}>
+        <Button size="lg" color="info" href="/startup-application-form" target="-blank" type="button"><strong>Click Here To Fill the Application Form</strong> </Button>
+        </div>
+        <br/>
         <br/>
         <Fade left duration={1500}>
         <Steps num= "2nd" text="The Registration must include a Pitch Deck with not more than 10 Slides. The Deck Must include Business Plan, Value Proposition, Projections for the next 5 years, Current Financials and Necessary Statistics (Traction, Users, Pricing etc.), Competition Analysis, Team and any other relevant data"/>  
