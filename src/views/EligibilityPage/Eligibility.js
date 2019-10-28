@@ -35,10 +35,6 @@ export default function Eligibility(props) {
     alignItems : 'center',
   } ;
 
-  const style={
-    color : 'cyan'
-  }
-
   return (
     <div>
       <Preloader/>
@@ -56,12 +52,12 @@ export default function Eligibility(props) {
       />
       
       <Fade duration = "1500"  >
-      <Parallax filter image={require("assets/img/start-bg.png")}>
+      <Parallax filter image={require("assets/img/Eligibility.png")}>
         <div className={classes.container}>
           <GridContainer style = {flex}>
             <GridItem xs={12} sm={12} md={6}>
             
-              <h1 className={classes.title} style={style} > <CharPose  text = "Eligibility Criteria" /></h1>
+              <h1 className={classes.title} > <CharPose  text = "Eligibility Criteria" /></h1>
                
               <br />
 
