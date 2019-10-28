@@ -16,6 +16,8 @@ import { cardTitle } from "assets/jss/material-kit-react.js";
 
 
 import session from "assets/img/session2.png"
+import session2 from "assets/img/startup-about-2.jpg"
+
 
 
 
@@ -136,6 +138,28 @@ const Service = function(props){
           
 
           </GridContainer>
+
+            
+          <h3 className={classes.title}>Executive Networking Session – High Tea Session</h3>
+
+          <GridContainer style = {flex}>
+          <GridItem xs={12} sm={12} md={6}>
+            <Fade left duration={2000}>
+             <img src={session2} style={{width:'100%'}}/>
+             </Fade> 
+          </GridItem>    
+
+          <GridItem xs={12} sm={12} md={6}>
+
+          <Fade right duration ={2000}>
+          <p className={classes.description} style={design} >
+          This world is now becoming more and more entrepreneur-oriented. A start-up begins with an idea and the prime obstruction is how to take forward that idea towards a successful business keeping in view the societal issues. We expect people coming with different interests and backgrounds. Some people may have successful start-ups while some might just have ideas and looking for some kind of mentorship and funding to take the
+          idea to implementation. Through our Start-Up event we will lay a platform for the networking and interaction amongst the speakers, young entrepreneurs and the audience (participants).       
+          </p>
+          </Fade>
+
+          </GridItem>
+          </GridContainer>
          
 
           <h3 className = {classes.title}> Event Tracks</h3>
@@ -205,18 +229,7 @@ const Service = function(props){
           
 
           </GridContainer>
-            
-          <h3 className={classes.title}>Executive Networking Session – High Tea Session</h3>
-
-          <p className={classes.description} style={design} >
-          This world is now becoming more and more entrepreneur-oriented. A start-up begins with an idea and the prime obstruction is how to take forward that idea towards a successful business keeping in view the societal issues. We expect people coming with different interests and backgrounds. Some people may have successful start-ups while some might just have ideas and looking for some kind of mentorship and funding to take the
-          idea to implementation. Through our Start-Up event we will lay a platform for the networking and interaction amongst the speakers, young entrepreneurs and the audience (participants).
-
-          </p>
-
           
-          
-       
       <div>
       
        
