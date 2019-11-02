@@ -39,7 +39,7 @@ export default function StartUpPage(props) {
  
   return (
     <div>
-      <Preloader/>
+   
       <Header
         color="transparent"
         routes={dashboardRoutes}
@@ -59,7 +59,7 @@ export default function StartUpPage(props) {
           <GridContainer style = {flex}>
             <GridItem xs={12} sm={12} md={6}>
             
-              <h1 className={classes.title} > <CharPose  text = " Where StartUp Meets Investors" /></h1>
+              <h1 className={classes.title} > <CharPose  text = "Where StartUp Meets Investors" /></h1>
              
               <br />
 
@@ -82,7 +82,7 @@ export default function StartUpPage(props) {
       </div>
       </Fade>
       <Footer />
-
+      <Preloader/>
     </div>
   );
 }

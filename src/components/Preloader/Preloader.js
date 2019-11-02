@@ -7,9 +7,6 @@ import { Planets } from 'react-preloaders';
 
 export default function Preloader() {
     return(
-        <div>
-            <Planets animation = "slide" color = {"#00A5BB"} />  
-            
-        </div>
+           <Planets animation = "slide-down" color = {"#00A5BB"}/>  
     );
 }

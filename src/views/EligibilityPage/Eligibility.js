@@ -37,7 +37,7 @@ export default function Eligibility(props) {
 
   return (
     <div>
-      <Preloader/>
+   
       <Header
         color="transparent"
         routes={dashboardRoutes}
@@ -79,7 +79,7 @@ export default function Eligibility(props) {
       </div>
       </Fade>
       <Footer />
-
+      <Preloader/>
     </div>
   );
 }

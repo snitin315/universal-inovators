@@ -51,7 +51,7 @@ export default function Application(props) {
 
   return (
     <div>
-      <Preloader/>
+      
       <Header
         color="transparent"
         routes={dashboardRoutes}
@@ -138,7 +138,7 @@ export default function Application(props) {
       </div>
       </Fade>
       <Footer />
-
+      <Preloader/>
     </div>
   );
 }
