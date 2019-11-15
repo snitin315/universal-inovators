@@ -38,7 +38,7 @@ export default function Footer(props) {
           >
             Universal-Inovators
           </a>{" "}
-          for a better web. 
+          for a better web | Site by <a href="https://github.com/snitin315">Nitin Kumar</a>
          
         </div>
       </div>
