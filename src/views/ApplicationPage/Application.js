@@ -93,9 +93,18 @@ export default function Application(props) {
             <Steps num= "1st" text="The Venture must fill the form and complete their Registration of INR 5,000 here. Click the button below to fill the application form. "/>              
         </Fade> 
        
-        <div style={{display:"flex" , justifyContent : "center"}}>
-        <Button size="lg" color="info" href="/startup-application-form" target="-blank" type="button"><strong>Click Here To Fill the Application Form</strong> </Button>
-        </div>
+        <GridContainer>
+            <GridItem xs={10} sm={10} md={6}>
+              <div style={{display:"flex" , justifyContent : "center"}}>
+                <Button size="lg" color="info" href="/startup-application-form" target="-blank" type="button"> <i class="fas fa-angle-right"></i> <strong>Click Here To Fill the Application Form</strong> </Button>
+              </div>
+            </GridItem>
+            <GridItem xs={10} sm={10} md={6}>
+              <div style={{display:"flex" , justifyContent : "center"}}>
+               <Button size="lg" color="info" href="https://www.scupo.in/event/3rd-international-conference-on-innovative-computing-communication/#bookticket" target="-blank" type="button"> <i class="fas fa-angle-right"></i> <strong>Click Here To Pay The Registration Fees</strong> </Button>
+              </div>
+            </GridItem>
+        </GridContainer>     
         <br/>
         <br/>
         <Fade left duration={1500}>
