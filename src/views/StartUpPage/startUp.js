@@ -4,6 +4,7 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
+import "./Sections/Slider.scss"
 // @material-ui/icons
 
 // core components
@@ -35,6 +36,13 @@ export default function StartUpPage(props) {
     display : 'flex',
     alignItems : 'center',
   } ;
+
+  const Slide = function(props){
+    return(
+    <div class="slide">
+       <img src={props.img} />
+    </div>
+    )}
 
  
   return (
@@ -74,7 +82,33 @@ export default function StartUpPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
          <About/>
-          
+
+         <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="250" width="250" alt="" />
+              </div>
+              <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="250" width="250" alt="" />
+              </div>
+              <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="250" width="250" alt="" />
+              </div>
+              <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+              </div>
+              <div class="slide">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+              </div>
+            </div>
+        </div>
+
          <Category/>
 
         </div>
