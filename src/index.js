@@ -20,13 +20,13 @@ import Funding from "views/FundingPage/Funding";
 import Application from "views/ApplicationPage/Application";
 import Partners from "views/PartnersPage/Partners";
 import ApplicationForm from "views/ApplicationForm/ApplicationForm";
+import Investors from "views/SpecialInvestors/specialInvestors";
 
 var hist = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      
       <Route path="/conferences" component = {Conferences}/>
       <Route path="/workshops" component = {Fdp}/>
       <Route path="/patent" component = {Patent}/>
@@ -34,21 +34,15 @@ ReactDOM.render(
       <Route path="/uischool" component = {Uischool}/>
       <Route path="/books"  component ={Books}/>
       <Route path="/uimembership" component={Membership}/>
-
-    
-          <Route path ="/startup" component = {StartUpPage}/>
-          <Route path="/startup-about" component = {Sessions} />
-          <Route path="/startup-eligibility" component = {Eligibility} />
-          <Route path="/startup-funding" component = {Funding} />
-          <Route path="/startup-application-procedure" component = {Application}/>
-          <Route path="/startup-partners-and-promoters" component = {Partners}/>
-          <Route path="/startup-application-form" component = {ApplicationForm}/>
-              
-         
-      
-         
+      <Route path="/startup" component = {StartUpPage}/>
+      <Route path="/startup-about" component = {Sessions} />
+      <Route path="/startup-eligibility" component = {Eligibility} />
+      <Route path="/startup-funding" component = {Funding} />
+      <Route path="/startup-application-procedure" component = {Application}/>
+      <Route path="/startup-partners-and-promoters" component = {Partners}/>
+      <Route path="/startup-application-form" component = {ApplicationForm}/>   
+      <Route path="/startup-special-investors" component = {Investors}/>              
       <Route path="/" component={LandingPage} />
-
     </Switch>
   </Router>,
   document.getElementById("root")
