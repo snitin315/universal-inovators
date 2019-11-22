@@ -16,7 +16,9 @@ import Fade from 'react-reveal/Fade';
 
 //logo
 
-import ssclogo from "assets/img/ssclogo.png"
+import x100 from "assets/img/100x.png"
+import huddle from "assets/img/huddle.png"
+import icici from "assets/img/icicilogo.jpeg"
 
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
@@ -88,16 +90,33 @@ export default function Investors(props) {
          <Fade>
           <GridContainer style = {flex}>
             <GridItem xs={12} sm={3} md={3}>
-                     <div> <img src={ssclogo} style={container} /> </div> 
+                <div> <img src={icici} style={container} /> </div> 
             </GridItem>
-
             <GridItem xs={12} sm={9} md={9}>
-                         <h4  className={classes.title} style={{textAlign:"center", color : "black"}} > SHAHEED SUKHDEV COLLEGE OF BUSINESS STUDIES, UNIVERSITY OF DELHI</h4>
+                <h4  className={classes.title} style={{textAlign:"center", color : "black"}} >ICICI BANK</h4>
             </GridItem>
-            
           </GridContainer>
          </Fade>
-          <br/>  
+
+         <Fade>
+          <GridContainer style = {flex}>
+            <GridItem xs={12} sm={3} md={3}>
+                <div> <img src={huddle} style={container} /> </div> 
+            </GridItem>
+            <GridItem xs={12} sm={9} md={9}>
+                <h4  className={classes.title} style={{textAlign:"center", color : "black"}} >HUDDLE</h4>
+            </GridItem>
+          </GridContainer>
+          <GridContainer style = {flex}>
+            <GridItem xs={12} sm={3} md={3}>
+                <div> <img src={x100} style={container} /> </div> 
+            </GridItem>
+            <GridItem xs={12} sm={9} md={9}>
+                <h4  className={classes.title} style={{textAlign:"center", color : "black"}} >100X VC</h4>
+            </GridItem>
+          </GridContainer>
+         </Fade>
+        <br/>  
         </div>
       </div>
       </Fade>
