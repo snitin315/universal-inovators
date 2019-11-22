@@ -5,7 +5,27 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 
 import "./Sections/Slider.scss"
-// @material-ui/icons
+// logo
+
+import ssclogo from "assets/img/ssclogo.png"
+import nitplogo from "assets/img/nitplogo.jpeg"
+import npclogo from "assets/img/npclogo.jpeg"
+import srgelogo from "assets/img/srgelogo.png"
+import setitlogo from "assets/img/setitlogo.png"
+import dilogo from "assets/img/dilogo.jpg"
+import uilogo from "assets/img/uilogo.jpeg"
+import minlogo from "assets/img/minlogo.png"
+import dmrlogo from "assets/img/dmrlogo.jpeg"
+import pkslogo from "assets/img/pkslogo.jpeg"
+import autologo from "assets/img/autologo.jpeg"
+import callogo from "assets/img/callogo.jpeg"
+import plucklogo from "assets/img/plucklogo.jpeg"
+import rtmlogo from "assets/img/rtmlogo.jpeg"
+import spainlogo from "assets/img/spainlogo.jpeg"
+import sgrtlogo from "assets/img/sgrtlogo.jpeg"
+import negdlogo from "assets/img/negdlogo.jpeg"
+import thinklogo from "assets/img/thinklogo.jpeg"
+import gvlogo from "assets/img/gvlogo.png"
 
 // core components
 import Header from "components/Header/Header.js";
@@ -36,14 +56,6 @@ export default function StartUpPage(props) {
     display : 'flex',
     alignItems : 'center',
   } ;
-
-  const Slide = function(props){
-    return(
-    <div class="slide">
-       <img src={props.img} />
-    </div>
-    )}
-
  
   return (
     <div>
@@ -82,37 +94,71 @@ export default function StartUpPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
          <About/>
-
+         <h2 style={{ textAlign : "center",color : "black"} }><strong>Partners And Promoters</strong></h2>
          <div class="slider">
             <div class="slide-track">
               <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="250" width="250" alt="" />
+                <img src= {ssclogo} height="250" width="250" />
               </div>
               <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="250" width="250" alt="" />
+                <img src= {nitplogo} height="250" width="250" />
               </div>
               <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="250" width="250" alt="" />
+                <img src= {npclogo} height="250" width="250" />
               </div>
               <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                <img src= {srgelogo} height="250" width="250" />
               </div>
               <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                <img src= {setitlogo} height="250" width="250" />
               </div>
               <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                <img src= {dilogo} height="250" width="250"  />
               </div>
               <div class="slide">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
+                <img src= {uilogo} height="250" width="250" />
               </div>
+              
+              <div class="slide">
+                <img src= {dmrlogo} height="250" width="250" />
+              </div>
+              <div class="slide">
+                <img src= {pkslogo} height="250" width="300" />
+              </div>
+              <div class="slide">
+                <img src= {autologo} height="250" width="250" />
+              </div>
+              <div class="slide">
+                <img src= {callogo} height="250" width="250" />
+              </div>
+              <div class="slide">
+                <img src= {plucklogo} height="250" width="250" />
+              </div>
+              <div class="slide">
+                <img src= {rtmlogo} height="250" width="250" />
+              </div>
+              <div class="slide">
+                <img src= {spainlogo} height="250" width="250" />
+              </div>
+              <div class="slide">
+                <img src= {sgrtlogo} height="250" width="250" />
+              </div>
+              <div class="slide">
+                <img src= {negdlogo} height="250" width="300" />
+              </div>
+              <div class="slide">
+                <img src= {thinklogo} height="250" width="250" />
+              </div>
+              <div class="slide">
+                <img src= {gvlogo} height="250" width="250" />
+              </div>
+              <div class="slide">
+                <img src= {minlogo} height="250" width="400" />
+              </div>   
             </div>
         </div>
-
-         <Category/>
-
+        <Category/>
         </div>
-        
       </div>
       </Fade>
       <Footer />
