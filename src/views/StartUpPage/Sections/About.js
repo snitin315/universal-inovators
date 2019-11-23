@@ -65,11 +65,8 @@ export default function About() {
            Venture Capitalists, Angel Investment) will also be invited to listen the ideas showcased by the startup teams. There will be close interaction between startup teams and Funders to chart the future path. The event will be organized under 
            the banner of ICICC and supported by many Government and Private Organizations. This event is a flagship initiative of ICICC, intended to build a strong ecosystem that is conducive for the growth of startup businesses, to drive sustainable economic growth 
            and generate large scale employment opportunities. 
-
-
           </p>
           </Fade>
-
           </GridItem>
 
           <GridItem xs={12} sm={12} md={6}>
@@ -81,36 +78,25 @@ export default function About() {
             
           <h3 className={classes.title}> Objectives of The StartUp Event </h3>
 
-          <GridContainer style = {flex}>
-            
-          <GridItem xs={12} sm={12} md={6}>
-            <Fade left  style = {{width : "100%"}} duration={2000}>
-             <img style={{width : '100%'}} src={objective}/>
-             </Fade> 
-          </GridItem>  
-
-          <GridItem xs={12} sm={12} md={6}>
-
-          <Fade right duration ={2000}>
-          <p className={classes.description} style={design} >
-            <br/>
-            Prime objective of the event is to promote Make in India and Digital India initiative. Through this platform we want to bring the faith of investors and startups that the success ratio/ hit ratio of the startups funded
-            at this platform will be highly successful. We will create the kind of firewall and selection criteria’s so that only the best of ideas including the best implementers of the ideas will get selected. We will provide a limited 
-            kind of safety to the investors and start up teams that there funds and ideas are safer comparatively at our platform. Another objective is to give funding agencies and start up teams a common platform where they can meet and
-            work together.
-
-          </p>
-          </Fade>
-
-          </GridItem>
-
-          </GridContainer>
-          
-          
+          <GridContainer style = {flex}>       
+            <GridItem xs={12} sm={12} md={6}>
+              <Fade left  style = {{width : "100%"}} duration={2000}>
+              <img style={{width : '100%'}} src={objective}/>
+              </Fade> 
+            </GridItem>  
+            <GridItem xs={12} sm={12} md={6}>
+              <Fade right duration ={2000}>
+                <p className={classes.description} style={design} >
+                  <br/>
+                  Prime objective of the event is to promote Make in India and Digital India initiative. Through this platform we want to bring the faith of investors and startups that the success ratio/ hit ratio of the startups funded
+                  at this platform will be highly successful. We will create the kind of firewall and selection criteria’s so that only the best of ideas including the best implementers of the ideas will get selected. We will provide a limited 
+                  kind of safety to the investors and start up teams that there funds and ideas are safer comparatively at our platform. Another objective is to give funding agencies and start up teams a common platform where they can meet and
+                  work together.
+                </p>
+              </Fade>
+            </GridItem>
+          </GridContainer> 
         <div>
-      
-       
-       
       </div>
     </div>
   );
