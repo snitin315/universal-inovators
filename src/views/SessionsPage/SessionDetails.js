@@ -12,10 +12,7 @@ import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader";
 import { cardTitle } from "assets/jss/material-kit-react.js";
-
-
-
-import session from "assets/img/session2.png"
+import session from "assets/img/session.svg"
 import session2 from "assets/img/startup-about-2.jpg"
 
 

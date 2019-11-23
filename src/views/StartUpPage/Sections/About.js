@@ -96,8 +96,6 @@ export default function About() {
               </Fade>
             </GridItem>
           </GridContainer> 
-        <div>
-      </div>
     </div>
   );
 }
