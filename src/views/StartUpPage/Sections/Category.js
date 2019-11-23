@@ -56,13 +56,10 @@ export default function About() {
  
   return (
 
-    <div className={classes.section} >
-      
-          
-          <h3 className={classes.title}>Core Fields of Research for the Start-Up </h3>
-
-          <br/>
-          <NavPills
+    <div className={classes.section} style={{marginTop:"-100px"}} >
+      <h3 className={classes.title}>Core Fields of Research for the Start-Up </h3>
+      <br/>
+      <NavPills
       color="info"
       tabs={[
         {
@@ -70,51 +67,45 @@ export default function About() {
           tabContent: (
             <span>
               <GridContainer style = {flex} justify="center">
-              <GridItem xs={12} sm={12} md={6}>
-              <Fade > 
-              <Card>
-                <Carousel {...settings}>
-                  <div>
-                    <img
-                      src={image3}
-                      alt="First slide"
-                      className="slick-image"
-                    />
-                    
-                  </div>
-                  <div>
-                    <img
-                      src={image1}
-                      alt="Second slide"
-                      className="slick-image"
-                    />
-                    
-                  </div>
-                  <div>
-                    <img
-                      src={image2}
-                      alt="Third slide"
-                      className="slick-image"
-                    />
-                  </div>
-                </Carousel>
-            </Card>
-             </Fade>
-               
+                <GridItem xs={12} sm={12} md={6}>
+                  <Fade > 
+                    <Card>
+                      <Carousel {...settings}>
+                        <div>
+                          <img
+                            src={image3}
+                            alt="First slide"
+                            className="slick-image"
+                          />
+                          
+                        </div>
+                        <div>
+                          <img
+                            src={image1}
+                            alt="Second slide"
+                            className="slick-image"
+                          />
+                          
+                        </div>
+                        <div>
+                          <img
+                            src={image2}
+                            alt="Third slide"
+                            className="slick-image"
+                          />
+                        </div>
+                      </Carousel>
+                  </Card>
+                </Fade>
               </GridItem>
-
               <GridItem xs={12} sm={12} md={4}>
-
-              <h3 className={classes.title}> Societal Applications </h3>
-                <ListStyle text = " Agriculture/Food "/> 
-                <ListStyle text = "Healthcare"/> 
-                <ListStyle text = "Education "/> 
-                <ListStyle text = "Hospitality"/> 
-                                              
+                  <h3 className={classes.title}> Societal Applications </h3>
+                  <ListStyle text = " Agriculture/Food "/> 
+                  <ListStyle text = "Healthcare"/> 
+                  <ListStyle text = "Education "/> 
+                  <ListStyle text = "Hospitality"/>                             
               </GridItem>
-
-            
-              </GridContainer>
+            </GridContainer>
             </span>
           )
         },
@@ -123,37 +114,36 @@ export default function About() {
           tabContent: (
             <GridContainer style = {flex} justify="center">
               <GridItem xs={12} sm={12} md={6}>
-              <Fade >  
-              <Card>
-                <Carousel {...settings}>
-                  <div>
-                    <img
-                      src={renew}
-                      alt="Renewable Energy"
-                      className="slick-image"
-                    /> 
-                  </div>
-                  <div>
-                    <img
-                      src={water}
-                      alt="Clean Water"
-                      className="slick-image"
-                    />
-                    
-                  </div>
-                  <div>
-                    <img
-                      src={recycle}
-                      alt="Second slide"
-                      className="slick-image"
-                    />
-                    
-                  </div>
-                
-                </Carousel>
-            </Card>
-            </Fade> 
-               
+                <Fade >  
+                <Card>
+                  <Carousel {...settings}>
+                    <div>
+                      <img
+                        src={renew}
+                        alt="Renewable Energy"
+                        className="slick-image"
+                      /> 
+                    </div>
+                    <div>
+                      <img
+                        src={water}
+                        alt="Clean Water"
+                        className="slick-image"
+                      />
+                      
+                    </div>
+                    <div>
+                      <img
+                        src={recycle}
+                        alt="Second slide"
+                        className="slick-image"
+                      />
+                      
+                    </div>
+                  
+                  </Carousel>
+                </Card>
+                </Fade> 
               </GridItem>
 
               <GridItem xs={12} sm={12} md={4}>
