@@ -29,7 +29,7 @@ export default function StartupHeader(props) {
           color="transparent"
           className={classes.navLink}
         >
-         <Home className={classes.icons} /> Home
+         <Home className={classes.icons} /><b>Home</b>
         </Button>
       </ListItem>
       
@@ -39,7 +39,7 @@ export default function StartupHeader(props) {
           color="transparent"
           className={classes.navLink}
         >
-         <Apps className={classes.icons} />About 
+         <Apps className={classes.icons} /><b>About</b> 
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -48,7 +48,7 @@ export default function StartupHeader(props) {
           color="transparent"
           className={classes.navLink}
         >
-         <CheckBox className={classes.icons} />Eligibility 
+         <CheckBox className={classes.icons} /><b>Eligibility</b> 
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -57,7 +57,7 @@ export default function StartupHeader(props) {
           color="transparent"
           className={classes.navLink}
         >
-          <PersonAdd className={classes.icons} />Application Procedure
+          <PersonAdd className={classes.icons} /><b>Application Procedure</b>
         </Button>
       </ListItem>
 
@@ -67,7 +67,7 @@ export default function StartupHeader(props) {
           color="transparent"
           className={classes.navLink}
         >
-          <Money className={classes.icons} />Funding
+          <Money className={classes.icons} /><b>Funding</b>
         </Button>
       </ListItem>
 
@@ -77,7 +77,7 @@ export default function StartupHeader(props) {
           color="transparent"
           className={classes.navLink}
         >
-          <People className={classes.icons} />Partners & Promoters
+         <People className={classes.icons} /><b>Partners & Promoters</b>
         </Button>
       </ListItem>     
 
@@ -87,10 +87,9 @@ export default function StartupHeader(props) {
           color="transparent"
           className={classes.navLink}
         >
-          <Money className={classes.icons} />Special Investors
+          <Money className={classes.icons} /><b>Special Investors</b>
         </Button>
       </ListItem>  
-     
     </List>
   );
 }
