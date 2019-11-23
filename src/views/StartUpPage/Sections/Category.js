@@ -36,7 +36,7 @@ const flex = {display : "flex", alignItems : "center",textalign : "justify"}
 function ListStyle(props){
   const classes = useStyles(); 
   return (
-    <h6 className={classes.description} style= {flex}><Album style = {{ color : "#00A5BB"}}/> <li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}> {props.text}</li> </h6>
+    <h6 className={classes.description} style= {flex}><Album style = {{ color : "#3aafa9"}}/> <li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}> {props.text}</li> </h6>
   )
 }
 

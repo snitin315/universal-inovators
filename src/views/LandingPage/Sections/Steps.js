@@ -14,7 +14,7 @@ export default function Steps(props) {
   }
 
   const border ={
-    border : "2px solid skyblue",
+    border : "2px solid #3aafa9",
     borderRadius : '10px',
     minwidth: "12rem"
   }
