@@ -29,6 +29,10 @@ import negdlogo from "assets/img/negdlogo.jpeg"
 import thinklogo from "assets/img/thinklogo.jpeg"
 import gvlogo from "assets/img/gvlogo.png"
 
+import x100 from "assets/img/100x.png"
+import huddle from "assets/img/huddle.png"
+import icici from "assets/img/icici-bank-logo.jpg"
+
 const useStyles = makeStyles(styles);
 
 export default function Slider() {
@@ -128,20 +132,20 @@ export default function Slider() {
         <GridContainer>
             <GridItem xs={12} sm={12} md={4}>
                 <div>
-                    <img src={ssclogo} style={{maxWidth:"100%"}} />
-                    <h6 className={classes.description}><strong>Test 1</strong></h6>
+                    <img src={icici} height="100px" style={{maxWidth:"100%"}} />
+                    <h6 className={classes.description}><strong>ICICI BANK</strong></h6>
                 </div>
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
                 <div>
-                    <img src={ssclogo} style={{maxWidth:"100%"}} />
-                    <h6 className={classes.description}><strong>Test 1</strong></h6>
+                    <img src={huddle} height="100px" style={{maxWidth:"100%"}} />
+                    <h6 className={classes.description}><strong>HUDDLE</strong></h6>
                 </div>
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
                 <div>
-                    <img src={ssclogo} style={{maxWidth:"100%"}} />
-                    <h6 className={classes.description}><strong>Test 1</strong></h6>
+                    <img src={x100} height="100px" style={{maxWidth:"100%"}} />
+                    <h6 className={classes.description}><strong>100X VC</strong></h6>
                 </div>
             </GridItem>          
         </GridContainer>
