@@ -32,6 +32,7 @@ import gvlogo from "assets/img/gvlogo.png"
 import x100 from "assets/img/100x.png"
 import huddle from "assets/img/huddle.png"
 import icici from "assets/img/icici-bank-logo.jpg"
+import nasscom from "assets/img/nasscom.jpeg"
 
 const useStyles = makeStyles(styles);
 
@@ -130,22 +131,28 @@ export default function Slider() {
         <h2 className={classes.title}>Special Invited Investors</h2>
         <br/>
         <GridContainer>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem xs={12} sm={12} md={3}>
                 <div>
-                    <img src={icici} height="100px" style={{maxWidth:"100%"}} />
+                    <img src={icici} height="150px" style={{maxWidth:"100%"}} />
                     <h6 className={classes.description}><strong>ICICI BANK</strong></h6>
                 </div>
             </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem xs={12} sm={12} md={3}>
                 <div>
-                    <img src={huddle} height="100px" style={{maxWidth:"100%"}} />
+                    <img src={huddle} height="150px" style={{maxWidth:"100%"}} />
                     <h6 className={classes.description}><strong>HUDDLE</strong></h6>
                 </div>
             </GridItem>
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem xs={12} sm={12} md={3}>
                 <div>
-                    <img src={x100} height="100px" style={{maxWidth:"100%"}} />
+                    <img src={x100} height="150px" style={{maxWidth:"100%"}} />
                     <h6 className={classes.description}><strong>100X VC</strong></h6>
+                </div>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={3}>
+                <div>
+                    <img src={nasscom} height="150px" style={{maxWidth:"100%"}} />
+                    <h6 className={classes.description}><strong>Nasscom</strong></h6>
                 </div>
             </GridItem>          
         </GridContainer>
