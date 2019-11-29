@@ -4,9 +4,8 @@
     margin-bottom: 50px;
     text-align: center;
     border: 1px solid #e6e6e6;
-    box-shadow: 5px 10px #bdbdbd; 
-    border-radius: 25px;    
-    height: 270px;
+    border-radius: 15px;    
+    height: 180px;
     position: relative;
     background: #fafafa;
     transition: all ease-in 0.2s;    ;
@@ -18,7 +17,7 @@
     left: calc(50% - 36px);
     transition: 0.2s;
     border-radius: 50%;
-    border: 6px solid #fff;
+    border: 6px solid #e6e6e6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +39,7 @@
   
   
  .box:hover{
-    box-shadow: 15px 20px #bdbdbd; 
+    box-shadow: 5px 10px #e6e6e6; 
     border:2px solid #3aafa9;    
   }
   
