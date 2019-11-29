@@ -5,6 +5,7 @@ import NavPills from "components/NavPills/NavPills.js";
 import  Album from '@material-ui/icons/Album';
 import {Assessment, TrendingUp, MergeType} from "@material-ui/icons";
 import GridItem from "components/Grid/GridItem.js";
+import EventTracks from './EventTracks';
 
 
 const flex = {display : "flex", alignItems : "center",textAlign : "justify"}
@@ -72,6 +73,8 @@ export default function Example(){
         }
       ]}
     />
+
+    <EventTracks/>
     </div>
   );
 }
