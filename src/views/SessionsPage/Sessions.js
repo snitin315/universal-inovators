@@ -55,12 +55,12 @@ export default function StartUpPage(props) {
         {...rest}
       />
       
-      <Parallax filter responsive style={{backgroundColor:"#28a796"}}> 
+    <Parallax filter responsive style={{backgroundColor:"#28a796"}}> 
     <ParticlesContainer />
         <div className={classes.container}>
           <GridContainer style={flex}>
             <GridItem xs={12} sm={12} md={6}>
-              <h2 className={classes.title}><CharPose text="Where StartUp Meet Investors" /></h2>
+              <h2 className={classes.title}><CharPose text="About The Event" /></h2>
               <h6 className={classes.title} style={{marginTop : "-10px"}}>Let your dreams come true || Your Story Starts with us</h6>
               <br />
               <Button
@@ -82,16 +82,13 @@ export default function StartUpPage(props) {
           </GridContainer>
         </div>
     </Parallax> 
-      
-      <Fade bottom duration ={2000} delay="500">
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classNames(classes.main)}>
         <div className={classes.container}>
          <SessionDetails/>
         </div>
         
       </div>
-      </Fade>
-      <Footer />
+   <Footer />
      
       
     </div>

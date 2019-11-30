@@ -14,8 +14,7 @@ import CardHeader from "components/Card/CardHeader";
 import { cardTitle } from "assets/jss/material-kit-react.js";
 import session from "assets/img/session.svg"
 import session2 from "assets/img/startup-about-2.jpg"
-
-
+import ServiceBox from "components/ServiceBox/ServiceBox";
 
 
 const useStyles = makeStyles(styles);
@@ -42,16 +41,6 @@ const awards = {
     justifyContent : "center"
   }
   
-const Service = function(props){
-   const classes = useStyles();
-         return (
-            <div className="box" style={{height : "200px", boxShadow : "0 0"}}>
-               <div className="icon"><a href={props.link}><i class={props.icon}></i></a></div>
-               <h4 className="title"><a href={props.link}>{props.title}</a></h4>
-               <p className={classes.description} >{props.description}</p>
-             </div>
-         )}  
-
   const useCardStyles = makeStyles(cardstyles);
   const cards = useCardStyles();
 
@@ -97,7 +86,7 @@ const Service = function(props){
            
           <GridItem xs={12} sm={12} md={4}>
           <Fade up>
-            <Service 
+            <ServiceBox 
              icon = "fas fa-trophy"
              title = "Start-up of the year Award"
              description = "The start-up with the greatest growth and success rate."
@@ -110,7 +99,7 @@ const Service = function(props){
           
           <GridItem xs={12} sm={12} md={4}>
           <Fade up delay={500}>
-            <Service 
+            <ServiceBox 
              icon = "fas fa-trophy"
              title = "Young Innovator Award"
              description = "Best Student Start-Up"
@@ -124,7 +113,7 @@ const Service = function(props){
           
           <GridItem xs={12} sm={12} md={4}>
           <Fade up delay={1000}>
-           <Service 
+           <ServiceBox 
              icon = "fas fa-trophy"
              title = "Womanovator Award"
              description = "Best of a start-up/innovative idea led by a woman."
