@@ -10,7 +10,7 @@ import ListItem from "@material-ui/core/ListItem";
 
 
 // @material-ui/icons
-import { Apps,Home,PersonAdd,CheckBox,Money,People} from "@material-ui/icons";
+import { Apps,Home,PersonAdd,CheckBox,Money,People, Create} from "@material-ui/icons";
 
 // core components
 import Button from "components/CustomButtons/Button.js";
@@ -48,7 +48,7 @@ export default function StartupHeader(props) {
           color="transparent"
           className={classes.navLink}
         >
-         <CheckBox className={classes.icons} /><b>Eligibility</b> 
+         <CheckBox className={classes.icons} /><b>Eligibility Criteria</b> 
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -60,26 +60,16 @@ export default function StartupHeader(props) {
           <PersonAdd className={classes.icons} /><b>Application Procedure</b>
         </Button>
       </ListItem>
-
       <ListItem className={classes.listItem}>
         <Button
-          href="/startup-funding"
+          href="/startup-application-procedure"
           color="transparent"
           className={classes.navLink}
         >
-          <Money className={classes.icons} /><b>Funding</b>
+          <Create className={classes.icons} /><b>Apply Now</b>
         </Button>
       </ListItem>
-
-      <ListItem className={classes.listItem}>
-        <Button
-          href="/startup-partners-and-promoters"
-          color="transparent"
-          className={classes.navLink}
-        >
-         <People className={classes.icons} /><b>Partners & Promoters</b>
-        </Button>
-      </ListItem>     
+      
     </List>
   );
 }
