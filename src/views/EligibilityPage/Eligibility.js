@@ -46,7 +46,7 @@ export default function Eligibility(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Universal Inovators"
+        brand="StartUp Meet Investors"
         rightLinks={<StartupHeader />}
         fixed
         changeColorOnScroll={{
@@ -74,6 +74,17 @@ export default function Eligibility(props) {
               >
                 <i className="fas fa-pencil-alt" />
                <b style={{color:"#888"}}>Apply Now</b> 
+              </Button>
+              <Button
+                style={btn}
+                color="white"
+                size="md"
+                href="https://www.scupo.in/event/3rd-international-conference-on-innovative-computing-communication/#bookticket"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fas fa-ticket-alt"/>
+               <b style={{color:"#888"}}>Pay Fees</b> 
               </Button>
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
