@@ -5,11 +5,12 @@ import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
 import Popover from "@material-ui/core/Popover";
+
 // core components
 import Button from "components/CustomButtons/Button.js";
-
+import ParticlesContainer from "components/Particle/Particle.js"
 import { Info} from "@material-ui/icons";
-
+import rocket from "assets/img/rocket2.gif"
 import './ApplicationForm.css';
 
 // core components
@@ -42,12 +43,16 @@ const popstyle = {
 export default function LandingPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
+  const btn ={
+    borderRadius: "25px",
+    border : "1px solid #fff"
+  }
+  const flex = {
+    display : 'flex',
+    alignItems : 'center',
+  } ;
 
   const [anchorElLeft, setAnchorElLeft] = React.useState(null);
-  const [anchorElLeft2, setAnchorElLeft2] = React.useState(null);
-  const [anchorElTop, setAnchorElTop] = React.useState(null);
-  const [anchorElBottom, setAnchorElBottom] = React.useState(null);
-  const [anchorElRight, setAnchorElRight] = React.useState(null);
 
   return (
     <div>
@@ -55,7 +60,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Universal Inovators"
+        brand="StartUp Meet Investors"
         rightLinks={<StartupHeader />}
         fixed
         changeColorOnScroll={{
@@ -66,27 +71,36 @@ export default function LandingPage(props) {
       />
       
       
-      <Parallax filter image={require("assets/img/start-bg.png")}>
+    <Parallax filter responsive style={{backgroundColor:"#28a796"}}> 
+    <ParticlesContainer />
         <div className={classes.container}>
-          <GridContainer>
+          <GridContainer style={flex}>
             <GridItem xs={12} sm={12} md={6}>
-            
-              <h1 className={classes.title} style={{color:"cyan"}}> <CharPose text = "Application Form" /></h1>
-             
+              <h2 className={classes.title}><CharPose text="Application Form" /></h2>
+              <h6 className={classes.title} style={{marginTop : "-10px"}}>Fill the application form here and pay the registration fees using the button below.</h6>
               <br />
-
+              <Button
+                style={btn}
+                color="white"
+                size="lg"
+                href="https://www.scupo.in/event/3rd-international-conference-on-innovative-computing-communication/#bookticket"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fas fa-ticket-alt"/>
+               <b style={{color:"#888"}}>Pay Registration Fees</b> 
+              </Button>
             </GridItem>
-
             <GridItem xs={12} sm={12} md={6}>
-             
+              <br/>
+              <img src ={rocket} style={{maxWidth:"100%", opacity:"0.8", borderRadius:" 100% 100% 0% 0%"}}/>
             </GridItem>
           </GridContainer>
         </div>
-      </Parallax>
+    </Parallax> 
       
-      
-      <Fade bottom duration ={2000} delay="500">
-      <div className={classNames(classes.main, classes.mainRaised)}>
+    
+      <div className={classNames(classes.main)}>
         <div className={classes.container}>
            <div className={classes.section}  style = {{ display : "flex", justifyContent : 'center'}}>
                <h3 className={classes.title} style={{textAlign:"center", color : "black"}}> Application Form </h3>
@@ -710,7 +724,6 @@ export default function LandingPage(props) {
      </div>
         
       </div>
-      </Fade>
       <Footer />
 
     </div>
