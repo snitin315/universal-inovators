@@ -134,25 +134,25 @@ export default function Slider() {
             <GridItem xs={12} sm={12} md={3}>
                 <div>
                     <img src={icici} height="150px" style={{maxWidth:"100%"}} />
-                    <h6 className={classes.description}><strong>ICICI BANK</strong></h6>
+                    <h6 className={classes.title}><strong>ICICI BANK</strong></h6>
                 </div>
             </GridItem>
             <GridItem xs={12} sm={12} md={3}>
                 <div>
                     <img src={huddle} height="150px" style={{maxWidth:"100%"}} />
-                    <h6 className={classes.description}><strong>HUDDLE</strong></h6>
+                    <h6 className={classes.title}><strong>HUDDLE</strong></h6>
                 </div>
             </GridItem>
             <GridItem xs={12} sm={12} md={3}>
                 <div>
                     <img src={x100} height="150px" style={{maxWidth:"100%"}} />
-                    <h6 className={classes.description}><strong>100X VC</strong></h6>
+                    <h6 className={classes.title}><strong>100X VC</strong></h6>
                 </div>
             </GridItem>
             <GridItem xs={12} sm={12} md={3}>
                 <div>
                     <img src={nasscom} height="150px" style={{maxWidth:"100%"}} />
-                    <h6 className={classes.description}><strong>Nasscom</strong></h6>
+                    <h6 className={classes.title}><strong>Nasscom</strong></h6>
                 </div>
             </GridItem>          
         </GridContainer>

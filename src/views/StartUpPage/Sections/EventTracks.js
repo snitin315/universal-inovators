@@ -34,7 +34,7 @@ export default function EventTracks() {
   const cards = useCardStyles();
   return (
      <div className={classes.section}>
-          <h3 className = {classes.title} style={{textAlign: "center"}}> Event Tracks</h3>
+
 
         <GridContainer style={awards} >
 

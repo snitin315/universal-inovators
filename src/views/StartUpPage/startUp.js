@@ -60,7 +60,7 @@ export default function StartUpPage(props) {
         {...rest}
       />
       
-      <Parallax filter responsive style={{backgroundColor:"#28a796"}}> 
+    <Parallax filter responsive style={{backgroundColor:"#28a796"}}> 
     <ParticlesContainer />
         <div className={classes.container}>
           <GridContainer style={flex}>
@@ -91,6 +91,7 @@ export default function StartUpPage(props) {
         <div className={classes.container}>
           <About />
           <Funding/>
+          <Slider/>
           <Category/>
         </div>
       </div>
