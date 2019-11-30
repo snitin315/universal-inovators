@@ -15,13 +15,14 @@ import StartupHeader from "components/Header/StartupHeader";
 import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import Fade from 'react-reveal/Fade';
-
+import ParticlesContainer from "components/Particle/Particle.js"
+import Button from "components/CustomButtons/Button.js";
 
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
 import Details from "./Details.js";
 import Preloader from "components/Preloader/Preloader.js";
-
+import rocket from "assets/img/rocket2.gif"
 
 const dashboardRoutes = [];
 
@@ -34,6 +35,10 @@ export default function Eligibility(props) {
     display : 'flex',
     alignItems : 'center',
   } ;
+  const btn ={
+    borderRadius: "25px",
+    border : "1px solid #fff"
+  }
 
   return (
     <div>
@@ -51,25 +56,35 @@ export default function Eligibility(props) {
         {...rest}
       />
       
-      <Fade duration = "1500"  >
-      <Parallax filter image={require("assets/img/Eligibility.png")}>
+      <Parallax filter responsive style={{backgroundColor:"#28a796"}}> 
+    <ParticlesContainer />
         <div className={classes.container}>
-          <GridContainer style = {flex}>
+          <GridContainer style={flex}>
             <GridItem xs={12} sm={12} md={6}>
-            
-              <h1 className={classes.title} > <CharPose  text = "Eligibility Criteria" /></h1>
-               
+              <h2 className={classes.title}><CharPose text="Eligibility Criteria" /></h2>
+              <h6 className={classes.title} style={{marginTop : "-10px"}}>Let your dreams come true || Your Story Starts with us</h6>
               <br />
-
+              <Button
+                style={btn}
+                color="white"
+                size="md"
+                href="/startup-application-form"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fas fa-pencil-alt" />
+               <b style={{color:"#888"}}>Apply Now</b> 
+              </Button>
             </GridItem>
-
+            <GridItem xs={12} sm={12} md={6}>
+              <br/>
+              <img src ={rocket} style={{maxWidth:"100%", opacity:"0.8", borderRadius:" 100% 100% 0% 0%"}}/>
+            </GridItem>
           </GridContainer>
         </div>
-      </Parallax>
-      </Fade>
+    </Parallax> 
       
-      <Fade bottom duration ={2000} delay="500">
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classNames(classes.main)}>
         <div className={classes.container}>
          
          <Details/>
@@ -77,7 +92,7 @@ export default function Eligibility(props) {
         </div>
         
       </div>
-      </Fade>
+
       <Footer />
       <Preloader/>
     </div>
