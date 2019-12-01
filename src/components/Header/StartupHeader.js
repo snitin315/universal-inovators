@@ -62,7 +62,7 @@ export default function StartupHeader(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="/startup-application-procedure"
+          href="/startup-application-form"
           color="transparent"
           className={classes.navLink}
         >
