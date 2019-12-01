@@ -26,7 +26,7 @@ const flex = {
 const Service = function(props){
   const classes = useStyles();
         return (
-           <div className="box">
+           <div style={{height:"270px"}} className="box">
               <div className="icon"><a href={props.link}><i class={props.icon}></i></a></div>
               <h4 className="title"><a href={props.link}>{props.title}</a></h4>
               <p className={classes.description} >{props.description}</p>
