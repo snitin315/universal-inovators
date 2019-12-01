@@ -6,7 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 
-import sideImage from "assets/img/services.png"
+import sideImage from "assets/img/rocket2.gif"
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 

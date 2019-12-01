@@ -48,12 +48,12 @@ export default function LandingPage(props) {
       />
       
       
-      <Parallax filter image={require("assets/img/start-bg.png")}>
+      <Parallax filter image={require("assets/img/startup-about.jpeg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>
             
-              <h1 className={classes.title} style={{color:"cyan"}}> <CharPose text = " Your Story Starts With Us" /></h1>
+              <h1 className={classes.title}> <CharPose text = "Your Story Starts With Us" /></h1>
              
               <br />
 
@@ -67,8 +67,8 @@ export default function LandingPage(props) {
       </Parallax>
      
       
-      <Fade bottom duration ={2000} delay="500">
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      
+      <div className={classNames(classes.main)}>
         <div className={classes.container}>
           <ProductSection />
 
@@ -119,7 +119,7 @@ export default function LandingPage(props) {
         </div>
         
       </div>
-      </Fade>
+
       <Footer />
 
     </div>
