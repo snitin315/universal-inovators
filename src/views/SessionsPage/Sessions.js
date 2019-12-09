@@ -62,18 +62,6 @@ export default function StartUpPage(props) {
             <GridItem xs={12} sm={12} md={6}>
               <h2 className={classes.title}><CharPose text="About The Event" /></h2>
               <h6 className={classes.title} style={{marginTop : "-10px"}}>Let your dreams come true || Your Story Starts with us</h6>
-              <br />
-              <Button
-                style={btn}
-                color="white"
-                size="md"
-                href="/startup-application-form"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-pencil-alt" />
-               <b style={{color:"#888"}}>Register Today</b> 
-              </Button>
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <br/>

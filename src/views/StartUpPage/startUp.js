@@ -26,6 +26,7 @@ import Slider from "./Sections/Slider.js";
 import SpecialInvestors from "./Sections/SpecialInvestors.js";
 
 import rocket from "assets/img/rocket2.gif"
+import PayFees from "components/PayFees/PayFee.js";
 
 
 
@@ -71,17 +72,24 @@ export default function StartUpPage(props) {
               <h2 className={classes.title}><CharPose text="Where StartUp Meet Investors" /></h2>
               <h6 className={classes.title} style={{marginTop : "-20px"}}>Let your dreams come true || Your Story Starts with us</h6>
               <br />
-              <Button
-                style={btn}
-                color="white"
-                size="md"
-                href="/startup-application-form"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-pencil-alt" />
-               <b style={{color:"#888"}}>Register Today</b> 
-              </Button>
+              <GridContainer>
+                <GridItem xs={12} sm={6} md={4}>
+                    <Button
+                    style={btn}
+                    color="white"
+                    size="md"
+                    href="/startup-application-form"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fas fa-pencil-alt" />
+                    <b style={{color:"#888"}}>Register Today</b> 
+                  </Button>
+                </GridItem>
+                <GridItem xs={12} sm={6} md={8}>
+                  <PayFees style={btn}/>
+                </GridItem>
+              </GridContainer>
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <br/>

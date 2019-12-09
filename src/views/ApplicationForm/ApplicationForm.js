@@ -28,6 +28,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
 import Preloader from "components/Preloader/Preloader";
+import PayFees from "components/PayFees/PayFee";
 
 const dashboardRoutes = [];
 
@@ -76,20 +77,27 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer style={flex}>
             <GridItem xs={12} sm={12} md={6}>
-              <h2 className={classes.title}><CharPose text="Application Form" /></h2>
-              <h6 className={classes.title} style={{marginTop : "-10px"}}>Fill the application form here and pay the registration fees using the button below.</h6>
+              <h2 className={classes.title}><CharPose text="Registration Form" /></h2>
+              <h6 className={classes.title} style={{marginTop : "-10px"}}>Fill the registration form here and pay the registration fees using the button below.</h6>
               <br />
-              <Button
-                style={btn}
-                color="white"
-                size="lg"
-                href="https://www.scupo.in/event/3rd-international-conference-on-innovative-computing-communication/#bookticket"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fas fa-ticket-alt"/>
-               <b style={{color:"#888"}}>Pay Registration Fees</b> 
-              </Button>
+              <GridContainer>
+                <GridItem xs={12} sm={6} md={4}>
+                    <Button
+                    style={btn}
+                    color="white"
+                    size="md"
+                    href="/startup-application-form"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fas fa-pencil-alt" />
+                    <b style={{color:"#888"}}>Register Today</b> 
+                  </Button>
+                </GridItem>
+                <GridItem xs={12} sm={6} md={8}>
+                  <PayFees style={btn}/>
+                </GridItem>
+              </GridContainer>
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <br/>
