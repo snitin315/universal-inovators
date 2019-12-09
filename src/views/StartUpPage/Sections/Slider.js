@@ -7,6 +7,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 import Fade from 'react-reveal/Fade';
+import Carousel from "react-slick";
 
 //images 
 import ssclogo from "assets/img/ssclogo.png"
@@ -40,10 +41,9 @@ export default function Slider() {
   const classes = useStyles();
 
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true
   };
@@ -130,32 +130,32 @@ export default function Slider() {
         <br/>
         <h2 className={classes.title}>Special Invited Investors</h2>
         <br/>
-        <GridContainer>
-            <GridItem xs={12} sm={12} md={3}>
+        <Carousel {...settings}>
+            <GridItem xs={12} sm={12} md={12}>
                 <div>
                     <img src={icici} height="150px" style={{maxWidth:"100%"}} />
                     <h6 className={classes.title}><strong>ICICI BANK</strong></h6>
                 </div>
             </GridItem>
-            <GridItem xs={12} sm={12} md={3}>
+            <GridItem xs={12} sm={12} md={12}>
                 <div>
                     <img src={huddle} height="150px" style={{maxWidth:"100%"}} />
                     <h6 className={classes.title}><strong>HUDDLE</strong></h6>
                 </div>
             </GridItem>
-            <GridItem xs={12} sm={12} md={3}>
+            <GridItem xs={12} sm={12} md={12}>
                 <div>
                     <img src={x100} height="150px" style={{maxWidth:"100%"}} />
                     <h6 className={classes.title}><strong>100X VC</strong></h6>
                 </div>
             </GridItem>
-            <GridItem xs={12} sm={12} md={3}>
+            <GridItem xs={12} sm={12} md={12}>
                 <div>
                     <img src={nasscom} height="150px" style={{maxWidth:"100%"}} />
                     <h6 className={classes.title}><strong>Nasscom</strong></h6>
                 </div>
             </GridItem>          
-        </GridContainer>
+        </Carousel>
     </div>
   );
 }
