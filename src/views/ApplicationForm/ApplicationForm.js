@@ -56,7 +56,7 @@ export default function LandingPage(props) {
 
   return (
     <div>
-      <Preloader/>  
+      
       <Header
         color="transparent"
         routes={dashboardRoutes}

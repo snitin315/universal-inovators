@@ -67,7 +67,7 @@ export default function Partners(props) {
   
   return (
     <div>
-      <Preloader/>
+ 
       <Header
         color="transparent"
         routes={dashboardRoutes}

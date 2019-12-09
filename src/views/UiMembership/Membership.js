@@ -34,7 +34,7 @@ export default function Membership(props) {
   const { ...rest } = props;
   return (
     <div>
-      <Preloader/>
+    
       <Header
         color="transparent"
         routes={dashboardRoutes}

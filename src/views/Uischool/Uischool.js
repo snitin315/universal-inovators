@@ -30,7 +30,7 @@ export default function Uischool(props) {
   const { ...rest } = props;
   return (
     <div>
-      <Preloader/>
+    
       <Header
         color="transparent"
         routes={dashboardRoutes}

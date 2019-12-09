@@ -158,7 +158,7 @@ export default function Application(props) {
       </div>
     
       <Footer />
-      <Preloader/>
+     
     </div>
   );
 }

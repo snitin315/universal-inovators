@@ -46,7 +46,7 @@ export default function Investors(props) {
   
   return (
     <div>
-      <Preloader/>
+
       <Header
         color="transparent"
         routes={dashboardRoutes}

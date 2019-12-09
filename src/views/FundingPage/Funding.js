@@ -41,7 +41,7 @@ export default function Funding(props) {
 
   return (
     <div>
-      <Preloader/>
+     
       <Header
         color="transparent"
         routes={dashboardRoutes}

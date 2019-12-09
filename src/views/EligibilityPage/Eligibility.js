@@ -105,7 +105,7 @@ export default function Eligibility(props) {
       </div>
 
       <Footer />
-      <Preloader/>
+   
     </div>
   );
 }

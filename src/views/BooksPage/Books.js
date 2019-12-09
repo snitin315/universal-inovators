@@ -35,7 +35,7 @@ export default function Conferences(props) {
   const { ...rest } = props;
   return (
     <div>
-      <Preloader/>
+   
       <Header
         color="transparent"
         routes={dashboardRoutes}
