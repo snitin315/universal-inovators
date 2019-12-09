@@ -13,7 +13,8 @@ const productStyle = {
     textDecoration: "none"
   },
   description: {
-    color: "#999",
+    color: "#000",
+    fontWeight: "400",
     textAlign: "justify"
   }
 };
