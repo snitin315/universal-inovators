@@ -73,8 +73,6 @@ export default function Example(){
         }
       ]}
     />
-
-    <h3 className = {classes.title}> Event Tracks</h3>
     <EventTracks/>
     </div>
   );
