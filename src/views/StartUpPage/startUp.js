@@ -90,7 +90,6 @@ export default function StartUpPage(props) {
     <div className={classNames(classes.main)}>
         <div className={classes.container}>
           <About />
-          <Funding/>
           <Slider/>
           <Category/>
         </div>
