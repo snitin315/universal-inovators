@@ -23,9 +23,10 @@ import Category from "./Sections/Category.js";
 import Funding from "./Sections/Funding.js";
 import Preloader from "components/Preloader/Preloader.js";
 import Slider from "./Sections/Slider.js";
+import SpecialInvestors from "./Sections/SpecialInvestors.js";
 
 import rocket from "assets/img/rocket2.gif"
-import EventTracks from "./Sections/EventTracks.js";
+
 
 
 const dashboardRoutes = [];
@@ -65,8 +66,10 @@ export default function StartUpPage(props) {
         <div className={classes.container}>
           <GridContainer style={flex}>
             <GridItem xs={12} sm={12} md={6}>
+              <SpecialInvestors/>
+              <br/>
               <h2 className={classes.title}><CharPose text="Where StartUp Meet Investors" /></h2>
-              <h6 className={classes.title} style={{marginTop : "-10px"}}>Let your dreams come true || Your Story Starts with us</h6>
+              <h6 className={classes.title} style={{marginTop : "-20px"}}>Let your dreams come true || Your Story Starts with us</h6>
               <br />
               <Button
                 style={btn}
