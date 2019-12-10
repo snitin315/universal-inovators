@@ -15,9 +15,7 @@ import num1 from "assets/img/number-1.jpg"
 import num2 from "assets/img/number-2.jpg"
 import num3 from "assets/img/number-3.jpg"
 import num4 from "assets/img/number-4.jpg"
-import num5 from "assets/img/number-5.jpg"
-import num6 from "assets/img/number-6.jpg"
-import num7 from "assets/img/number-7.jpg"
+
 
 const useStyles = makeStyles(styles);
 

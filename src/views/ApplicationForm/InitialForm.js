@@ -3,8 +3,6 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import Tooltip from "@material-ui/core/Tooltip";
-import Popover from "@material-ui/core/Popover";
 
 // core components
 import Button from "components/CustomButtons/Button.js";
@@ -23,26 +21,37 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import Fade from 'react-reveal/Fade';
 import CustomInput from "components/CustomInput/CustomInput.js";
-
+import Checkbox from "@material-ui/core/Checkbox";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Check from "@material-ui/icons/Check";
 
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
-import Preloader from "components/Preloader/Preloader";
 import PayFees from "components/PayFees/PayFee";
 
 const dashboardRoutes = [];
 
 const useStyles = makeStyles(styles);
 
-const popstyle = {
-    width : "300px",
-    padding : "20px",
-    color : "#fff",
-    backgroundColor : "rgba(0,0,0,0.6)"
-}
 
-export default function LandingPage(props) {
-  const classes = useStyles();
+export default function InitialForm(props) {
+    const [checked, setChecked] = React.useState([24, 22]);
+    const classes = useStyles();
+    const wrapperDiv = classNames(
+      classes.checkboxAndRadio,
+      classes.checkboxAndRadioHorizontal
+    );
+    const handleToggle = value => {
+      const currentIndex = checked.indexOf(value);
+      const newChecked = [...checked];
+  
+      if (currentIndex === -1) {
+        newChecked.push(value);
+      } else {
+        newChecked.splice(currentIndex, 1);
+      }
+      setChecked(newChecked);
+    };
   const { ...rest } = props;
   const btn ={
     borderRadius: "25px",
@@ -53,7 +62,6 @@ export default function LandingPage(props) {
     alignItems : 'center',
   } ;
 
-  const [anchorElLeft, setAnchorElLeft] = React.useState(null);
 
   return (
     <div>
@@ -81,19 +89,6 @@ export default function LandingPage(props) {
               <h6 className={classes.title} style={{marginTop : "-10px"}}>Fill the registration form here and pay the registration fees using the button below.</h6>
               <br />
               <GridContainer>
-                <GridItem xs={12} sm={6} md={4}>
-                    <Button
-                    style={btn}
-                    color="white"
-                    size="md"
-                    href="/startup-application-form"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <i className="fas fa-pencil-alt" />
-                    <b style={{color:"#888"}}>Register Today</b> 
-                  </Button>
-                </GridItem>
                 <GridItem xs={12} sm={6} md={8}>
                   <PayFees style={btn}/>
                 </GridItem>
@@ -116,9 +111,120 @@ export default function LandingPage(props) {
          <br/>
          
          
-<form class="form" target="_blank" action="https://docs.google.com/forms/d/e/1FAIpQLSdrs2xXlLNt2QCD_Kj27dmvfu_SZJgF1qyGigSFOZPUf3QQFQ/formResponse" >
-  
-  
+    <form class="form" target="_blank" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfwA9no8bq4ei1bIZxsYU2Lmbf4w65kn579xWArq7kIn8t5cQ/formResponse" >
+        <GridContainer>
+        <GridItem xs={12} sm={6} md={6}>
+            <CustomInput
+                labelText="Name of Venture/ StartUp"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                   name : "entry.800826381",
+                   type : "text",
+                   required : "true"
+                }}
+            />
+        </GridItem>
+
+        <GridItem xs={12} sm={6} md={6}>
+            <CustomInput
+                labelText="Founder Name"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                    name : "entry.1867725001" , 
+                    type : "text",
+                    required : "true"
+                 }}
+            />
+        </GridItem>
+
+        <GridItem xs={12} sm={6} md={6}>
+            <CustomInput
+                labelText="Contact Number"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                    name : "entry.1303408001" , 
+                    type : "number",
+                    required : "true"
+                 }}
+            />
+        </GridItem>
+
+        <GridItem xs={12} sm={6} md={6}>
+            <CustomInput
+                labelText="Email"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                    name : "entry.741139356" , 
+                    type : "email",
+                    required : "true"
+                 }}
+            />
+        </GridItem>
+
+        <GridItem xs={12} sm={4} md={4}>
+            <CustomInput
+                labelText="Website"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                    name : "entry.841654917" , 
+                    type : "text",
+                 }}
+            />
+        </GridItem>
+
+        <GridItem xs={12} sm={4} md={4}>
+            <CustomInput
+                labelText="City"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                    name : "entry.191361227" , 
+                    type : "text",
+                    required : "true"
+                 }}
+            />
+        </GridItem>
+
+        <GridItem xs={12} sm={4} md={4}>
+            <CustomInput
+                labelText="State"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                    name : "entry.1571296917" , 
+                    type : "text",
+                    required : "true"
+                 }}
+            />
+        </GridItem>
+    </GridContainer>
+                 
+
+        <label class="container3">I have sent Transaction Details to universalinovators@gmail.com
+        <input name = "entry.1264776458" value="I have sent Transaction Details to universalinovators@gmail.com" type="checkbox" />
+        <span class="checkmark"></span>
+        </label>    
+       
+ 
        
     <input type="submit" value="Submit" />
     <br/>
