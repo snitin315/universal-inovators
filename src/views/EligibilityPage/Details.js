@@ -58,75 +58,16 @@ export default function Details() {
           <h3 className={classes.title}> Eligibility Criteria for Startup Event </h3>
           <br/>
 
-          
+          <h5 className={classes.title} style={{marginTop :"-20px"}}> You must have an idea related to any field of Engineering or Non-Engineering.</h5>          
           <ol className = {classes.description} style={design}>
-            <Fade up>  
-            <GridContainer style = {flex}>
-            <GridItem xs={12} sm={3} md={3}>
-                     <div> <img src={num1} style={container} /> </div> 
-            </GridItem>
-
-            <GridItem xs={12} sm={9} md={9}>
-                    
-                   
-                <strong>The start-up must be registered as a Private Company, LLP or Partnership Firm: </strong><br/>
-                <ul><li>A start-up must be incorporated as a Private Limited Company under Indian Companies Act, 2013, a Limited Liability Partnership (LLP) under Indian Limited Liability Partnership Act, 
-                    2008 or a partnership firm under the Indian Partnership Act, 1932.</li></ul>
-                    
-            </GridItem>
             
-          </GridContainer>
-            
-            </Fade>
-           
-            
-            <Fade up>
-            <GridContainer style = {flex}>
-            <GridItem xs={12} sm={3} md={3}>
-                     <div> <img src={num2} style={container} /> </div> 
-            </GridItem>
-
-            <GridItem xs={12} sm={9} md={9}>
-                    
-     
-               <strong>The start-up must not be a product of restructuring: </strong>
-               <ul>
-                   <li>The start-up should not be formed out of splitting or reconstructing of a subsisting business. A business formed out of splitting an organization into two or more other businesses, then it won’t be eligible under this scheme.</li>
-               </ul>
-
-            </GridItem>
-            
-          </GridContainer>
-            
-            </Fade>
-
-            <Fade up>
-
-            <GridContainer style = {flex}>
-            <GridItem xs={12} sm={3} md={3}>
-                     <div> <img src={num3} style={container} /> </div> 
-            </GridItem>
-
-            <GridItem xs={12} sm={9} md={9}>
-                    
-         
-                <strong>Not more than 5 years must have elapsed since incorporation: </strong>
-                <ul>
-                    <li>All business startup in India that have been incorporated in the past five years from the effective date of policy will be eligible under this scheme. Simply, all businesses incorporated or registered after April 01, 2015 are eligible to participate. </li>
-                </ul>
-        
-            </GridItem>
-            
-          </GridContainer>
-            
-            </Fade>
-      
+                
             
             <Fade up>
 
             <GridContainer style = {flex}>
                 <GridItem xs={12} sm={3} md={3}>
-                        <div> <img src={num4} style={container} /> </div> 
+                        <div> <img src={num1} height="200px" style={container} /> </div> 
                 </GridItem>
 
                 <GridItem xs={12} sm={9} md={9}>          
@@ -141,7 +82,7 @@ export default function Details() {
 
             <GridContainer style = {flex}>
             <GridItem xs={12} sm={3} md={3}>
-                     <div> <img src={num5} style={container} /> </div> 
+                     <div> <img src={num2} height="200px" style={container} /> </div> 
             </GridItem>
 
             <GridItem xs={12} sm={9} md={9}>
@@ -168,16 +109,16 @@ export default function Details() {
 
             <GridContainer style = {flex}>
             <GridItem xs={12} sm={3} md={3}>
-                     <div> <img src={num6} style={container} /> </div> 
+                     <div> <img src={num3} height="200px" style={container} /> </div> 
             </GridItem>
 
             <GridItem xs={12} sm={9} md={9}>
                     
          
-            <strong>The start-up must be a DIPP Recognized Start-up</strong>
+            <strong>The StartUp may be DIPP recognized.</strong>
 
                 <ul>
-                    <li>To get DIPP Recognition, Startups can log on to <a href="https://www.startupindia.gov.in" target="_blank" rel="noopener"> www.startupindia.gov.in </a> and get themselves registered there</li>
+                    <li>Forregistering Startup can log on to <a href="https://www.startupindia.gov.in" target="_blank" rel="noopener"> www.startupindia.gov.in </a> </li>
                 </ul>
                         
             </GridItem>
@@ -190,13 +131,13 @@ export default function Details() {
 
             <GridContainer style = {flex}>
             <GridItem xs={12} sm={3} md={3}>
-                     <div> <img src={num7} style={container} /> </div> 
+                     <div> <img src={num4} height="200px" style={container} /> </div> 
             </GridItem>
 
             <GridItem xs={12} sm={9} md={9}>
                     
                 <strong>
-                The Startup must have a functioning Minimum Viable Product or Beta Product 
+                The StartUp must show the capability to develop Minimum Viable Product (MVP) or Beta Product.
                 </strong>
                 
             </GridItem>
