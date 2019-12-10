@@ -22,6 +22,7 @@ import CharPose from "../LandingPage/Sections/CharPose.js";
 import Steps from "../LandingPage/Sections/Steps"
 import Preloader from "components/Preloader/Preloader.js";
 import rocket from "assets/img/rocket2.gif"
+import PayButton from "./PayButton.js";
 
 const dashboardRoutes = [];
 
@@ -36,16 +37,17 @@ export default function Application(props) {
   } ;
   const btn ={
     borderRadius: "25px",
-    border : "1px solid #fff"
+    border : "1px solid #fff",
+  
   }
-
+ 
   return (
     <div>
       
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Startu Meet Investors"
+        brand="Startup Meet Investors"
         rightLinks={<StartupHeader />}
         fixed
         changeColorOnScroll={{
@@ -74,25 +76,32 @@ export default function Application(props) {
       <div className={classNames(classes.main)}>
         <div className={classes.container}>
            <div className={classes.section}  style = {{ display : "flex", justifyContent : 'center'}}>
-               <h3 className={classes.title} style={{textAlign:"center", color : "black"}}>Application Procedure</h3>
+               <h3 className={classes.title} style={{textAlign:"center", color : "black"}}> Registration process</h3>
            </div>
          <br/>
         <Fade duration={1500}>
-            <Steps num= "1st" text="The Venture must fill the form and complete their Registration of INR 5,000 here. Click the button below to fill the application form. "/>              
+            <Steps num= "1st" text="The Venture must fill the form and complete their Registration of INR 5,000 here. Click the button below to fill the application form. ">
+            <GridContainer justify="center">
+                <GridItem xs={12} sm={6} md={6}>
+                    <Button
+                    style={btn}
+                    size="lg"
+                    color = "info"
+                    href="/startup-application-form"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fas fa-pencil-alt" />
+                    <b style={{color:"#fff"}}>Register Here</b> 
+                  </Button>
+                </GridItem>
+                <GridItem xs={12} sm={6} md={6}>
+                  <PayButton style={btn} />
+                </GridItem>
+              </GridContainer>    
+            </Steps>              
         </Fade> 
-       
-        <GridContainer>
-            <GridItem xs={12} sm={10} md={6}>
-              <div style={{display:"flex" , justifyContent : "center"}}>
-                <Button size="lg" color="info" href="/startup-application-form" target="-blank" type="button"> <i class="fas fa-angle-right"></i> <strong>Click Here To Fill the Application Form</strong> </Button>
-              </div>
-            </GridItem>
-            <GridItem xs={12} sm={10} md={6}>
-              <div style={{display:"flex" , justifyContent : "center"}}>
-               <Button size="lg" color="info" href="https://www.scupo.in/event/3rd-international-conference-on-innovative-computing-communication/#bookticket" target="-blank" type="button"> <i class="fas fa-angle-right"></i> <strong>Click Here To Pay The Registration Fees</strong> </Button>
-              </div>
-            </GridItem>
-        </GridContainer>     
+               
         <br/>
         <br/>
         <Fade duration={1500}>
@@ -135,7 +144,7 @@ export default function Application(props) {
       </div>
     
       <Footer />
-     
+  
     </div>
   );
 }

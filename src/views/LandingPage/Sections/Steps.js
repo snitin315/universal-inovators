@@ -26,6 +26,7 @@ export default function Steps(props) {
         <Quote style ={{textAlign:"justify",textJustify:"inter-word",color:"blue"}} 
           text={props.text}
         />
+        {props.children}
       </CardBody>
     </Card>
   );
