@@ -37,12 +37,13 @@ import sgrtlogo from "assets/img/sgrtlogo.jpeg"
 import negdlogo from "assets/img/negdlogo.jpeg"
 import thinklogo from "assets/img/thinklogo.jpeg"
 import gvlogo from "assets/img/gvlogo.png"
-
+import rocket from "assets/img/rocket2.gif"
 
 
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
 import Preloader from "components/Preloader/Preloader.js";
+import ParticlesContainer from "components/Particle/Particle.js";
 
 const dashboardRoutes = [];
 
@@ -81,28 +82,25 @@ export default function Partners(props) {
         {...rest}
       />
       
-      <Fade duration = "1500"  >
-      <Parallax filter image={require("assets/img/start-bg.png")}>
+      <Parallax filter responsive style={{backgroundColor:"#28a796"}}> 
+    <ParticlesContainer />
         <div className={classes.container}>
-        <GridContainer>
+          <GridContainer style={flex}>
             <GridItem xs={12} sm={12} md={6}>
-            
-              <h1 className={classes.title} style={{color:"cyan"}}> <CharPose text = "Partners & Promoters" /></h1>
-             
+              <br/>
+              <h2 className={classes.title}><CharPose text="Partners And Promoters" /></h2>
               <br />
-
             </GridItem>
-
             <GridItem xs={12} sm={12} md={6}>
-             
+              <br/>
+              <img src ={rocket} style={{maxWidth:"100%", opacity:"0.8", borderRadius:" 100% 100% 0% 0%"}}/>
             </GridItem>
           </GridContainer>
         </div>
-      </Parallax>
-      </Fade>
+    </Parallax> 
       
       <Fade bottom duration ={2000} delay="500">
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classNames(classes.main)}>
         <div className={classes.container}>
            <div className={classes.section}  style = {{ display : "flex", justifyContent : 'center'}}>
                <h3 className={classes.title} style={{textAlign:"center", color : "black"}}> Parteners & Promoters </h3>
