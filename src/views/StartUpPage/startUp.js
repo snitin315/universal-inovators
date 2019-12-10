@@ -52,7 +52,6 @@ export default function StartUpPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Startup Meet Investors"
         rightLinks={<StartupHeader />}
         fixed
         changeColorOnScroll={{

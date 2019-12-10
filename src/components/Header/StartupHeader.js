@@ -57,7 +57,25 @@ export default function StartupHeader(props) {
           color="transparent"
           className={classes.navLink}
         >
-          <PersonAdd className={classes.icons} /><b>Application Procedure</b>
+          <PersonAdd className={classes.icons} /><b>Registration Process</b>
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/startup-partners-and-promoters"
+          color="transparent"
+          className={classes.navLink}
+        >
+          <Create className={classes.icons} /><b>Partners & Promoters</b>
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/startup-special-investors"
+          color="transparent"
+          className={classes.navLink}
+        >
+          <Create className={classes.icons} /><b>Special Invited Investors</b>
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -67,6 +85,15 @@ export default function StartupHeader(props) {
           className={classes.navLink}
         >
           <Create className={classes.icons} /><b>Apply Now</b>
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/contact-us"
+          color="transparent"
+          className={classes.navLink}
+        >
+          <Create className={classes.icons} /><b>Contact Us</b>
         </Button>
       </ListItem>
       
