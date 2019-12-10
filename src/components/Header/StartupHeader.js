@@ -66,7 +66,7 @@ export default function StartupHeader(props) {
           color="transparent"
           className={classes.navLink}
         >
-          <Create className={classes.icons} /><b>Partners & Promoters</b>
+          <People className={classes.icons} /><b>Partners & Promoters</b>
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -75,7 +75,7 @@ export default function StartupHeader(props) {
           color="transparent"
           className={classes.navLink}
         >
-          <Create className={classes.icons} /><b>Special Invited Investors</b>
+          <Money className={classes.icons} /><b>Special Invited Investors</b>
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
