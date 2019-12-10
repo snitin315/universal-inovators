@@ -14,12 +14,15 @@ import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import Fade from 'react-reveal/Fade';
 import rocket from "assets/img/rocket2.gif"
+import Carousel from "react-slick";
 
 //logo
 
 import x100 from "assets/img/100x.png"
 import huddle from "assets/img/huddle.png"
-import icici from "assets/img/icicilogo.jpeg"
+import icici from "assets/img/icici-bank-logo.jpg"
+import nasscom from "assets/img/nasscom.jpeg"
+
 
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
@@ -41,7 +44,13 @@ export default function Investors(props) {
   const style={
     color : 'cyan'
   }
-
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true
+  };
   const container ={
     width : '100%'
   }
@@ -81,48 +90,43 @@ export default function Investors(props) {
     </Parallax> 
     
       
-      <Fade bottom duration ={2000} delay="500">
+ 
       <div className={classNames(classes.main)}>
         <div className={classes.container}>
            <div className={classes.section}  style = {{ display : "flex", justifyContent : 'center'}}>
                <h3 className={classes.title} style={{textAlign:"center", color : "black"}}> Special Invited Ivestors </h3>
            </div>
          <br/>
-         <Fade>
-          <GridContainer style = {flex}>
-            <GridItem xs={12} sm={3} md={3}>
-                <div> <img src={icici} style={container} /> </div> 
-            </GridItem>
-            <GridItem xs={12} sm={9} md={9}>
-                <h4  className={classes.title} style={{textAlign:"center", color : "black"}} >ICICI BANK</h4>
-            </GridItem>
-          </GridContainer>
-         </Fade>
-
-         <Fade>
-          <GridContainer style = {flex}>
-            <GridItem xs={12} sm={3} md={3}>
-                <div> <img src={huddle} style={container} /> </div> 
-            </GridItem>
-            <GridItem xs={12} sm={9} md={9}>
-                <h4  className={classes.title} style={{textAlign:"center", color : "black"}} >HUDDLE</h4>
-            </GridItem>
-          </GridContainer>
-          <GridContainer style = {flex}>
-            <GridItem xs={12} sm={3} md={3}>
-                <div> <img src={x100} style={container} /> </div> 
-            </GridItem>
-            <GridItem xs={12} sm={9} md={9}>
-                <h4  className={classes.title} style={{textAlign:"center", color : "black"}} >100X VC</h4>
-            </GridItem>
-          </GridContainer>
-         </Fade>
-        <br/>  
         </div>
-      </div>
-      </Fade>
-      <Footer />
+        <Carousel {...settings}>
+            <GridItem xs={12} sm={12} md={12}>
+                <div>
+                    <img src={icici} height="150px" style={{maxWidth:"100%"}} />
+                    <h6 className={classes.title}><strong>ICICI BANK</strong></h6>
+                </div>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={12}>
+                <div>
+                    <img src={huddle} height="150px" style={{maxWidth:"100%"}} />
+                    <h6 className={classes.title}><strong>HUDDLE</strong></h6>
+                </div>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={12}>
+                <div>
+                    <img src={x100} height="150px" style={{maxWidth:"100%"}} />
+                    <h6 className={classes.title}><strong>100X VC</strong></h6>
+                </div>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={12}>
+                <div>
+                    <img src={nasscom} height="150px" style={{maxWidth:"100%"}} />
+                    <h6 className={classes.title}><strong>Nasscom</strong></h6>
+                </div>
+            </GridItem>          
+        </Carousel>
+       <Footer />
 
+    </div>
     </div>
   );
 }

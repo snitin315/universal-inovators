@@ -104,41 +104,30 @@ export default function Application(props) {
                
         <br/>
         <br/>
+         
+
+        <br/>
         <Fade duration={1500}>
-        <Steps num= "2nd" text="The Registration must include a Pitch Deck with not more than 10 Slides. The Deck Must include Business Plan, Value Proposition, Projections for the next 5 years, Current Financials and Necessary Statistics (Traction, Users, Pricing etc.), Competition Analysis, Team and any other relevant data"/>  
+        <Steps num= "2nd" text="After Submission, All Entries will be evaluated by our Team of Analysts. All Entries that are Shortlisted will be intimated(Intimation by 1st Feb, 2020) about the same. All decision made by ICICC are final"/>  
         </Fade> 
 
         <br/>
         <Fade duration={1500}>
-        <Steps num= "3rd" text="If the Start-up has any video highlighting their Venture and/or Product, the link of the video must also be shared in the Registration"/>  
-        </Fade>   
-
-        <br/>
-        <Fade duration={1500}>
-        <Steps num= "4th" text="After Submission, All Entries will be evaluated by our Team of Analysts. All Entries that are Shortlisted will be intimated about the same. All decision made by ICICC are final"/>  
-        </Fade> 
-
-        <br/>
-        <Fade duration={1500}>
-        <Steps num= "5th" text="After Shortlisting, The Selected Start-ups will be invited to the Start-up Event to pitch their Venture to the Panel of Judges and Investors. The decision for Investment is at the sole discretion of the Investors and the Judges."/>  
+        <Steps num= "3rd" text="After Shortlisting, The Selected Start-ups will be invited to the Start-up Event to pitch their Venture to the Panel of Judges and Investors. The decision for Investment is at the sole discretion of the Investors and the Judges."/>  
         </Fade> 
 
         <br/>  
         <Fade duration={1500}>
-        <Steps num= "6th" text="Post Event, ICICC will collect the details from investors regarding any Investment Decisions and will intimate your Start-up about the same"/>  
+        <Steps num= "4th" text="Post Event, ICICC will collect the details from investors regarding any Investment Decisions and will intimate your Start-up about the same (within one week after the event)."/>  
         </Fade>   
 
        <br/>
         <Fade duration={1500}>
-        <Steps num= "7th" text="All Investment Discussion between the Investor and the Start-up will take place under the presence of an ICICC Representative."/>  
+        <Steps num= "5th" text="All Investment Discussion between the Investor and the Start-up will take place under the presence of an ICICC Representative."/>  
         </Fade> 
 
          <br/>
-         <Fade duration={1500}>
-        <Steps num= "8th" text="Post Successful investment, The Start-up will pay 4% of the total amount successfully raised by the Start-up through the medium of the Start-up Event."/>  
-        </Fade> 
-        <br/>
-                         
+                  
         </div>
         
       </div>
