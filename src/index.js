@@ -21,6 +21,7 @@ import Application from "views/ApplicationPage/Application";
 import Partners from "views/PartnersPage/Partners";
 import InitialForm from "views/ApplicationForm/InitialForm";
 import Investors from "views/SpecialInvestors/specialInvestors";
+import Contact from "views/Contact/Contact";
 
 var hist = createBrowserHistory();
 
@@ -41,7 +42,8 @@ ReactDOM.render(
       <Route path="/startup-application-procedure" component = {Application}/>
       <Route path="/startup-partners-and-promoters" component = {Partners}/>
       <Route path="/startup-application-form" component = {InitialForm}/>   
-      <Route path="/startup-special-investors" component = {Investors}/>              
+      <Route path="/startup-special-investors" component = {Investors}/>   
+      <Route path="/contact-us" component = {Contact}/>              
       <Route path="/" component={LandingPage} />
     </Switch>
   </Router>,
