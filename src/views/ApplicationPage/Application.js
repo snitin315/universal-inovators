@@ -61,7 +61,7 @@ export default function Application(props) {
         <div className={classes.container}>
           <GridContainer style={flex}>
             <GridItem xs={12} sm={12} md={6}>
-              <h2 className={classes.title}><CharPose text="Application Procedure" /></h2>
+              <h2 className={classes.title}><CharPose text="Registration Process" /></h2>
               <h6 className={classes.title} style={{marginTop : "-10px"}}>Let your dreams come true || Your Story Starts with us</h6>
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
