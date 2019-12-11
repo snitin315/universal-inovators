@@ -37,9 +37,9 @@ export default function PayButton() {
   const classes = useStyles();
   return (
     <div>
-        <Button color="info" size="lg" round onClick={() => setModal(true)}>
+        <Button color="info" size="md" round onClick={() => setModal(true)}>
         <i class="fas fa-ticket-alt"/>  
-        <b style={{color:"#fff"}}>Pay Registration Fees</b>
+        <b style={{color:"#fff"}}>Submit Fees</b>
         </Button>
       <Dialog
         classes={{

@@ -23,6 +23,7 @@ import Steps from "../LandingPage/Sections/Steps"
 import Preloader from "components/Preloader/Preloader.js";
 import rocket from "assets/img/rocket2.gif"
 import PayButton from "./PayButton.js";
+import { LooksOne, Looks3, Looks4, LooksTwo, Looks5 } from "@material-ui/icons";
 
 const dashboardRoutes = [];
 
@@ -34,6 +35,7 @@ export default function Application(props) {
   const flex = {
     display : 'flex',
     alignItems : 'center',
+    color:"#333",
   } ;
   const btn ={
     borderRadius: "25px",
@@ -45,47 +47,40 @@ export default function Application(props) {
     <div>
       
       <Header
-        color="transparent"
+        color="info"
         routes={dashboardRoutes}
         brand="Startup Meet Investors"
         rightLinks={<StartupHeader />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: -1,
           color: "info"
         }}
         {...rest}
       />
-      <Parallax filter responsive style={{backgroundColor:"#28a796"}}> 
-    <ParticlesContainer />
-        <div className={classes.container}>
-          <GridContainer style={flex}>
-            <GridItem xs={12} sm={12} md={6}>
-              <h2 className={classes.title}><CharPose text="Registration Process" /></h2>
-              <h6 className={classes.title} style={{marginTop : "-10px"}}>Let your dreams come true || Your Story Starts with us</h6>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={6}>
-              <br/>
-              <img src ={rocket} style={{maxWidth:"100%", opacity:"0.8", borderRadius:" 100% 100% 0% 0%"}}/>
-            </GridItem>
-          </GridContainer>
-        </div>
-    </Parallax> 
-      
-       
       <div className={classNames(classes.main)}>
         <div className={classes.container}>
            <div className={classes.section}  style = {{ display : "flex", justifyContent : 'center'}}>
-               <h3 className={classes.title} style={{textAlign:"center", color : "black"}}> Registration process</h3>
+               <h3 className={classes.title} style={{textAlign:"center", color : "black", marginTop:"100px", marginBottom:"-10px"}}> Registration Process</h3>
            </div>
          <br/>
         <Fade duration={1500}>
-            <Steps num= "1st" text="The Venture must fill the form and complete their Registration of INR 5,000 here. Click the button below to fill the application form. ">
-            <GridContainer justify="center">
-                <GridItem xs={12} sm={6} md={6}>
+          <GridContainer style={flex}>
+              <GridItem xs={12} sm={2} md={1}>
+                <LooksOne style={{fontSize : "70px" , color : "#28a796"}}/>
+              </GridItem>
+              <GridItem xs={10} sm={10} md={11}>
+                <h5><b>The venture must fill the form and complete their registration of INR 5,000 here. Click the button below to fill the application form.  </b></h5>
+              </GridItem>
+          </GridContainer>
+            <GridContainer>
+                <GridItem md={2}>
+                    <span></span>
+                </GridItem>
+                <GridItem xs={12} sm={6} md={5}>
                     <Button
                     style={btn}
-                    size="lg"
+                    size="md"
                     color = "info"
                     href="/startup-application-form"
                     target="_blank"
@@ -95,38 +90,54 @@ export default function Application(props) {
                     <b style={{color:"#fff"}}>Register Here</b> 
                   </Button>
                 </GridItem>
-                <GridItem xs={12} sm={6} md={6}>
+                <GridItem xs={12} sm={6} md={5}>
                   <PayButton style={btn} />
                 </GridItem>
               </GridContainer>    
-            </Steps>              
-        </Fade> 
-               
-        <br/>
-        <br/>
-         
-
-        <br/>
-        <Fade duration={1500}>
-        <Steps num= "2nd" text="After Submission, All Entries will be evaluated by our Team of Analysts. All Entries that are Shortlisted will be intimated(Intimation by 1st Feb, 2020) about the same. All decision made by ICICC are final"/>  
+                        
         </Fade> 
 
-        <br/>
         <Fade duration={1500}>
-        <Steps num= "3rd" text="After Shortlisting, The Selected Start-ups will be invited to the Start-up Event to pitch their Venture to the Panel of Judges and Investors. The decision for Investment is at the sole discretion of the Investors and the Judges."/>  
+          <GridContainer style={flex}>
+            <GridItem xs={12} sm={2} md={1}>
+              <LooksTwo style={{fontSize : "70px" , color : "#28a796"}}/>
+            </GridItem>
+            <GridItem xs={12} sm={10} md={11}>
+              <h5><b>After Submission, All Entries will be evaluated by our Team of Analysts. All Entries that are Shortlisted will be intimated (Intimation by 1st Feb, 2020) about the same. All decision made by ICICC are final.</b></h5>
+            </GridItem>
+          </GridContainer>
         </Fade> 
 
-        <br/>  
         <Fade duration={1500}>
-        <Steps num= "4th" text="Post Event, ICICC will collect the details from investors regarding any Investment Decisions and will intimate your Start-up about the same (within one week after the event)."/>  
+          <GridContainer style={flex}>
+              <GridItem xs={12} sm={2} md={1}>
+                <Looks3 style={{fontSize : "70px" , color : "#28a796"}}/>
+              </GridItem>
+              <GridItem xs={10} sm={10} md={11}>
+                <h5><b> After Shortlisting, The Selected Start-ups will be invited to the Start-up Event to pitch their Venture to the Panel of Judges and Investors. The decision for Investment is at the sole discretion of the Investors and the Judges. </b></h5>
+              </GridItem>
+          </GridContainer>
+        </Fade>  
+        <Fade duration={1500}>
+          <GridContainer style={flex}>
+                <GridItem xs={12} sm={2} md={1}>
+                  <Looks4 style={{fontSize : "70px" , color : "#28a796"}}/>
+                </GridItem>
+                <GridItem xs={10} sm={10} md={11}>
+                  <h5><b> Post Event, ICICC will collect the details from investors regarding any investment decisions and will intimate your Startup about the same (within one week after the event).</b></h5>
+                </GridItem>
+            </GridContainer>
         </Fade>   
-
-       <br/>
         <Fade duration={1500}>
-        <Steps num= "5th" text="All Investment Discussion between the Investor and the Start-up will take place under the presence of an ICICC Representative."/>  
+           <GridContainer style={flex}>
+                <GridItem xs={12} sm={2} md={1}>
+                  <Looks5 style={{fontSize : "70px" , color : "#28a796"}}/>
+                </GridItem>
+                <GridItem xs={10} sm={10} md={11}>
+                  <h5><b> All investment discussion between the investor and the Startup will take place under the presence of an ICICC representative. </b></h5>
+                </GridItem>
+            </GridContainer>
         </Fade> 
-
-         <br/>
                   
         </div>
         
