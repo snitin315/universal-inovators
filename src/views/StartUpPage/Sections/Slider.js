@@ -50,6 +50,34 @@ export default function Slider() {
  
   return (
     <div className={classes.section} style={{marginTop:"-100px"}}> 
+        <h2 className={classes.title}>Special Invited Investors</h2>
+        <br/>
+         <Carousel {...settings}>
+            <GridItem xs={12} sm={12} md={12}>
+                <div>
+                    <img src={icici} height="150px" style={{maxWidth:"100%"}} />
+                    <h6 className={classes.title}><strong>ICICI BANK</strong></h6>
+                </div>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={12}>
+                <div>
+                    <img src={huddle} height="150px" style={{maxWidth:"100%"}} />
+                    <h6 className={classes.title}><strong>HUDDLE</strong></h6>
+                </div>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={12}>
+                <div>
+                    <img src={x100} height="150px" style={{maxWidth:"100%"}} />
+                    <h6 className={classes.title}><strong>100X VC</strong></h6>
+                </div>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={12}>
+                <div>
+                    <img src={nasscom} height="150px" style={{maxWidth:"100%"}} />
+                    <h6 className={classes.title}><strong>Nasscom</strong></h6>
+                </div>
+            </GridItem>          
+        </Carousel>
          <h2 className={classes.title}>Partners & Promoters </h2>   
          <div class="slider">
             <div class="slide-track">
@@ -127,35 +155,7 @@ export default function Slider() {
               </div>   
             </div>
         </div> 
-        <br/>
-        <h2 className={classes.title}>Special Invited Investors</h2>
-        <br/>
-        <Carousel {...settings}>
-            <GridItem xs={12} sm={12} md={12}>
-                <div>
-                    <img src={icici} height="150px" style={{maxWidth:"100%"}} />
-                    <h6 className={classes.title}><strong>ICICI BANK</strong></h6>
-                </div>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={12}>
-                <div>
-                    <img src={huddle} height="150px" style={{maxWidth:"100%"}} />
-                    <h6 className={classes.title}><strong>HUDDLE</strong></h6>
-                </div>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={12}>
-                <div>
-                    <img src={x100} height="150px" style={{maxWidth:"100%"}} />
-                    <h6 className={classes.title}><strong>100X VC</strong></h6>
-                </div>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={12}>
-                <div>
-                    <img src={nasscom} height="150px" style={{maxWidth:"100%"}} />
-                    <h6 className={classes.title}><strong>Nasscom</strong></h6>
-                </div>
-            </GridItem>          
-        </Carousel>
+        <br/>       
     </div>
   );
 }
