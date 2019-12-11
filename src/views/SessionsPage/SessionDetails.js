@@ -135,9 +135,9 @@ const awards = {
                  <strong><CardHeader color="info">Track 1</CardHeader>  </strong>     
                 <CardBody>
                 <h4 className={cards.cardTitle}> IDEA</h4>
-                <p className={cards.description}>
-                Discuss your business idea
-                </p>
+                <b className={cards.description}>
+                Discuss your idea
+                </b>
                 </CardBody>
              </Card>
 
@@ -151,7 +151,7 @@ const awards = {
                  <strong><CardHeader color="info">Track 2</CardHeader>  </strong>     
                 <CardBody>
                 <h4 className={cards.cardTitle}>PROTOTYPE</h4>
-                <p className={cards.description}>  Demonstrate your idea  </p>
+                <b className={cards.description}>  Demonstrate your idea  </b>
                 </CardBody>
              </Card>
 
@@ -165,9 +165,9 @@ const awards = {
                  <strong><CardHeader color="info">Track 3</CardHeader>  </strong>     
                 <CardBody>
                 <h4 className={cards.cardTitle}> PRODUCT </h4>
-                <p className={cards.description}>
+                <b className={cards.description}>
                 Showcase your idea
-                </p>
+                </b>
                 </CardBody>
              </Card>
 
@@ -181,9 +181,9 @@ const awards = {
                  <strong><CardHeader color="info">Track 4</CardHeader>  </strong>     
                 <CardBody>
                 <h4 className={cards.cardTitle}>START-UP</h4>
-                <p className={cards.description}>
+                <b className={cards.description}>
                 Share your success story
-                </p>
+                </b>
                 </CardBody>
              </Card>
 

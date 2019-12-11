@@ -55,7 +55,7 @@ export default function StartUpPage(props) {
         rightLinks={<StartupHeader />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: 200,
           color: "info"
         }}
         {...rest}

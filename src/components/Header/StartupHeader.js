@@ -57,36 +57,19 @@ export default function StartupHeader(props) {
           color="transparent"
           className={classes.navLink}
         >
-          <PersonAdd className={classes.icons} /><b>Registration Process</b>
+          <PersonAdd className={classes.icons} /><b>Registration</b>
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="/startup-partners-and-promoters"
+          href="/startup-investors-and-partners"
           color="transparent"
           className={classes.navLink}
         >
-          <People className={classes.icons} /><b>Partners & Promoters</b>
+          <People className={classes.icons} /><b>Investors & Partners</b>
         </Button>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="/startup-special-investors"
-          color="transparent"
-          className={classes.navLink}
-        >
-          <Money className={classes.icons} /><b>Special Invited Investors</b>
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="/startup-application-form"
-          color="transparent"
-          className={classes.navLink}
-        >
-          <Create className={classes.icons} /><b>Apply Now</b>
-        </Button>
-      </ListItem>
+      
       <ListItem className={classes.listItem}>
         <Button
           href="/contact-us"
