@@ -23,7 +23,7 @@ export default function Slider() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 200,
+    speed: 2500,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true
