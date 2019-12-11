@@ -39,7 +39,7 @@ export default function PayFees() {
     <div>
         <Button color="white" size="md" round onClick={() => setModal(true)}>
         <i class="fas fa-ticket-alt"/>  
-        <b style={{color:"#888"}}>Pay Registration Fees</b>
+        <b style={{color:"#888"}}>Registration Fees</b>
         </Button>
       <Dialog
         classes={{
@@ -58,18 +58,18 @@ export default function PayFees() {
           disableTypography
           className={classes.modalHeader}
         >
-          <h6 className={classes.modalTitle}>Pay via NEFT/RTGS</h6>
+          <h5 className={classes.modalTitle}><b>Pay via NEFT/RTGS</b></h5>
         </DialogTitle>
         <DialogContent
           id="modal-slide-description"
           className={classes.modalBody}
           style={{marginTop : "-45px"}}
         ><br/>
-          <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>Account Name: ICICC </li></h6>
-          <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>Account No: 510909010080523  </li></h6>
-          <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>Bank: City Union Bank </li></h6>
-          <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>Branch: Sector-8, Rohini, Delhi </li></h6>
-          <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>IFSC Code: CIUB0000244 </li></h6>
+          <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>Account Name - ICICC </li></h6>
+          <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>Account No - 510909010080523  </li></h6>
+          <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>Bank - City Union Bank </li></h6>
+          <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>Branch - Sector-8, Rohini, Delhi </li></h6>
+          <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>IFSC Code - CIUB0000244 </li></h6>
     
           <GridContainer>
               <GridItem xs={5} sm={5} md={5}>
