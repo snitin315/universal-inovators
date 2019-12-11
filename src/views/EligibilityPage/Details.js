@@ -54,12 +54,8 @@ export default function Details() {
       
 
           <h3 className={classes.title}> Eligibility Criteria for Startup Event </h3>
-          <br/>
-
-          <h5 className={classes.title} style={{marginTop :"-20px"}}> You must have an idea related to any field of Engineering or Non-Engineering.</h5>          
-          <ol className = {classes.description} style={design}>
-            
-                
+         
+          <ol className = {classes.description} style={design}>   
             
             <Fade up>
 
@@ -69,7 +65,7 @@ export default function Details() {
                 </GridItem>
 
                 <GridItem xs={12} sm={9} md={9}>          
-                    <strong>Annual turnover of the start-up is not more Rs. 25 crores.</strong>     
+                    <strong>You must have an idea related to any field of Engineering or Non-Engineering.</strong>     
                 </GridItem>
             
           </GridContainer>
@@ -111,13 +107,9 @@ export default function Details() {
             </GridItem>
 
             <GridItem xs={12} sm={9} md={9}>
-                    
-         
-            <strong>The StartUp may be DIPP recognized.</strong>
-
-                <ul>
-                    <li>Forregistering Startup can log on to <a href="https://www.startupindia.gov.in" target="_blank" rel="noopener"> www.startupindia.gov.in </a> </li>
-                </ul>
+            <strong>
+                The StartUp must show the capability to develop Minimum Viable Product (MVP) or Beta Product.
+            </strong>           
                         
             </GridItem>
             
@@ -133,11 +125,10 @@ export default function Details() {
             </GridItem>
 
             <GridItem xs={12} sm={9} md={9}>
-                    
-                <strong>
-                The StartUp must show the capability to develop Minimum Viable Product (MVP) or Beta Product.
-                </strong>
-                
+              <strong>The StartUp may be DIPP recognized.</strong>
+                <ul>
+                    <li>Forregistering Startup can log on to <a href="https://www.startupindia.gov.in" target="_blank" rel="noopener"> www.startupindia.gov.in </a> </li>
+                </ul>              
             </GridItem>
             
           </GridContainer>

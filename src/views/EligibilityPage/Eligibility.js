@@ -44,34 +44,18 @@ export default function Eligibility(props) {
     <div>
    
       <Header
-        color="transparent"
+        color="white"
         routes={dashboardRoutes}
-        brand="StartUp Meet Investors"
+ 
         rightLinks={<StartupHeader />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: -1,
           color: "info"
         }}
         {...rest}
       />
-      
-      <Parallax filter responsive style={{backgroundColor:"#28a796"}}> 
-    <ParticlesContainer />
-        <div className={classes.container}>
-          <GridContainer style={flex}>
-            <GridItem xs={12} sm={12} md={6}>
-              <h2 className={classes.title}><CharPose text="Eligibility Criteria" /></h2>
-              <h6 className={classes.title} style={{marginTop : "-10px"}}>Let your dreams come true || Your Story Starts with us</h6>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={6}>
-              <br/>
-              <img src ={rocket} style={{maxWidth:"100%", opacity:"0.8", borderRadius:" 100% 100% 0% 0%"}}/>
-            </GridItem>
-          </GridContainer>
-        </div>
-    </Parallax> 
-      
+            
       <div className={classNames(classes.main)}>
         <div className={classes.container}>
          
