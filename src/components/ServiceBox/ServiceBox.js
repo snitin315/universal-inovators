@@ -9,7 +9,7 @@ const ServiceBox = (props) => {
         <div className="box">
             <div className="icon"><a href={props.link}><i class={props.icon}></i></a></div>
             <h4 className="title"><a href={props.link}>{props.title}</a></h4>
-            <p className={classes.description} style={{color:"#888"}} >{props.description}</p>
+            <p className={classes.description} style={{color:"#000"}} ><b>{props.description}</b></p>
         </div>
     )
 }
