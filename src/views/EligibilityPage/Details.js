@@ -2,6 +2,7 @@ import React from "react";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import { LooksOne, Looks3, Looks4, LooksTwo, Looks5 } from "@material-ui/icons";
 
 // core components
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
@@ -33,8 +34,7 @@ export default function Details() {
   const flex = {
         display : 'flex',
         alignItems : 'center',
-        justifyContent : 'center',
-        marginBottom : '15px'
+        color:"#333",
       } ;
        
 
@@ -54,7 +54,16 @@ export default function Details() {
       
 
           <h3 className={classes.title}> Eligibility Criteria for Startup Event </h3>
-         
+          <Fade duration={1500}>
+          <GridContainer style={flex}>
+                <GridItem xs={12} sm={2} md={1}>
+                  <Looks4 style={{fontSize : "70px" , color : "#28a796"}}/>
+                </GridItem>
+                <GridItem xs={10} sm={10} md={11}>
+                  <h5><b> Post Event, ICICC will collect the details from investors regarding any investment decisions and will intimate your Startup about the same (within one week after the event).</b></h5>
+                </GridItem>
+            </GridContainer>
+           </Fade> 
           <ol className = {classes.description} style={design}>   
             
             <Fade up>

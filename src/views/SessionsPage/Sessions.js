@@ -43,7 +43,7 @@ export default function StartUpPage(props) {
        
     
       <Header
-        color="white"
+        color="info"
         routes={dashboardRoutes}
         brand="StartUp Meets Investors"
         rightLinks={<StartupHeader />}
