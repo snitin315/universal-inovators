@@ -28,9 +28,8 @@ export default function About() {
   }   
   return (
     <div className={classes.section}>
-    <h3 className={classes.title}>Awards & Prizes </h3>
-    <br/>
-    <br/>       
+    <h3 className={classes.title}  style={{marginTop : "-70px"}}>Awards & Prizes </h3>
+    <br/>      
     <GridContainer>
         <GridItem xs={12} sm={12} md={4}>
           <Fade>
@@ -63,7 +62,7 @@ export default function About() {
           </GridItem>
         </GridContainer>
         
-        <h3 className = {classes.title}> Event Tracks</h3>
+        <h3 className = {classes.title}  style={{marginTop : "-40px"}}> Event Tracks</h3>
         <br/>
         <EventTracks/>
   </div>
