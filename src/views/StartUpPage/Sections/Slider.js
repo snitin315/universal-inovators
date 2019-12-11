@@ -49,7 +49,7 @@ export default function Slider() {
   };
  
   return (
-    <div className={classes.section} style={{marginTop:"-100px"}}> 
+    <div className={classes.section} style={{marginTop:"-150px"}}> 
         <h2 className={classes.title}>Special Invited Investors</h2>
         <br/>
          <Carousel {...settings}>

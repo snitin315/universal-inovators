@@ -39,7 +39,7 @@ export default function PayFees() {
     <div>
         <Button color="white" size="md" round onClick={() => setModal(true)}>
         <i class="fas fa-ticket-alt"/>  
-        <b style={{color:"#888"}}>Registration Fees</b>
+        <b style={{color:"#888"}}>Submit Fees</b>
         </Button>
       <Dialog
         classes={{
@@ -84,7 +84,7 @@ export default function PayFees() {
           </GridContainer>
           <Button color="info" size="md" round target="_blank" href="https://www.scupo.in/event/3rd-international-conference-on-innovative-computing-communication/#bookticket">
             <i class="fas fa-ticket-alt"/>  
-            <b style={{color:"#fff"}}>Pay Registration Fees Online</b>
+            <b style={{color:"#fff"}}>Submit Fees Online</b>
           </Button>
           
         </DialogContent>
