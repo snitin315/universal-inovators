@@ -57,7 +57,7 @@ export default function About() {
   return (
 
     <div className={classes.section} style={{marginTop:"-100px"}} >
-      <h3 className={classes.title}>Core Fields of Research for the Start-Up </h3>
+      <h3 className={classes.title} style={{marginBottom:"-40px"}}>Core Fields of Research for the Start-Up </h3>
       <br/>
       <NavPills
       color="info"
@@ -66,7 +66,7 @@ export default function About() {
         {
           tabButton: "Category A",
           tabContent: (
-            <GridContainer style = {flex} justify="center">
+            <GridContainer style = {flex}>
               <GridItem xs={12} sm={12} md={6}>
               <Fade >  
               <Card>
