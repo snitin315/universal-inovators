@@ -68,8 +68,8 @@ export default function StartUpPage(props) {
             <GridItem xs={12} sm={12} md={6}>
               <SpecialInvestors/>
               <br/>
-              <h2 className={classes.title}><CharPose text="Where StartUp Meet Investors" /></h2>
-              <h6 className={classes.title} style={{marginTop : "-20px"}}>Let your dreams come true || Your Story Starts with us</h6>
+              <h3 className={classes.title}><CharPose text="Where StartUp Meet Investors" /></h3>
+              <h6 className={classes.title} style={{marginTop : "-20px"}}><em>Let your dreams come true || Your Story Starts with us</em></h6>
               <br />
               <GridContainer>
                 <GridItem xs={12} sm={6} md={4}>
@@ -82,7 +82,7 @@ export default function StartUpPage(props) {
                     rel="noopener noreferrer"
                   >
                     <i className="fas fa-pencil-alt" />
-                    <b style={{color:"#888"}}>Register Today</b> 
+                    <b style={{color:"#888"}}>Register</b> 
                   </Button>
                 </GridItem>
                 <GridItem xs={12} sm={6} md={8}>
@@ -92,7 +92,7 @@ export default function StartUpPage(props) {
             </GridItem>
             <GridItem xs={12} sm={12} md={6}>
               <br/>
-              <img src ={rocket} style={{maxWidth:"100%", opacity:"0.8", borderRadius:" 100% 100% 0% 0%"}}/>
+              
             </GridItem>
           </GridContainer>
         </div>
