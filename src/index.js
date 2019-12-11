@@ -42,7 +42,7 @@ ReactDOM.render(
       <Route path="/startup-application-procedure" component = {Application}/>
       <Route path="/startup-partners-and-promoters" component = {Partners}/>
       <Route path="/startup-application-form" component = {InitialForm}/>   
-      <Route path="/startup-special-investors" component = {Investors}/>   
+      <Route path="/startup-investors-and-partners" component = {Investors}/>   
       <Route path="/contact-us" component = {Contact}/>              
       <Route path="/" component={LandingPage} />
     </Switch>
