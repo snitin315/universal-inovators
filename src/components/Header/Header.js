@@ -1,3 +1,4 @@
+
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
@@ -15,6 +16,11 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
+
+import "./header.css"
+import uilogo from "assets/img/navlogo.png"
+import GridContainer from "components/Grid/GridContainer";
+import GridItem from "components/Grid/GridItem";
 
 const useStyles = makeStyles(styles);
 
@@ -53,18 +59,35 @@ export default function Header(props) {
         .classList.remove(classes[changeColorOnScroll.color]);
     }
   };
-  const { color, rightLinks, leftLinks, brand, fixed, absolute } = props;
+  const { color, rightLinks, leftLinks, brand, fixed, absolute,} = props;
   const appBarClasses = classNames({
     [classes.appBar]: true,
     [classes[color]]: color,
     [classes.absolute]: absolute,
     [classes.fixed]: fixed
   });
-  const brandComponent = <Button className={classes.title}><b>{brand}</b></Button>;
+  const brandComponent = <GridContainer>
+                          <GridItem xs={2} sm={2} md={2} class="img-container">
+                            <img src={uilogo} class="logo"/>
+                          </GridItem>
+                          <GridItem xs={10} sm={10} md={10}>
+                            <h6 class="text">February 21, 2020</h6>
+                            <h6 class="text" style={{margin:"-10px -20px 0px 0px"}}>SHAHEED SUKHDEV COLLEGE OF BUSINESS STUDIES, UNIVERSITY OF DELHI, NEW DELHI</h6>
+                          </GridItem>
+                        </GridContainer>
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
-        
+        {leftLinks !== undefined ? brandComponent : null}
+        <div className={classes.flex}>
+          {leftLinks !== undefined ? (
+            <Hidden smDown implementation="css">
+              {leftLinks}
+            </Hidden>
+          ) : (
+            brandComponent
+          )}
+        </div>
         <Hidden smDown implementation="css">
           {rightLinks}
         </Hidden>
