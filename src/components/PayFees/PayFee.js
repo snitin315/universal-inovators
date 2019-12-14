@@ -39,7 +39,7 @@ export default function PayFees() {
     <div>
         <Button color="white" size="md" round onClick={() => setModal(true)}>
         <i class="fas fa-ticket-alt"/>  
-        <b style={{color:"#888"}}>Submit Fees</b>
+        <b style={{color:"#888"}}>Submit Fees</b><br/>
         </Button>
       <Dialog
         classes={{
@@ -65,6 +65,7 @@ export default function PayFees() {
           className={classes.modalBody}
           style={{marginTop : "-45px"}}
         ><br/>
+          <b>(INR 5000 per team)</b>
           <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>Account Name - ICICC </li></h6>
           <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>Account No - 510909010080523  </li></h6>
           <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>Bank - City Union Bank </li></h6>
