@@ -46,7 +46,6 @@ export default function FooterArea(props) {
 		<div class="footer-center" style={{color:"#fff"}}>
         <h4 style={{color:"#fff", textAlign:"center"}}>Contact Us</h4>
         <ListStyle icon="fa fa-map-marker" text = "SHAHEED SUKHDEV COLLEGE OF BUSINESS STUDIES, University of Delhi, New Delhi"/>    
-		<ListStyle icon="fa fa-phone" text ="+91 " />
         <ListStyle icon="fa fa-envelope" text ="universalinovators@gmail.com" /> 
 		 
 		</div>
@@ -67,7 +66,7 @@ export default function FooterArea(props) {
 		<a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
 		<a href="" target="_blank"><i class="fa fa-envelope"></i></a>
 		<a href="https://www.linkedin.com/company/icicc2020/" target="_blank" ><i class="fab fa-linkedin"></i></a>
-		<a href="https://github.com/snitin315/universal-inovators" target="_blank"><i class="fab fa-github"></i></a>
+		<a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
  
 		</div>
  
