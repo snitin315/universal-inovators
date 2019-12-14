@@ -106,6 +106,10 @@
 	width: 20%;
 }
  
+.footer-distributed .footer-right a:hover{
+    color : #28a796;
+}
+
 .footer-distributed .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
