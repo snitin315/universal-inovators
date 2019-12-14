@@ -28,6 +28,7 @@ import Check from "@material-ui/icons/Check";
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
 import PayFees from "components/PayFees/PayFee";
+import FooterArea from "components/FooterArea/FooterArea";
 
 const dashboardRoutes = [];
 
@@ -106,7 +107,7 @@ export default function InitialForm(props) {
       <div className={classNames(classes.main)}>
         <div className={classes.container}>
            <div className={classes.section}  style = {{ display : "flex", justifyContent : 'center'}}>
-               <h3 className={classes.title} style={{textAlign:"center", color : "black"}}> Application Form </h3>
+               <h3 className={classes.title} style={{textAlign:"center", color : "black"}}> Registration Form </h3>
            </div>
          <br/>
          
@@ -219,8 +220,8 @@ export default function InitialForm(props) {
     </GridContainer>
                  
 
-        <label class="container3">I have sent Transaction Details to universalinovators@gmail.com
-        <input name = "entry.1264776458" value="I have sent Transaction Details to universalinovators@gmail.com" type="checkbox" />
+        <label class="container3"><sup style={{color:"red"}}>*</sup> I have sent Transaction Details to registerationui@gmail.com
+        <input name = "entry.1264776458" required  value="I have sent Transaction Details to universalinovators@gmail.com" type="checkbox" />
         <span class="checkmark"></span>
         </label>    
        
@@ -232,9 +233,9 @@ export default function InitialForm(props) {
      <br/>
 
      </div>
-        
+        <FooterArea/>
       </div>
-      <Footer />
+      
 
     </div>
   );
