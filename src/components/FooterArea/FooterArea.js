@@ -44,7 +44,7 @@ export default function FooterArea(props) {
 		</div>
  
 		<div class="footer-center" style={{color:"#fff"}}>
-        <h3 style={{textAlign:"center"}}>Contact Us</h3>
+        <h4 style={{color:"#fff", textAlign:"center"}}>Contact Us</h4>
         <ListStyle icon="fa fa-map-marker" text = "SHAHEED SUKHDEV COLLEGE OF BUSINESS STUDIES, University of Delhi, New Delhi"/>    
 		<ListStyle icon="fa fa-phone" text ="+91 " />
         <ListStyle icon="fa fa-envelope" text ="universalinovators@gmail.com" /> 
@@ -54,7 +54,7 @@ export default function FooterArea(props) {
 		<div class="footer-right">
  
 		<p class="footer-company-about">
-		<h3 >Important Links</h3>
+		<h4 style={{color:"#fff"}} >Important Links</h4>
         <div style={{marginLeft:"50px"}}>
         <ListStyle link="/startup" icon="fas fa-chevron-circle-right" text = "Home"/>
         <ListStyle link="/startup-investors-and-partners" icon="fas fa-chevron-circle-right" text = "Investors & Partners"/>

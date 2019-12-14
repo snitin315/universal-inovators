@@ -80,6 +80,10 @@ export default function Policy(props) {
                     <br/>
                     <br/> 
                     This policy is effective as of 1 December 2019. 
+                    <br/>
+                    <br/> 
+                    For any enquiry or updates kindly mail us at <a><b>universalinovators@gmail.com</b></a> .
+
                   </h5>
             </div>
          <br/>
