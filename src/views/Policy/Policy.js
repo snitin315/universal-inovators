@@ -57,7 +57,7 @@ export default function Policy(props) {
                <h3 className={classes.title} style={{textAlign:"center", color : "black", marginTop:"100px", marginBottom:"-10px"}}> Privacy Policy</h3>
            </div>
             <div className={classes.container}>
-                  <h5 className={classes.description} style={{color: "black", fontSize:"20px" , fontWeight : "400"}}>
+                  <h5 className={classes.description} style={{color: "black", fontSize:"20px" , fontWeight : "400" , textAlign:"justify"}}>
                    Your privacy is important to us. It is Universal-inovators' policy to respect your privacy regarding any information we may collect from you across our website <a href="https://universal-inovators.com/startup">https://universal-inovators.com/startup</a> , and other sites we own and operate.
                    <br/> 
                    <br/> 
