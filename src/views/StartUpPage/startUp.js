@@ -27,6 +27,7 @@ import SpecialInvestors from "./Sections/SpecialInvestors.js";
 
 import rocket from "assets/img/rocket2.gif"
 import PayFees from "components/PayFees/PayFee.js";
+import FooterArea from "components/FooterArea/FooterArea.js";
 
 
 
@@ -103,8 +104,8 @@ export default function StartUpPage(props) {
           <Slider/>
           <Category/>
         </div>
-      </div>
-      <Footer />
+      <FooterArea/>  
+    </div>
     </div>
   );
 }

@@ -15,6 +15,7 @@ import StartupHeader from "components/Header/StartupHeader";
 import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import Fade from 'react-reveal/Fade';
+import FooterArea from "components/FooterArea/FooterArea";
 
 
 const dashboardRoutes = [];
@@ -114,8 +115,8 @@ export default function Eligibility(props) {
             </GridContainer>
            </Fade> 
         </div>
+        <FooterArea/>
       </div>
-      <Footer />
     </div>
   );
 }

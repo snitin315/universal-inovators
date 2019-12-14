@@ -17,6 +17,7 @@ import Fade from 'react-reveal/Fade';
 
 import PayButton from "./PayButton.js";
 import { LooksOne, Looks3, Looks4, LooksTwo, Looks5 } from "@material-ui/icons";
+import FooterArea from "components/FooterArea/FooterArea.js";
 
 const dashboardRoutes = [];
 
@@ -134,9 +135,8 @@ export default function Application(props) {
                   
         </div>
         
+        <FooterArea/>
       </div>
-    
-      <Footer />
   
     </div>
   );

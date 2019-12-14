@@ -21,6 +21,7 @@ import rocket from "assets/img/startup6.gif"
 import CharPose from "../LandingPage/Sections/CharPose.js";
 import SessionDetails from "./SessionDetails"
 import Preloader from "components/Preloader/Preloader.js";
+import FooterArea from "components/FooterArea/FooterArea.js";
 
 const dashboardRoutes = [];
 
@@ -58,10 +59,8 @@ export default function StartUpPage(props) {
         <div className={classes.container}>
          <SessionDetails/>
         </div>
-        
-      </div>
-   <Footer />
-     
+        <FooterArea/>
+      </div>    
       
     </div>
   );

@@ -47,6 +47,7 @@ import nasscom from "assets/img/nasscom.jpeg"
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
 import ParticlesContainer from "components/Particle/Particle.js";
+import FooterArea from "components/FooterArea/FooterArea.js";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -246,8 +247,9 @@ export default function Investors(props) {
              </div>
           </GridItem>
         </GridContainer>
+        
+        <FooterArea/>
     </div>
-    <Footer />
     </div>
   );
 }

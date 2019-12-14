@@ -29,6 +29,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import CharPose from "../LandingPage/Sections/CharPose.js";
 import Preloader from "components/Preloader/Preloader";
 import PayFees from "components/PayFees/PayFee";
+import FooterArea from "components/FooterArea/FooterArea";
 
 const dashboardRoutes = [];
 
@@ -730,9 +731,8 @@ export default function LandingPage(props) {
      <br/>
 
      </div>
-        
+        <FooterArea/>
       </div>
-      <Footer />
 
     </div>
   );
