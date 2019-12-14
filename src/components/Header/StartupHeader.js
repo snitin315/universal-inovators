@@ -69,16 +69,6 @@ export default function StartupHeader(props) {
           <People className={classes.icons} /><b>Investors & Partners</b>
         </Button>
       </ListItem>
-      
-      <ListItem className={classes.listItem}>
-        <Button
-          href="/contact-us"
-          color="transparent"
-          className={classes.navLink}
-        >
-          <Person className={classes.icons} /><b>Contact Us</b>
-        </Button>
-      </ListItem>
     </List>
   );
 }
