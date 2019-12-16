@@ -10,7 +10,7 @@ import ListItem from "@material-ui/core/ListItem";
 
 
 // @material-ui/icons
-import { Apps,Home,PersonAdd,CheckBox,Money,People, Create, Person} from "@material-ui/icons";
+import { Apps,Home,PersonAdd,CheckBox,Money,People, Create, Person, ViewAgenda} from "@material-ui/icons";
 
 // core components
 import Button from "components/CustomButtons/Button.js";
@@ -67,6 +67,15 @@ export default function StartupHeader(props) {
           className={classes.navLink}
         >
           <People className={classes.icons} /><b>Investors & Partners</b>
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/startup-agenda"
+          color="transparent"
+          className={classes.navLink}
+        >
+          <ViewAgenda className={classes.icons} /><b>Agenda</b>
         </Button>
       </ListItem>
     </List>
