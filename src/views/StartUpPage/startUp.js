@@ -71,8 +71,7 @@ export default function StartUpPage(props) {
               <br/>
               <h3 className={classes.title}><CharPose text="Where StartUp Meet Investors" /></h3>
               <h6 className={classes.title} style={{marginTop : "-20px"}}><em>Let your dreams come true || Your Story Starts with us</em></h6>
-              <br />
-              <GridContainer>
+              <GridContainer  style={{marginTop : "-20px"}}>
                 <GridItem xs={12} sm={6} md={4}>
                     <Button
                     style={btn}
@@ -88,6 +87,9 @@ export default function StartUpPage(props) {
                 </GridItem>
                 <GridItem xs={12} sm={6} md={8}>
                   <PayFees style={btn}/>
+                </GridItem>
+                <GridItem xs={12}>
+                <h6 className={classes.title}  style={{marginTop : "-8px"}}><em>20% Discount for Early Registrations (Before January 15, 2020)</em></h6>
                 </GridItem>
               </GridContainer>
             </GridItem>
