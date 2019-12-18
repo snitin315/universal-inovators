@@ -19,7 +19,7 @@ const ParticlesContainer = (props) => {
             params={{
                 "particles": {
                     "number": {
-                        "value": 60
+                        "value": 40
                     },
                     "size": {
                         "value": 3
