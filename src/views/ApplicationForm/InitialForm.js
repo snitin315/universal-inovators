@@ -217,6 +217,20 @@ export default function InitialForm(props) {
                  }}
             />
         </GridItem>
+        <GridItem xs={12} sm={6} md={6}>
+            <CustomInput
+                labelText="Link for pitch deck (if any)"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                    name : "entry.2038164463" , 
+                    type : "text",
+                    required : "true"
+                 }}
+            />
+        </GridItem>
     </GridContainer>
                  
 
