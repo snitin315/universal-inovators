@@ -227,7 +227,6 @@ export default function InitialForm(props) {
                 inputProps={{
                     name : "entry.2038164463" , 
                     type : "text",
-                    required : "true"
                  }}
             />
         </GridItem>
