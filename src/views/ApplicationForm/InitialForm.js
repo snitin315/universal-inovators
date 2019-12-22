@@ -234,7 +234,7 @@ export default function InitialForm(props) {
                  
 
         <label class="container3"><sup style={{color:"red"}}>*</sup> I have sent Transaction Details to registerationui@gmail.com
-        <input name = "entry.1264776458" required  value="I have sent Transaction Details to universalinovators@gmail.com" type="checkbox" />
+        <input name = "entry.1953338999"  value="I have sent Transaction Details to registerationui@gmail.com" type="checkbox" />
         <span class="checkmark"></span>
         </label>    
        
