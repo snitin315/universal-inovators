@@ -97,7 +97,7 @@ export default function Investors(props) {
       <div className={classNames(classes.main)}>
         <div className={classes.container}>
            <div className={classes.section}  style = {{ display : "flex", justifyContent : 'center'}}>
-               <h3 className={classes.title} style={{textAlign:"center", color : "black",marginTop :"100px"}}> Special Invited Ivestors </h3>
+               <h3 className={classes.title} style={{textAlign:"center", color : "black",marginTop :"100px"}}> Special Invited Investors </h3>
            </div>
          <br/>
         </div>
