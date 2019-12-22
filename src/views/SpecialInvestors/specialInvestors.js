@@ -36,6 +36,7 @@ import sgrtlogo from "assets/img/sgrtlogo.jpeg"
 import negdlogo from "assets/img/negdlogo.jpeg"
 import thinklogo from "assets/img/thinklogo.jpeg"
 import gvlogo from "assets/img/gvlogo.png"
+import btlogo from "assets/img/btlogo.png"
 
 
 import x100 from "assets/img/100x.png"
@@ -160,6 +161,12 @@ export default function Investors(props) {
              <div style={flex}>
                <img src={minlogo} height="150px" style={{maxWidth:"100%"}} />
                <h6 className={classes.description} style={{textAlign:"center"}}><strong> MINISTRY OF ELECTRONICS & INFORMAION TECHNOLOGY , GOVERNMENT OF INDIA</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={3}>
+             <div style={flex}>
+               <img src={btlogo} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description} style={{textAlign:"center"}}><strong>BOLDINK TECHNOLOGIES</strong></h6>
              </div>
           </GridItem>
           <GridItem xs={12} sm={6} md={3}>
