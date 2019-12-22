@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "037117f32a796fa791f4142639553727",
+    "revision": "f9a447127158f6dc2f931eb0cc64d3b0",
     "url": "/index.html"
   },
   {
-    "revision": "ecea90c2ce4c6cd50980",
+    "revision": "3bb1dd3c36fa709af5e4",
     "url": "/static/css/main.767b9939.chunk.css"
   },
   {
-    "revision": "5e6e5b61d22005071714",
-    "url": "/static/js/2.93fc3074.chunk.js"
+    "revision": "fc812fbd6e600b262632",
+    "url": "/static/js/2.5d68061c.chunk.js"
   },
   {
-    "revision": "ecea90c2ce4c6cd50980",
-    "url": "/static/js/main.97b6147f.chunk.js"
+    "revision": "3bb1dd3c36fa709af5e4",
+    "url": "/static/js/main.50964628.chunk.js"
   },
   {
     "revision": "4931b02d894689682610",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "67b2067d14b75e67add53fd40039ca70",
     "url": "/static/media/books-page.67b2067d.jpeg"
+  },
+  {
+    "revision": "d30e139ca7d7fa2b3d37d52c5e5c5086",
+    "url": "/static/media/btlogo.d30e139c.png"
   },
   {
     "revision": "da705074801dd780bd8e23228fda2738",
