@@ -65,7 +65,7 @@ export default function PayFees() {
           className={classes.modalBody}
           style={{marginTop : "-45px"}}
         ><br/>
-          <b>INR 5000 per team</b>
+          <b>INR 2000 per team</b>
           <p><b><em>20% Discount for Early Registrations<br/>(Before Jan. 15, 2020)</em></b></p>
           <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>Account Name - ICICC </li></h6>
           <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>Account No - 510909010080523  </li></h6>
