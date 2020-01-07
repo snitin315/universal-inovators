@@ -219,13 +219,13 @@ export default function InitialForm(props) {
         </GridItem>
         <GridItem xs={12} sm={6} md={6}>
             <CustomInput
-                labelText="Link for pitch deck (if any)"
+                labelText="About your StartUp"
                 id="float"
                 formControlProps={{
                     fullWidth: true
                 }}
                 inputProps={{
-                    name : "entry.2038164463" , 
+                    name : "entry.216812707" , 
                     type : "text",
                  }}
             />
@@ -234,7 +234,7 @@ export default function InitialForm(props) {
                  
 
         <label class="container3"><sup style={{color:"red"}}>*</sup> I have sent Transaction Details to registerationui@gmail.com
-        <input name = "entry.1953338999"  value="I have sent Transaction Details to registerationui@gmail.com" type="checkbox" />
+        <input name = "entry.1953338999"  value="I have sent Transaction Details to registerationui@gmail.com" required type="checkbox" />
         <span class="checkmark"></span>
         </label>    
        
