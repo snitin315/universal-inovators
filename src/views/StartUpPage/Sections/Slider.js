@@ -35,16 +35,25 @@ import x100 from "assets/img/100x.png"
 import huddle from "assets/img/huddle.png"
 import icici from "assets/img/icici-bank-logo.jpg"
 import nasscom from "assets/img/nasscom.jpeg"
+import siiflogo from "assets/img/siiflogo.jpg"
+import optlogo from "assets/img/optlogo.png"
 
 const useStyles = makeStyles(styles);
+const flex = {
+  display : 'flex',
+  flexDirection:"column",
+  alignItems : 'center',
+  justifyContent : 'center',
+  color :"#333"
+} ;
 
 export default function Slider() {
   const classes = useStyles();
 
   const settings = {
     infinite: true,
-    speed: 500,
-    slidesToShow: 4,
+    speed: 2500,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true
   };
@@ -54,7 +63,43 @@ export default function Slider() {
         <h2 className={classes.title}>Special Invited Investors</h2>
         <br/>
          <Carousel {...settings}>
-            <GridItem xs={12} sm={12} md={12}>
+           <GridItem xs={12}>
+             <div style={flex}>
+               <img src={icici} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>ICICI Bank</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12} >
+             <div style={flex}>
+               <img src={optlogo} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>Optymystix</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12}>
+             <div style={flex}>
+               <img src={siiflogo} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>SIIF</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12}>
+             <div style={flex}>
+               <img src={huddle} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>huddle</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12}>
+             <div style={flex}>
+               <img src={nasscom} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>nasscom</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12}>
+             <div style={flex}>
+               <img src={x100} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>100X VC</strong></h6>
+             </div>
+          </GridItem>
+            {/* <GridItem xs={12} sm={12} md={12}>
                 <div>
                     <img src={icici} height="150px" style={{maxWidth:"100%"}} />
                     <h6 className={classes.title}><strong>ICICI BANK</strong></h6>
@@ -77,7 +122,7 @@ export default function Slider() {
                     <img src={nasscom} height="150px" style={{maxWidth:"100%"}} />
                     <h6 className={classes.title}><strong>Nasscom</strong></h6>
                 </div>
-            </GridItem>          
+            </GridItem>           */}
         </Carousel>
          <h2 className={classes.title}>Partners & Promoters </h2>   
          <div class="slider">

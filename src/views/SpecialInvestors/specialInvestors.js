@@ -38,12 +38,12 @@ import thinklogo from "assets/img/thinklogo.jpeg"
 import gvlogo from "assets/img/gvlogo.png"
 import btlogo from "assets/img/btlogo.png"
 
-
 import x100 from "assets/img/100x.png"
 import huddle from "assets/img/huddle.png"
 import icici from "assets/img/icici-bank-logo.jpg"
 import nasscom from "assets/img/nasscom.jpeg"
-
+import siiflogo from "assets/img/siiflogo.jpg"
+import optlogo from "assets/img/optlogo.png"
 
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
@@ -125,6 +125,30 @@ export default function Investors(props) {
                <img src={nasscom} height="150px" style={{maxWidth:"100%"}} />
                <h6 className={classes.description}><strong>nasscom</strong></h6>
              </div>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={3}>
+             {/* <div style={flex}>
+               <img src={siiflogo} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>nasscom</strong></h6>
+             </div> */}
+          </GridItem>
+          <GridItem xs={12} sm={6} md={3}>
+             <div style={flex}>
+               <img src={siiflogo} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>SIIF</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={3}>
+             <div style={flex}>
+               <img src={optlogo} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>optymystix</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={3}>
+             {/* <div style={flex}>
+               <img src={siiflogo} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>nasscom</strong></h6>
+             </div> */}
           </GridItem>
         </GridContainer>
 

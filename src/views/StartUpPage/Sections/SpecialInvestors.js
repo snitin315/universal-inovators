@@ -14,6 +14,8 @@ import x100 from "assets/img/100x.png"
 import huddle from "assets/img/huddle.png"
 import icici from "assets/img/icici-bank-logo.jpg"
 import nasscom from "assets/img/nasscom.jpeg"
+import siiflogo from "assets/img/siiflogo.jpg"
+import optlogo from "assets/img/optlogo.png"
 
 const useStyles = makeStyles(styles);
 
@@ -50,6 +52,16 @@ export default function Slider() {
             <GridItem xs={0} sm={12} md={12}>
                 <div>
                     <img src={x100} height="80"  style={{maxWidth:"100%"}} className="slick-image" />
+                </div>
+            </GridItem>
+            <GridItem xs={0} sm={12} md={12}>
+                <div>
+                    <img src={siiflogo} height="80"  style={{maxWidth:"100%"}} className="slick-image" />
+                </div>
+            </GridItem>
+            <GridItem xs={0} sm={12} md={12}>
+                <div>
+                    <img src={optlogo} height="80"  style={{maxWidth:"100%"}} className="slick-image" />
                 </div>
             </GridItem>
         </Carousel> 
