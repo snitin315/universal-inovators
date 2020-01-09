@@ -16,6 +16,7 @@ import icici from "assets/img/icici-bank-logo.jpg"
 import nasscom from "assets/img/nasscom.jpeg"
 import siiflogo from "assets/img/siiflogo.jpg"
 import optlogo from "assets/img/optlogo.png"
+import acqlogo from "assets/img/acqlogo.png"
 
 const useStyles = makeStyles(styles);
 
@@ -57,6 +58,11 @@ export default function Slider() {
             <GridItem xs={0} sm={12} md={12}>
                 <div>
                     <img src={siiflogo} height="80"  style={{maxWidth:"100%"}} className="slick-image" />
+                </div>
+            </GridItem>
+            <GridItem xs={0} sm={12} md={12}>
+                <div>
+                    <img src={acqlogo} height="80"  style={{maxWidth:"100%"}} className="slick-image" />
                 </div>
             </GridItem>
             <GridItem xs={0} sm={12} md={12}>

@@ -37,6 +37,7 @@ import icici from "assets/img/icici-bank-logo.jpg"
 import nasscom from "assets/img/nasscom.jpeg"
 import siiflogo from "assets/img/siiflogo.jpg"
 import optlogo from "assets/img/optlogo.png"
+import acqlogo from "assets/img/acqlogo.png"
 
 const useStyles = makeStyles(styles);
 const flex = {
@@ -97,6 +98,12 @@ export default function Slider() {
              <div style={flex}>
                <img src={x100} height="150px" style={{maxWidth:"100%"}} />
                <h6 className={classes.description}><strong>100X VC</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12}>
+             <div style={flex}>
+               <img src={acqlogo} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>Acquisory</strong></h6>
              </div>
           </GridItem>
             {/* <GridItem xs={12} sm={12} md={12}>
