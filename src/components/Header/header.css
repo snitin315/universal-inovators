@@ -1,11 +1,11 @@
 .logo{
     height: 60px;
-    width: 80px;
-    margin: -5px 0px -10px -40px;
+    width: 130px;
+    margin: -5px -10px -2px -30px;
 }
 .text{
     font-size: 12px;
-    margin-top: -5px
+    margin-top: -5px;
 }
 
 @media only screen and (max-width: 600px) {

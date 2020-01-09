@@ -18,7 +18,8 @@ import Menu from "@material-ui/icons/Menu";
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
 
 import "./header.css"
-import uilogo from "assets/img/navlogo.png"
+import uilogo from "assets/img/uisif.png"
+import siiflogo from "assets/img/siiflogo.jpg"
 import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
 
@@ -67,10 +68,10 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
   const brandComponent = <GridContainer>
-                          <GridItem xs={2} sm={2} md={2} class="img-container">
+                          <GridItem xs={3} sm={3} md={3} class="img-container">
                             <img src={uilogo} class="logo"/>
                           </GridItem>
-                          <GridItem xs={10} sm={10} md={10}>
+                          <GridItem xs={9} sm={9} md={9}>
                             <h6 class="text">February 21, 2020</h6>
                             <h6 class="text" style={{margin:"-10px -20px 0px 0px"}}>SHAHEED SUKHDEV COLLEGE OF BUSINESS STUDIES, UNIVERSITY OF DELHI, NEW DELHI</h6>
                           </GridItem>
