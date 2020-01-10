@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "459b11999a55142ce1f70057033475a1",
+    "revision": "b8b9046a0798499ab93295c46c8e842e",
     "url": "/index.html"
   },
   {
-    "revision": "a8aceb36a21ed12d194b",
-    "url": "/static/css/main.6e75affa.chunk.css"
+    "revision": "11d3c68236c194a94495",
+    "url": "/static/css/main.7cd66a1a.chunk.css"
   },
   {
-    "revision": "0c7510b29400687ffcca",
-    "url": "/static/js/2.7a8278a1.chunk.js"
+    "revision": "037d78ca8635ae16f6db",
+    "url": "/static/js/2.f7e32876.chunk.js"
   },
   {
-    "revision": "a8aceb36a21ed12d194b",
-    "url": "/static/js/main.5c098e15.chunk.js"
+    "revision": "11d3c68236c194a94495",
+    "url": "/static/js/main.a3bed174.chunk.js"
   },
   {
     "revision": "4931b02d894689682610",
@@ -278,5 +278,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "db48d7e2f9561f1d29459be617d50a48",
     "url": "/static/media/workshops.db48d7e2.jpg"
+  },
+  {
+    "revision": "d44da9443fc812f10fc01d6d158dbb0d",
+    "url": "/static/media/yuvalogo.d44da944.png"
   }
 ]);

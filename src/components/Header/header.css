@@ -10,6 +10,8 @@
 
 @media only screen and (max-width: 600px) {
     .logo{
-     visibility: hidden;
+     width: 90px;
+     margin-left: 10px
     }
+   
   }

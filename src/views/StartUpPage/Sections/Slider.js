@@ -30,6 +30,7 @@ import negdlogo from "assets/img/negdlogo.jpeg"
 import thinklogo from "assets/img/thinklogo.jpeg"
 import gvlogo from "assets/img/gvlogo.png"
 import btlogo from "assets/img/btlogo.png"
+import yuvalogo from "assets/img/yuvalogo.png"
 
 import x100 from "assets/img/100x.png"
 import huddle from "assets/img/huddle.png"
@@ -166,6 +167,9 @@ export default function Slider() {
               </div>
               <div class="slide">
                 <img src= {btlogo} height="250" width="250" />
+              </div>
+              <div class="slide">
+                <img src= {yuvalogo} height="250" width="250" />
               </div>
               <div class="slide">
                 <img src= {dilogo} height="250" width="250"  />
