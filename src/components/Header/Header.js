@@ -22,6 +22,7 @@ import uilogo from "assets/img/uisif.png"
 import siiflogo from "assets/img/siiflogo.jpg"
 import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
+import ssclogo from "assets/img/ssclogo.png"
 
 const useStyles = makeStyles(styles);
 
@@ -70,6 +71,7 @@ export default function Header(props) {
   const brandComponent = <GridContainer>
                           <GridItem xs={3} sm={3} md={3} class="img-container">
                             <img src={uilogo} class="logo"/>
+                            <img src={ssclogo} class="logo2"/>
                           </GridItem>
                           <GridItem xs={9} sm={9} md={9}>
                             <h6 class="text">February 21, 2020</h6>

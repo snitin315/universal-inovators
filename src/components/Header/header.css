@@ -1,7 +1,12 @@
 .logo{
     height: 60px;
     width: 130px;
-    margin: -5px -10px -2px -30px;
+    margin: -5px -10px -2px -65px;
+}
+.logo2{
+    height: 60px;
+    max-width: 100%;
+    margin: -5px -10px -2px 8px;
 }
 .text{
     font-size: 12px;
@@ -10,8 +15,11 @@
 
 @media only screen and (max-width: 600px) {
     .logo{
-     width: 90px;
-     margin-left: 1px
+     visibility: hidden;
+     margin: -100px
     }
-   
+    .logo2{
+        visibility: hidden;
+        margin: -100px
+       }
   }
