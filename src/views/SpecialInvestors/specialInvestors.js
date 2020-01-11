@@ -46,6 +46,9 @@ import nasscom from "assets/img/nasscom.jpeg"
 import siiflogo from "assets/img/siiflogo.jpg"
 import optlogo from "assets/img/optlogo.png"
 import acqlogo from "assets/img/acqlogo.png"
+import adlogo from "assets/img/adlogo.png"
+import glidelogo from "assets/img/Glidelogo.png"
+import emplogo from "assets/img/empyreanlogo.png"
 
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
@@ -283,6 +286,24 @@ export default function Investors(props) {
              <div style={flex}>
                <img src={gvlogo} height="150px" style={{maxWidth:"100%"}} />
                <h6 className={classes.description} style={{textAlign:"center"}}><strong>GENOMIC VALLEY BIOTECH LIMITED</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={3}>
+             <div style={flex}>
+               <img src={adlogo} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description} style={{textAlign:"center"}}><strong>Ad-vac-to Legal Solutions</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={3}>
+             <div style={flex}>
+               <img src={glidelogo} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description} style={{textAlign:"center"}}><strong>Glide Accelerators</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={3}>
+             <div style={flex}>
+               <img src={emplogo} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description} style={{textAlign:"center"}}><strong>Empyrean Robotic Technologies</strong></h6>
              </div>
           </GridItem>
         </GridContainer>

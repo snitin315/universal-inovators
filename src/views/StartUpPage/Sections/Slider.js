@@ -31,6 +31,9 @@ import thinklogo from "assets/img/thinklogo.jpeg"
 import gvlogo from "assets/img/gvlogo.png"
 import btlogo from "assets/img/btlogo.png"
 import yuvalogo from "assets/img/yuvalogo.png"
+import adlogo from "assets/img/adlogo.png"
+import glidelogo from "assets/img/Glidelogo.png"
+import emplogo from "assets/img/empyreanlogo.png"
 
 import x100 from "assets/img/100x.png"
 import huddle from "assets/img/huddle.png"
@@ -212,6 +215,15 @@ export default function Slider() {
               </div>
               <div class="slide">
                 <img src= {minlogo} height="250" width="400" />
+              </div>  
+              <div class="slide">
+                <img src= {adlogo} height="250" width="400" />
+              </div>  
+              <div class="slide">
+                <img src= {emplogo} height="250" width="400" />
+              </div>  
+              <div class="slide">
+                <img src= {glidelogo} height="250" width="400" />
               </div>   
             </div>
         </div> 
