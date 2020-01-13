@@ -17,6 +17,8 @@ import nasscom from "assets/img/nasscom.jpeg"
 import siiflogo from "assets/img/siiflogo.jpg"
 import optlogo from "assets/img/optlogo.png"
 import acqlogo from "assets/img/acqlogo.png"
+import ian from "assets/img/ianlogo.png"
+import tie from "assets/img/tielogo.png"
 
 const useStyles = makeStyles(styles);
 
@@ -37,7 +39,17 @@ export default function Slider() {
         <Carousel {...settings}>
             <GridItem xs={0} sm={12} md={12}>
                 <div>
+                    <img src={ian} height="80" style={{maxWidth:"100%"}} className="slick-image" />
+                </div>
+            </GridItem>
+            <GridItem xs={0} sm={12} md={12}>
+                <div>
                     <img src={icici} height="80" style={{maxWidth:"100%"}} className="slick-image" />
+                </div>
+            </GridItem>
+            <GridItem xs={0} sm={12} md={12}>
+                <div>
+                    <img src={tie} height="80" style={{maxWidth:"100%"}} className="slick-image" />
                 </div>
             </GridItem>
             <GridItem xs={0} sm={12} md={12}>

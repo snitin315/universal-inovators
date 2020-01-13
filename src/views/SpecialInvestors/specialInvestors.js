@@ -49,6 +49,8 @@ import acqlogo from "assets/img/acqlogo.png"
 import adlogo from "assets/img/adlogo.png"
 import glidelogo from "assets/img/Glidelogo.png"
 import emplogo from "assets/img/empyreanlogo.png"
+import ian from "assets/img/ianlogo.png"
+import tie from "assets/img/tielogo.png"
 
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js";
@@ -107,6 +109,18 @@ export default function Investors(props) {
          <br/>
         </div>
         <GridContainer style={{margin:"40px"}}>
+          <GridItem xs={12} sm={6} md={3}>
+             <div style={flex}>
+               <img src={ian} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>Indian Angel Network</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={3}>
+             <div style={flex}>
+               <img src={tie} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>Tie Global</strong></h6>
+             </div>
+          </GridItem>
           <GridItem xs={12} sm={6} md={3}>
              <div style={flex}>
                <img src={icici} height="150px" style={{maxWidth:"100%"}} />

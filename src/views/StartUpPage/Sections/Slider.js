@@ -42,6 +42,8 @@ import nasscom from "assets/img/nasscom.jpeg"
 import siiflogo from "assets/img/siiflogo.jpg"
 import optlogo from "assets/img/optlogo.png"
 import acqlogo from "assets/img/acqlogo.png"
+import ian from "assets/img/ianlogo.png"
+import tie from "assets/img/tielogo.png"
 
 const useStyles = makeStyles(styles);
 const flex = {
@@ -72,6 +74,18 @@ export default function Slider() {
              <div style={flex}>
                <img src={icici} height="150px" style={{maxWidth:"100%"}} />
                <h6 className={classes.description}><strong>ICICI Bank</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12}>
+             <div style={flex}>
+               <img src={ian} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>Indian Angel Network</strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12}>
+             <div style={flex}>
+               <img src={tie} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}><strong>Tie Global Fostering Enterpreneurship</strong></h6>
              </div>
           </GridItem>
           <GridItem xs={12} >
