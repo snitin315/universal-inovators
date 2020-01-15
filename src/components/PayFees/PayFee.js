@@ -72,7 +72,7 @@ export default function PayFees() {
           <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>Branch - Sector-8, Rohini, Delhi </li></h6>
           <h6><li style={{listStyle: "none", marginLeft : "5px" , textAlign : "left"}}>IFSC Code - CIUB0000244 </li></h6>
     
-          <GridContainer>
+          {/* <GridContainer>
               <GridItem xs={5} sm={5} md={5}>
                 <hr/>
               </GridItem>
@@ -86,7 +86,7 @@ export default function PayFees() {
           <Button color="info" size="md" round target="_blank" href="https://www.scupo.in/event/3rd-international-conference-on-innovative-computing-communication/#bookticket">
             <i class="fas fa-ticket-alt"/>  
             <b style={{color:"#fff"}}>Submit Fees Online</b>
-          </Button>
+          </Button> */}
           
         </DialogContent>
         <DialogActions
