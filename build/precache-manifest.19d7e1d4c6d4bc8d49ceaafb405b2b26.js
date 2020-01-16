@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6219f5c77d8c1dd2f8e772f2ed5a7935",
+    "revision": "c2c158c61dda936817c34e17db374548",
     "url": "/index.html"
   },
   {
-    "revision": "c9c927f48c98b29c7632",
-    "url": "/static/css/main.e18fdbfa.chunk.css"
+    "revision": "1c0d56c6e918de1d0a60",
+    "url": "/static/css/main.b80bbfec.chunk.css"
   },
   {
-    "revision": "8a59c9333949779663d8",
-    "url": "/static/js/2.7173a955.chunk.js"
+    "revision": "39fce0e6bcf351218dc8",
+    "url": "/static/js/2.8fd8913a.chunk.js"
   },
   {
-    "revision": "c9c927f48c98b29c7632",
-    "url": "/static/js/main.4e044445.chunk.js"
+    "revision": "1c0d56c6e918de1d0a60",
+    "url": "/static/js/main.3eb56a83.chunk.js"
   },
   {
     "revision": "4931b02d894689682610",
@@ -290,6 +290,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "73ce8f0bd798d9c074a022d5abf2d524",
     "url": "/static/media/uisif.73ce8f0b.png"
+  },
+  {
+    "revision": "7171374ee0f47efc41837b9c365a32b7",
+    "url": "/static/media/upliftlogo.7171374e.png"
   },
   {
     "revision": "6840d39e97077d6de267b1394616c286",
