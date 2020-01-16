@@ -34,6 +34,7 @@ import yuvalogo from "assets/img/yuvalogo.png"
 import adlogo from "assets/img/adlogo.png"
 import glidelogo from "assets/img/Glidelogo.png"
 import emplogo from "assets/img/empyreanlogo.png"
+import upliftlogo from "assets/img/upliftlogo.png"
 
 import x100 from "assets/img/100x.png"
 import huddle from "assets/img/huddle.png"
@@ -153,92 +154,80 @@ export default function Slider() {
          <div class="slider">
             <div class="slide-track">
               <div class="slide">
-                <img  height="250" width="250" />
+                <img src= {ssclogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img  height="250" width="250" />
+                <img src= {nitplogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img  height="250" width="250" />
+                <img src= {npclogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img  height="250" width="250" />
+                <img src= {srgelogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img  height="250" width="250" />
+                <img src= {setitlogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img src= {ssclogo} height="250" width="250" />
+                <img src= {btlogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img src= {nitplogo} height="250" width="250" />
+                <img src= {yuvalogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img src= {npclogo} height="250" width="250" />
+                <img src= {upliftlogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img src= {srgelogo} height="250" width="250" />
+                <img src= {dilogo} height="150" width="150"  />
               </div>
               <div class="slide">
-                <img src= {setitlogo} height="250" width="250" />
-              </div>
-              <div class="slide">
-                <img src= {btlogo} height="250" width="250" />
-              </div>
-              <div class="slide">
-                <img src= {yuvalogo} height="250" width="250" />
-              </div>
-              <div class="slide">
-                <img src= {dilogo} height="250" width="250"  />
-              </div>
-              <div class="slide">
-                <img src= {uilogo} height="250" width="250" />
+                <img src= {uilogo} height="150" width="150" />
               </div>     
               <div class="slide">
-                <img src= {dmrlogo} height="250" width="250" />
+                <img src= {dmrlogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img src= {pkslogo} height="250" width="300" />
+                <img src= {pkslogo} height="150" width="200" />
               </div>
               <div class="slide">
-                <img src= {autologo} height="250" width="250" />
+                <img src= {autologo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img src= {callogo} height="250" width="250" />
+                <img src= {callogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img src= {plucklogo} height="250" width="250" />
+                <img src= {plucklogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img src= {rtmlogo} height="250" width="250" />
+                <img src= {rtmlogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img src= {spainlogo} height="250" width="250" />
+                <img src= {spainlogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img src= {sgrtlogo} height="250" width="250" />
+                <img src= {sgrtlogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img src= {negdlogo} height="250" width="300" />
+                <img src= {negdlogo} height="150" width="200" />
               </div>
               <div class="slide">
-                <img src= {thinklogo} height="250" width="250" />
+                <img src= {thinklogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img src= {gvlogo} height="250" width="250" />
+                <img src= {gvlogo} height="150" width="150" />
               </div>
               <div class="slide">
-                <img src= {minlogo} height="250" width="400" />
+                <img src= {minlogo} height="150" width="250" />
               </div>  
               <div class="slide">
-                <img src= {adlogo} height="250" width="400" />
+                <img src= {adlogo} height="150" width="150" />
               </div>  
               <div class="slide">
-                <img src= {emplogo} height="250" width="400" />
+                <img src= {emplogo} height="150" width="150" />
               </div>  
               <div class="slide">
-                <img src= {glidelogo} height="250" width="400" />
-              </div>   
+                <img src= {glidelogo} height="150" width="150" />
+              </div>  
             </div>
         </div> 
         <br/>       

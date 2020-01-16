@@ -2,12 +2,12 @@
 	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 }
 
-$animationSpeed: 40s;
+$animationSpeed: 30s;
 
 // Animation
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 26))}
+	100% { transform: translateX(calc(-250px * 18))}
 }
 
 
@@ -15,7 +15,7 @@ $animationSpeed: 40s;
 .slider {
 	background: white;
 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 280px;
+	height: 200px;
 	max-width: 100%;
 	margin: auto;
 	overflow:hidden;
