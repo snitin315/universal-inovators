@@ -35,6 +35,7 @@ import adlogo from "assets/img/adlogo.png"
 import glidelogo from "assets/img/Glidelogo.png"
 import emplogo from "assets/img/empyreanlogo.png"
 import upliftlogo from "assets/img/upliftlogo.png"
+import ctlogo from "assets/img/ctlogo.png"
 
 import x100 from "assets/img/100x.png"
 import huddle from "assets/img/huddle.png"
@@ -224,7 +225,10 @@ export default function Slider() {
               </div>  
               <div class="slide">
                 <img src= {emplogo} height="150" width="150" />
-              </div>  
+              </div> 
+              <div class="slide">
+                <img src= {ctlogo} height="150" width="150"  />
+              </div> 
               <div class="slide">
                 <img src= {glidelogo} height="150" width="150" />
               </div>  
