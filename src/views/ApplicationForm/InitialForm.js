@@ -74,7 +74,7 @@ export default function InitialForm(props) {
         rightLinks={<StartupHeader />}
         fixed
         changeColorOnScroll={{
-          height: 400,
+          height: 300,
           color: "info"
         }}
         {...rest}
@@ -230,6 +230,232 @@ export default function InitialForm(props) {
                  }}
             />
         </GridItem>
+        <GridItem xs={12} sm={6} md={6}>
+            <CustomInput
+                labelText="Business Summary : (A one para description of your business)"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                    name : "entry.604889351" , 
+                    type : "text",
+                 }}
+            />
+        </GridItem>
+
+        <GridItem  xs={12} sm={12} md={4} >
+            <h4 style={{color : "black" , fontWeight : '900'}} >Type of Venture :</h4>  
+             
+            <label class="container3">Single Ownership
+              <input type="radio"  name="entry.63668602" value="Single Ownership" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Partnership / LLP
+              <input type="radio"  name="entry.63668602" value="Partnership / LLP" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Other
+              <input type="radio"  name="entry.63668602" value="Other" required />
+              <span class="checkmark"></span>
+            </label>       
+
+        </GridItem>
+
+        <GridItem  xs={12} sm={12} md={4} >
+            <h4 style={{color : "black" , fontWeight : '900'}} >Stage of Start-up</h4>  
+
+            <label class="container3">Idea
+              <input type="radio"  name="entry.1119135260" value="Idea" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Idea with Prototype
+              <input type="radio"  name="entry.1119135260" value="Idea with Prototype" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Pilot Launched
+              <input type="radio"  name="entry.1119135260" value="Pilot Launched" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Already Launched
+              <input type="radio"  name="entry.1119135260" value="Already Launched" required />
+              <span class="checkmark"></span>
+            </label>
+            
+        </GridItem>
+
+        <GridItem  xs={12} sm={12} md={4} >
+            <h4 style={{color : "black" , fontWeight : '900'}} >Business Model</h4>  
+
+            <label class="container3">For profit
+              <input type="radio"  name="entry.2010769821" value="For profit" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Not-for-profit
+              <input type="radio"  name="entry.2010769821" value="Not-for-profit" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Hybrid
+              <input type="radio"  name="entry.2010769821" value="Hybrid" required />
+              <span class="checkmark"></span>
+            </label>    
+        </GridItem>
+
+        <GridItem  xs={12} sm={12} md={6} >
+            <h4 style={{color : "black" , fontWeight : '900'}} >Category of Participants</h4>  
+
+            <label class="container3">Student
+              <input type="radio"  name="entry.1984042516" value="Student" required />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container3">Passed-out Student working on Innovative Idea/Start-up
+              <input type="radio"  name="entry.1984042516" value="Passed-out Student working on Innovative Idea/Start-up" required />
+              <span class="checkmark"></span>
+            </label>
+             
+            <label class="container3">Start-up registered with incubation center
+              <input type="radio"  name="entry.1984042516" value="Start-up registered with incubation center." required />
+              <span class="checkmark"></span>
+            </label>       
+
+        </GridItem>
+
+        <GridItem  xs={12} sm={12} md={6} >
+            <h4 style={{color : "black" , fontWeight : '900'}} > Current Revenue Size</h4>  
+
+            <label class="container3">Pre-revenue
+              <input type="radio"  name="entry.2052913070" value="Pre-revenue" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3"> Less than 10 Lakhs
+              <input type="radio"  name="entry.2052913070" value="< 10 Lakhs" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3"> 10 Lakhs - 50 Lakhs
+              <input type="radio"  name="entry.2052913070" value="10 Lakhs - 50 Lakhs" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">50 Lakhs - 1 Crore
+              <input type="radio"  name="entry.2052913070" value="50 Lakhs - 1 Crore" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3"> Greater than 1 Crore
+              <input type="radio"  name="entry.2052913070" value="> 1 Crore" required />
+              <span class="checkmark"></span>
+            </label>
+              
+        </GridItem>
+
+        <GridItem  xs={12} sm={12} md={6} >
+            <h4 style={{color : "black" , fontWeight : '900'}} >Current Funding Status</h4>  
+
+            <label class="container3">Self Funded
+              <input type="radio"  name="entry.1618994458" value="Self Funded" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Friends and Family
+              <input type="radio"  name="entry.1618994458" value="Friends and Family" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Angels
+              <input type="radio"  name="entry.1618994458" value="Angels" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">VC
+              <input type="radio"  name="entry.1618994458" value="VC" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Incubator
+              <input type="radio"  name="entry.1618994458" value="Incubator" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Other
+              <input type="radio"  name="entry.1618994458" value="Other" required />
+              <span class="checkmark"></span>
+            </label>
+   
+        </GridItem>
+
+        <GridItem  xs={12} sm={12} md={6} >
+            <h4 style={{color : "black" , fontWeight : '900'}} > Idea Belonging to Sector</h4>  
+
+            <label class="container3">Hospitality
+              <input type="radio"  name="entry.1740434126" value="Hospitality" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Tech-Automation
+              <input type="radio"  name="entry.1740434126" value="Tech-Automation" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">IT
+              <input type="radio"  name="entry.1740434126" value="IT" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Health-Wellness & Pharma
+              <input type="radio"  name="entry.1740434126" value="Health-Wellness & Pharma" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Environment, Green Tech & Sustainability
+              <input type="radio"  name="entry.1740434126" value="Environment, Green Tech & Sustainability" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Social Development and Art & Culture
+              <input type="radio"  name="entry.1740434126" value="Social Development and Art & Culture" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Supply Chain & Logistics
+              <input type="radio"  name="entry.1740434126" value="Supply Chain & Logistics" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Media, Communication & Entertainment
+              <input type="radio"  name="entry.1740434126" value="Media, Communication & Entertainment" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Textile & Apparels
+              <input type="radio"  name="entry.1740434126" value="Textile & Apparels" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">Food & Beverage
+              <input type="radio"  name="entry.1740434126" value="Food & Beverage" required />
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container3">FMCG
+              <input type="radio"  name="entry.1740434126" value="FMCG" required />
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container3">Other
+              <input type="radio"  name="entry.1740434126" value="Other" required />
+              <span class="checkmark"></span>
+            </label>
+        </GridItem>
+
     </GridContainer>
                  
 
