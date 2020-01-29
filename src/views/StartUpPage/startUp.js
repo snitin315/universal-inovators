@@ -70,6 +70,7 @@ export default function StartUpPage(props) {
               <SpecialInvestors/>
               <br/>
               <h3 className={classes.title}><CharPose text="Where StartUp Meet Investors" /></h3>
+              <h5 className={classes.title} style={{margin : "-20px 0px 0px 20px"}}><em>(Several Angel & VC Investors)</em></h5>
               <h6 className={classes.title} style={{marginTop : "-20px"}}><em>Let your dreams come true || Your Story Starts with us</em></h6>
               <GridContainer  style={{marginTop : "-20px"}}>
                 <GridItem xs={12} sm={6} md={4}>
