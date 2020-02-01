@@ -91,10 +91,6 @@ export default function StartUpPage(props) {
                 </GridItem>
               </GridContainer>
             </GridItem>
-            <GridItem xs={12} sm={12} md={6}>
-              <br/>
-              
-            </GridItem>
           </GridContainer>
         </div>
     </Parallax> 
