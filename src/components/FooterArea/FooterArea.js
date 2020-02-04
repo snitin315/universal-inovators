@@ -46,7 +46,8 @@ export default function FooterArea(props) {
 		<div class="footer-center" style={{color:"#fff"}}>
         <h4 style={{color:"#fff", textAlign:"center"}}>Contact Us</h4>
         <ListStyle icon="fa fa-map-marker" text = "SHAHEED SUKHDEV COLLEGE OF BUSINESS STUDIES, University of Delhi, New Delhi"/>    
-        <ListStyle icon="fa fa-envelope" text ="universalinovators@gmail.com" /> 
+        <ListStyle icon="fa fa-envelope" text ="universalinovators@gmail.com" />
+        <ListStyle icon="fa fa-phone" text ="Travel and accommodation related query: contact Mr Shyam +91 8108471440" />  
 		 
 		</div>
  
