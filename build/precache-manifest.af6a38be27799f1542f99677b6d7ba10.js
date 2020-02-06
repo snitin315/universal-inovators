@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "33f2fb838450cb56382424c2e6d9baff",
+    "revision": "8dbe23d89218f640cecb47b9a7b60def",
     "url": "/index.html"
   },
   {
-    "revision": "0fc01bf48a7d8fce2e94",
+    "revision": "b33daf8cd2e944b08b70",
     "url": "/static/css/main.895674b4.chunk.css"
   },
   {
-    "revision": "a036bc80c7b7aa1b231e",
-    "url": "/static/js/2.b34064b3.chunk.js"
+    "revision": "7a183613f96d7269d0c0",
+    "url": "/static/js/2.7cd02070.chunk.js"
   },
   {
-    "revision": "0fc01bf48a7d8fce2e94",
-    "url": "/static/js/main.957d5e25.chunk.js"
+    "revision": "b33daf8cd2e944b08b70",
+    "url": "/static/js/main.7b9abedd.chunk.js"
   },
   {
     "revision": "4931b02d894689682610",
@@ -218,6 +218,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "88e3c8076d3ed4642dee2bfb7be9a8e9",
     "url": "/static/media/siiflogo.88e3c807.jpg"
+  },
+  {
+    "revision": "d2bd1cb1b68db71a31b524b629f4d6af",
+    "url": "/static/media/snlogo.d2bd1cb1.png"
   },
   {
     "revision": "401990373d71aab7c2a92776a48682e4",
