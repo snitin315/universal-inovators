@@ -19,6 +19,7 @@ import GridItem from "components/Grid/GridItem.js";
 import StartupHeader from "components/Header/StartupHeader";
 import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
+import Tooltip from "@material-ui/core/Tooltip";
 import Fade from 'react-reveal/Fade';
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Checkbox from "@material-ui/core/Checkbox";
@@ -308,7 +309,7 @@ export default function InitialForm(props) {
             </label>    
         </GridItem>
 
-        <GridItem  xs={12} sm={12} md={6} >
+        <GridItem  xs={12} sm={12} md={4} >
             <h4 style={{color : "black" , fontWeight : '900'}} >Category of Participants</h4>  
 
             <label class="container3">Student
@@ -327,7 +328,7 @@ export default function InitialForm(props) {
 
         </GridItem>
 
-        <GridItem  xs={12} sm={12} md={6} >
+        <GridItem  xs={12} sm={12} md={4} >
             <h4 style={{color : "black" , fontWeight : '900'}} > Current Revenue Size</h4>  
 
             <label class="container3">Pre-revenue
@@ -357,7 +358,7 @@ export default function InitialForm(props) {
               
         </GridItem>
 
-        <GridItem  xs={12} sm={12} md={6} >
+        <GridItem  xs={12} sm={12} md={4} >
             <h4 style={{color : "black" , fontWeight : '900'}} >Current Funding Status</h4>  
 
             <label class="container3">Self Funded
@@ -390,6 +391,31 @@ export default function InitialForm(props) {
               <span class="checkmark"></span>
             </label>
    
+        </GridItem>
+
+        <GridItem  xs={12} sm={12} md={6} >
+            <h4 style={{color : "black" , fontWeight : '900'}} >Category of Participants</h4>  
+
+            <label class="container3">Patent applied for
+              <input type="radio"  name="entry.1465147416" value="Patent applied for" required />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container3">Patent awarded
+              <input type="radio"  name="entry.1465147416" value="Patent awarded" required />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container3">Regulatory permissions applied for
+              <input type="radio"  name="entry.1465147416" value="Regulatory permissions applied for" required />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container3">Regulatory permissions received
+              <input type="radio"  name="entry.1465147416" value="Regulatory permissions received" required />
+              <span class="checkmark"></span>
+            </label>
+            <label class="container3">Not Applicable
+              <input type="radio"  name="entry.1465147416" value="Not Applicable" required />
+              <span class="checkmark"></span>
+            </label>
         </GridItem>
 
         <GridItem  xs={12} sm={12} md={6} >
@@ -456,6 +482,194 @@ export default function InitialForm(props) {
             </label>
         </GridItem>
 
+        <GridItem xs={8} sm={10} md={9}>
+            <CustomInput
+                labelText="What is the value proposition/pain point that you are addressing?"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                   name : "entry.944397714" ,
+                   type : "text"
+                }}
+            />
+        </GridItem> 
+        <GridItem xs={4} sm={2} md={3} >   
+            <br/>
+            <Tooltip
+                id="tooltip-right"
+                title="Who is going to buy your product/service and how much they would pay for it. Why would consumers choose this overothers? Remember to articulate the key differentiation in customer beneNts, not an internal perspective on technologysuperiority."
+                placement="right"
+                classes={{ tooltip: classes.tooltip }}
+            >
+                <Button color="info"  style={{width:"3px"}}> <Info className={classes.icons} /> </Button>
+            </Tooltip>
+        </GridItem>
+
+        <GridItem xs={8} sm={10} md={9}>
+            <CustomInput
+                labelText="Business model / Financial model ( 2 year projections)"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                   name : "entry.2028315883",
+                   type : "text"
+                }}
+            />
+        </GridItem> 
+        <GridItem xs={4} sm={2} md={3} >   
+            <br/>
+            <Tooltip
+                id="tooltip-right"
+                title="This is about how you will make money from this business opportunity (example who will pay you,who will charge the customer, how, when etc) Financial Projections: Provide next 2 year quarterly Nnancial projectionsand provide an estimate of the 5 year Nnancial projection. Cover revenue, cost, gross margin and net cash how."
+                placement="right"
+                classes={{ tooltip: classes.tooltip }}
+            >
+                <Button color="info"  style={{width:"3px"}}> <Info className={classes.icons} /> </Button>
+            </Tooltip>
+        </GridItem>
+
+        <GridItem xs={8} sm={10} md={9}>
+            <CustomInput
+                labelText="What is the GOTO Market Strategy?"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                   name : "entry.980713676" ,
+                   type : "text"
+                }}
+            />
+        </GridItem> 
+        <GridItem xs={4} sm={2} md={3} >   
+            <br/>
+            <Tooltip
+                id="tooltip-right"
+                title="How are you going to market and sell your products/services (Go to Market Model). What capability does the teamhave and plans to build to take the offerings to the market. What partnerships are critical to your business. What is thecurrent status of customer and partner pipeline."
+                placement="right"
+                classes={{ tooltip: classes.tooltip }}
+            >
+                <Button color="info"  style={{width:"3px"}}> <Info className={classes.icons} /> </Button>
+            </Tooltip>
+        </GridItem>
+
+        <GridItem xs={8} sm={10} md={9}>
+            <CustomInput
+                labelText="Major Competitors & Barriers"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                   name : "entry.1607748443" ,
+                   type : "text"
+                }}
+            />
+        </GridItem> 
+        <GridItem xs={4} sm={2} md={3} >   
+            <br/>
+            <Tooltip
+                id="tooltip-right"
+                title="Explain your competitor products (Give speciNc Product/Company). Major barriers you will face entering in market andhow do you plan to overcome these barriers. (word limit: 150)"
+                placement="right"
+                classes={{ tooltip: classes.tooltip }}
+            >
+                <Button color="info"  style={{width:"3px"}}> <Info className={classes.icons} /> </Button>
+            </Tooltip>
+        </GridItem>
+
+        <GridItem xs={8} sm={10} md={9}>
+            <CustomInput
+                labelText="Customer traction"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                   name : "entry.1004490213",
+                   type : "text"
+                }}
+            />
+        </GridItem> 
+        <GridItem xs={4} sm={2} md={3} >   
+            <br/>
+            <Tooltip
+                id="tooltip-right"
+                title="Mention key milestones achieved since inception of company (prototype development, Nrst revenues etc)."
+                placement="right"
+                classes={{ tooltip: classes.tooltip }}
+            >
+                <Button color="info"  style={{width:"3px"}}> <Info className={classes.icons} /> </Button>
+            </Tooltip>
+        </GridItem>
+
+        <GridItem xs={8} sm={10} md={9}>
+            <CustomInput
+                labelText="What are you looking for? (Investment, Mentorship etc.)"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                   name : "entry.455168759",
+                   type : "text"
+                }}
+            />
+        </GridItem> 
+        <GridItem xs={4} sm={2} md={3} >   
+            <br/>
+            <Tooltip
+                id="tooltip-right"
+                title="Describe how much money you want to raise and what you intend doing with these funds."
+                placement="right"
+                classes={{ tooltip: classes.tooltip }}
+            >
+                <Button color="info"  style={{width:"3px"}}> <Info className={classes.icons} /> </Button>
+            </Tooltip>
+        </GridItem>
+
+        <GridItem xs={8} sm={10} md={9}>
+            <CustomInput
+                labelText="Link to your Pitch template"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                   name : "entry.980890318" ,
+                   type : "text"
+                }}
+            />
+        </GridItem> 
+        <GridItem xs={4} sm={2} md={3} >   
+            <br/>
+            <Tooltip
+                id="tooltip-right"
+                title="Upload your pitch to Drive(or any other platform) and share the link. (Not more than 8 Slides FONT size 22 and no background color )"
+                placement="right"
+                classes={{ tooltip: classes.tooltip }}
+            >
+                <Button color="info"  style={{width:"3px"}}> <Info className={classes.icons} /> </Button>
+            </Tooltip>
+        </GridItem>
+
+        <GridItem xs={8} sm={10} md={9}>
+            <CustomInput
+                labelText="Video link, please provide a link of the video of product/Service ( if any )"
+                id="float"
+                formControlProps={{
+                    fullWidth: true
+                }}
+                inputProps={{
+                   name : "entry.1975068442",
+                   type : "text"
+                }}
+            />
+        </GridItem> 
     </GridContainer>
                  
 
