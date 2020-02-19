@@ -37,6 +37,8 @@ import emplogo from "assets/img/empyreanlogo.png"
 import upliftlogo from "assets/img/upliftlogo.png"
 import ctlogo from "assets/img/ctlogo.png"
 import snlogo from "assets/img/snlogo.png"
+import inacclogo from "assets/img/inacclogo.jpeg"
+import sslogo from "assets/img/sslogo.jpeg"
 
 import x100 from "assets/img/100x.png"
 import huddle from "assets/img/huddle.png"
@@ -175,6 +177,12 @@ export default function Slider() {
               </div>
               <div class="slide">
                 <img src= {yuvalogo} height="150" width="150" />
+              </div>
+              <div class="slide">
+                <img src= {inacclogo} height="150" width="150" />
+              </div>
+              <div class="slide">
+                <img src= {sslogo} height="150" width="150" />
               </div>
               <div class="slide">
                 <img src= {upliftlogo} height="150" width="150" />

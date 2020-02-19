@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "92c120a1f143b3e8fcd0bac11b3c8195",
+    "revision": "892c865abd671cc74144e10039fe84a0",
     "url": "/index.html"
   },
   {
-    "revision": "10a6d201e1082ab66c9c",
+    "revision": "3065b9bb34ab9eb435c8",
     "url": "/static/css/main.895674b4.chunk.css"
   },
   {
-    "revision": "ad7b54ece7a504097f1e",
-    "url": "/static/js/2.0b12f3f2.chunk.js"
+    "revision": "a7165c483490a27d3f4e",
+    "url": "/static/js/2.020448d5.chunk.js"
   },
   {
-    "revision": "10a6d201e1082ab66c9c",
-    "url": "/static/js/main.50fc28ae.chunk.js"
+    "revision": "3065b9bb34ab9eb435c8",
+    "url": "/static/js/main.a6414ab8.chunk.js"
   },
   {
     "revision": "4931b02d894689682610",
@@ -238,6 +238,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fb151acf4487b596269f58b4a55094ed",
     "url": "/static/media/ssclogo.fb151acf.png"
+  },
+  {
+    "revision": "02f5844d933f5a7c654f9c8e0811e6ac",
+    "url": "/static/media/sslogo.02f5844d.jpeg"
   },
   {
     "revision": "213bbcdf820a3a530cae26093004a61f",

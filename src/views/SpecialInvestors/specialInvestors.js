@@ -6,15 +6,11 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // core components
 import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import StartupHeader from "components/Header/StartupHeader";
-import Parallax from "components/Parallax/Parallax.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
-import rocket from "assets/img/rocket2.gif"
-import Carousel from "react-slick";
 
 //logo
 import ssclogo from "assets/img/ssclogo.png"
@@ -41,6 +37,8 @@ import yuvalogo from "assets/img/yuvalogo.png"
 import upliftlogo from "assets/img/upliftlogo.png"
 import ctlogo from "assets/img/ctlogo.png"
 import snlogo from "assets/img/snlogo.png"
+import inacclogo from "assets/img/inacclogo.jpeg"
+import sslogo from "assets/img/sslogo.jpeg"
 
 import x100 from "assets/img/100x.png"
 import huddle from "assets/img/huddle.png"
@@ -56,8 +54,6 @@ import ian from "assets/img/ianlogo.png"
 import tie from "assets/img/tielogo.png"
 
 // Sections for this page
-import CharPose from "../LandingPage/Sections/CharPose.js";
-import ParticlesContainer from "components/Particle/Particle.js";
 import FooterArea from "components/FooterArea/FooterArea.js";
 
 const dashboardRoutes = [];
@@ -74,20 +70,6 @@ export default function Investors(props) {
     color :"#333"
   } ;
 
-  const style={
-    color : 'cyan'
-  }
-  const settings = {
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true
-  };
-  const container ={
-    width : '100%'
-  }
-  
   return (
     <div>
 
@@ -179,6 +161,18 @@ export default function Investors(props) {
         </div>
 
         <GridContainer style={{margin:"50px"}}>
+          <GridItem xs={12} sm={6} md={6}>
+             <div style={flex}>
+               <img src={inacclogo} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}  style={{textAlign:"center"}}><strong> India Accelerator </strong></h6>
+             </div>
+          </GridItem>
+          <GridItem xs={12} sm={6} md={6}>
+             <div style={flex}>
+               <img src={sslogo} height="150px" style={{maxWidth:"100%"}} />
+               <h6 className={classes.description}  style={{textAlign:"center"}}><strong> startup spine </strong></h6>
+             </div>
+          </GridItem>
           <GridItem xs={12} sm={6} md={3}>
              <div style={flex}>
                <img src={ssclogo} height="150px" style={{maxWidth:"100%"}} />
