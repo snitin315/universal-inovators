@@ -1,5 +1,7 @@
 # Universal-Inovators
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3bd25667ba164357b5fab833738bba62)](https://app.codacy.com/manual/snitin315/universal-inovators?utm_source=github.com&utm_medium=referral&utm_content=snitin315/universal-inovators&utm_campaign=Badge_Grade_Dashboard)
+
 Website for universal-inovators.com made with React.
 
 # Requirements 
