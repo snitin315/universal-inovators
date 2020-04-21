@@ -20,7 +20,7 @@
     "react-animations": "^1.0.0",
     "react-datetime": "2.16.3",
     "react-dom": "16.9.0",
-    "react-particles-js": "^2.7.0",
+    "react-particles-js": "^3.1.0",
     "react-pose": "^4.0.8",
     "react-pose-text": "^3.1.0",
     "react-preloaders": "^3.0.3",
