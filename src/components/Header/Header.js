@@ -70,7 +70,7 @@ export default function Header(props) {
   });
   const brandComponent = <GridContainer>
                           <GridItem class="img-container">
-                            <img src={uilogo}/>
+                            <img src={uilogo} class="logo"/>
                           </GridItem>
                         </GridContainer>
   return (
