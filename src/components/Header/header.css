@@ -12,14 +12,3 @@
     font-size: 12px;
     margin-top: -5px;
 }
-
-@media only screen and (max-width: 600px) {
-    .logo{
-     visibility: hidden;
-     margin: -100px
-    }
-    .logo2{
-        visibility: hidden;
-        margin: -100px
-       }
-  }
