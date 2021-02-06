@@ -18,7 +18,7 @@ import Menu from "@material-ui/icons/Menu";
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
 
 import "./header.css"
-import uilogo from "assets/img/uisifssc.png"
+import uilogo from "assets/img/uilogo.jpeg"
 
 import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
