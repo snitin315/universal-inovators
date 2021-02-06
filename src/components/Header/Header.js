@@ -69,7 +69,7 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
   const brandComponent = <GridContainer>
-                          <GridItem >
+                          <GridItem class="img-container">
                             <img src={uilogo}/>
                           </GridItem>
                         </GridContainer>
