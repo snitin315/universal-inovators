@@ -12,3 +12,9 @@
     font-size: 12px;
     margin-top: -5px;
 }
+
+@media only screen and (max-width: 600px) {
+    .logo{
+     margin: 80px
+    }
+  }
