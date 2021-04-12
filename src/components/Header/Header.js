@@ -18,7 +18,7 @@ import Menu from "@material-ui/icons/Menu";
 import styles from "assets/jss/material-kit-react/components/headerStyle.js";
 
 import "./header.css"
-import uilogo from "assets/img/uisifssc.png"
+import uilogo from "assets/img/uilogo.jpeg"
 
 import GridContainer from "components/Grid/GridContainer";
 import GridItem from "components/Grid/GridItem";
@@ -61,7 +61,7 @@ export default function Header(props) {
         .classList.remove(classes[changeColorOnScroll.color]);
     }
   };
-  const { color, rightLinks, leftLinks, brand, fixed, absolute,} = props;
+  const { color, rightLinks, leftLinks, brand, fixed, absolute, } = props;
   const appBarClasses = classNames({
     [classes.appBar]: true,
     [classes[color]]: color,
@@ -69,14 +69,10 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
   const brandComponent = <GridContainer>
-                          <GridItem xs={3} sm={3} md={2} className="img-container">
-                            <img src={uilogo} className="logo"/>
-                          </GridItem>
-                          <GridItem xs={9} sm={9} md={10}>
-                            <h6 className="text">February 21, 2020</h6>
-                            <h6 className="text" style={{margin:"-10px -20px 0px 0px"}}>SHAHEED SUKHDEV COLLEGE OF BUSINESS STUDIES, UNIVERSITY OF DELHI, NEW DELHI</h6>
-                          </GridItem>
-                        </GridContainer>
+    <GridItem class="img-container">
+      <img src={uilogo} class="logo" />
+    </GridItem>
+  </GridContainer>
   return (
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>

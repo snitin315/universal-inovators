@@ -229,7 +229,7 @@ export default function MemberDetails() {
                 <strong>Account Type: CURRENT</strong><br />
               </li>
               <li>
-                {/* <Paypal /> */}
+                <Paypal />
               </li>
             </ul>
 

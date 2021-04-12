@@ -15,11 +15,6 @@
 
 @media only screen and (max-width: 600px) {
     .logo{
-     visibility: hidden;
-     margin: -100px
+     margin-left: 30px
     }
-    .logo2{
-        visibility: hidden;
-        margin: -100px
-       }
   }
