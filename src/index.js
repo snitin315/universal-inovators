@@ -23,6 +23,7 @@ import InitialForm from "views/ApplicationForm/InitialForm";
 import Investors from "views/SpecialInvestors/specialInvestors";
 import Policy from "views/Policy/Policy.js";
 import Agenda from "views/Agenda/Agenda";
+import MemPay from "views/Mempay/Mempay";
 
 var hist = createBrowserHistory();
 
@@ -45,7 +46,8 @@ ReactDOM.render(
       <Route path="/startup-application-form" component = {InitialForm}/>   
       <Route path="/startup-investors-and-partners" component = {Investors}/>     
       <Route path="/privacy-policy" component = {Policy}/>  
-      <Route path="/startup-agenda" component = {Agenda}/>              
+      <Route path="/startup-agenda" component = {Agenda}/>
+      <Route path="/mempay" component={MemPay}/>             
       <Route path="/" component={LandingPage} />
     </Switch>
   </Router>,

@@ -16,6 +16,11 @@ const productStyle = {
     color: "#000",
     fontWeight: "400",
     textAlign: "justify"
+  },
+  paypalBTN: {
+    padding: '1.5rem',
+    borderRadius: 10,
+    backgroundColor: '#005780',
   }
 };
 

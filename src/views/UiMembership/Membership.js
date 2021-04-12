@@ -63,7 +63,7 @@ export default function Membership(props) {
         </div>
       </Parallax>
     
-      <Fade bottom duration ={2000} delay="500">
+      <Fade bottom duration ={2000} delay={500}>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
          
