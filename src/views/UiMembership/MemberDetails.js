@@ -219,8 +219,8 @@ export default function MemberDetails() {
             <p className={classes.description} style={design} > The fee for the membership may be paid via online, cash / DD /cheque or via wired transfer to the ICICC bank account. If there is any surcharge over outstation DD or cheque, it is to be borne by the member.</p>
             <ul className={classes.description} style={design}>
               <li>
-                <strong>Account Name:  ICICC</strong><br />
-                <strong>Account No:  510909010080523</strong><br />
+                <strong>Account Name:  UNIVERSAL INOVATORS</strong><br />
+                <strong>Account No:  510909010118890</strong><br />
                 <strong>Bank:  City Union Bank</strong><br />
                 <strong>Branch:  Sector-8, Rohini, Delhi</strong><br />
                 <strong>IFSC Code:   CIUB0000244</strong><br />
