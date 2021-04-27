@@ -21,7 +21,7 @@ const productStyle = {
     padding: '1.5rem',
     borderRadius: 10,
     backgroundColor: '#005780',
-  }
+  },
 };
 
 export default productStyle;
