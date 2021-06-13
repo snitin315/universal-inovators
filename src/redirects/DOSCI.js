@@ -7,9 +7,8 @@ const DOSCI = () => {
   }, []);
 
   return (
-    <div style={{margin: "50px"}}>
-      <h4>Redirecting to <a href="http://dosci-conf.com">dosci-conf.com</a> ...</h4>
-    </div>
+    < >
+    </>
   );
 }
 
