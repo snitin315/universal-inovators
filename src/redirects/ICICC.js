@@ -7,9 +7,8 @@ const ICICC = () => {
   }, []);
 
   return (
-    <div style={{margin: "50px"}}>
-      <h4>Redirecting to <a href="http://icicc-conf.com">icicc-conf.com</a> ...</h4>
-    </div>
+    < >
+    </>
   );
 }
 
