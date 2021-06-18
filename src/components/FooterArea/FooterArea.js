@@ -73,7 +73,7 @@ export default function FooterArea(props) {
  
 		</div>
         <hr/>
-        <p class="footer-company-name" style={{textAlign:"center"}}> Universal-Inovators &copy; 2019 | All Right Reserved</p>
+        <p class="footer-company-name" style={{textAlign:"center"}}> Universal-Inovators &copy; 2021 | All Right Reserved | Site by Aniket Rana</p>
 		</footer>
   );
 }
