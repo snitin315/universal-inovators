@@ -8,7 +8,7 @@
     "@material-ui/core": "4.3.2",
     "@material-ui/icons": "4.2.1",
     "classnames": "2.2.6",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "forever": "^1.0.0",
     "history": "4.10.1",
     "moment": "2.24.0",
