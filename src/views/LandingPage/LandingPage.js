@@ -75,7 +75,7 @@ export default function LandingPage(props) {
           <GridContainer>
 
               <Fade duration ={2000}>
-              <Steps num="1st"  text ="UI have its flagship conference 'International Conference on Innovative Computing and Communication (ICICC)', whose primary ai is to promote the exchange of innovative scientific information between researchers, developers, engineers, students, and practitioners. Another aim is to promote the transformation of fundamental research into institutional and industrialized research and to convert applied exploration into real time application. Overall the conference is successful to provide the researchers and attendees with prospects for national and international collaboration and networking among universities and institutions from India and abroad for promoting research."/>
+              <Steps num="1st"  text ="UI have its flagship conference 'International Conference on Innovative Computing and Communication (ICICC)', whose primary aim is to promote the exchange of innovative scientific information between researchers, developers, engineers, students, and practitioners. Another aim is to promote the transformation of fundamental research into institutional and industrialized research and to convert applied exploration into real time application. Overall the conference is successful to provide the researchers and attendees with prospects for national and international collaboration and networking among universities and institutions from India and abroad for promoting research."/>
               </Fade>
 
               <Fade duration ={2000}>
