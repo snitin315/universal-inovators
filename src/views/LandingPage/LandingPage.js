@@ -18,7 +18,7 @@ import Fade from 'react-reveal/Fade';
 
 
 // Sections for this page
-import ProductSection from "./Sections/ProductSection.js";
+import ProductSection from "./Sections/CourseSection.js";
 import Steps from "./Sections/Steps.js"
 import CharPose from "./Sections/CharPose.js";
 import Preloader from "components/Preloader/Preloader.js";
